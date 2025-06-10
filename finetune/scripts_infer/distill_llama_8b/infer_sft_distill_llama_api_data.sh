@@ -1,7 +1,7 @@
 # Assign the command line arguments to variables
 # base_path
-model_path=/data/h3571902/deep_r1/open_r1/results/sft/DeepSeek-R1-Distill-Llama-8B_lr5e6/checkpoint-1080
-question_path=/data/h3571902/deep_r1/data/subset_top40_top1/infer_data/infer_icd_report_data_top.json
+model_path=/xxx/open_r1/results/sft/DeepSeek-R1-Distill-Llama-8B_lr5e6/checkpoint-1080
+question_path=/xxx/data/subset_top40_top1/infer_data/infer_icd_report_data_top.json
 top_num=50
 answer_path=$model_path/40_test_infer_prompt_${top_num}/result.jsonl
 
