@@ -144,6 +144,7 @@ bash ./finetune/scripts_train/openbio_8b/sft/train_sft_openbio_8b_mimic.sh
 ## Examples
 
 **Inference with API Models**
+
 Use the [`examples/inference_api.ipynb`](examples/inference_api.ipynb) notebook to perform inference with API models.
 
 **Inference with Fine-tuned Models**
