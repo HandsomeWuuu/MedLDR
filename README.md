@@ -17,7 +17,8 @@ We constructed a long-context diagnostic reasoning (LDR) benchmark from the MIMI
 ## Data:
 
 First, you need to download [the MIMIC-IV dataset ](https://physionet.org/content/mimiciv/2.2/) (requires passing a qualification exam).
-Then use our code in the `data` directory to process and obtain the data
+Then use our code in the `data/` directory to process and generate the LDR training and evaluation datasets.
+
 
 ## File Structure
 Our code structure consists of three main parts: 
@@ -80,14 +81,60 @@ As an example, to perform inference using the DeepSeek-R1 model, follow these st
 Replace the placeholder paths in the scripts with your actual prediction and reference files as needed.
 
 
-## Supervised fine-tuning models
+##  Fine-tuning models
 ### 1. Requirements
+### Model Preparation
+Download the models from the links provided in `models/download_link.txt`:
+- [DeepSeek-R1-Distill-Llama-8B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B)
+- [Llama3-OpenBioLLM-8B](https://huggingface.co/aaditya/Llama3-OpenBioLLM-8B)
+
+### Training Environment
+Our training code is based on [open-r1](https://github.com/huggingface/open-r). Please set up your environment according to the requirements of open-r1.
 
 ### 2. Data Preparation
 
+Use the training dataset of the LDR dataset.
+
 ### 3. Train
 
+**Supervised Fine-tuning Training**
 
+- Train DeepSeek-R1-Distill-Llama-8B
+```
+bash ./finetune/scripts_train/distill_llama_8b/sft/train_sft_llama_8b_mimic.sh
+```
+- Train Llama3-OpenBioLLM-8B
+```
+bash ./finetune/scripts_train/distill_llama_8b/grpo/train_grpo_llama_8b.sh
+```
+
+**Reinforcement Learning Training (GPRO)**
+- Train DeepSeek-R1-Distill-Llama-8B
+```
+bash ./finetune/scripts_train/openbio_8b/sft/train_sft_openbio_8b_mimic.sh
+```
+## 4. Inference Evaluation Data
+
+1. **Run Inference**  
+  Use the provided shell script to generate predictions:
+  ```bash
+  # Inference SFT models
+  bash ./finetune/scripts_infer/distill_llama_8b/infer_sft_distill_llama_api_data.sh
+  # Inference RL models
+  bash ./finetune/scripts_infer/distill_llama_8b/infer_grpo_distill_llama_8b_model.sh
+  ```
+
+2. **Extract Results**  
+  After inference, extract and format the results:
+  ```bash
+  python finetune/eval/extract_sft_openbio_result.py
+  ```
+
+3. **Evaluate Predictions**  
+  Evaluate the predictions using the evaluation script:
+  ```bash
+  bash ./inference/scripts/eval/eval_train_models/eval_sft_model.sh
+  ```
 
 
 <!-- # Citation
