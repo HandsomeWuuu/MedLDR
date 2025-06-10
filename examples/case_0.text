@@ -1,0 +1,68 @@
+The following lab tests are available for the patient:
+labevents name,measurement fluid,measurement category,value,valueuom,lower_bound,upper_bound
+Hematocrit,Blood,Hematology,34.4,%,40.0,52.0
+Hemoglobin,Blood,Hematology,11.5,g/dL,14.0,18.0
+MCH,Blood,Hematology,33.9,pg,27.0,32.0
+MCHC,Blood,Hematology,33.3,%,31.0,35.0
+MCV,Blood,Hematology,102.0,fL,82.0,98.0
+Platelet Count,Blood,Hematology,129.0,K/uL,150.0,440.0
+RDW,Blood,Hematology,15.4,%,10.5,15.5
+Red Blood Cells,Blood,Hematology,3.38,m/uL,4.6,6.2
+White Blood Cells,Blood,Hematology,9.5,K/uL,4.0,11.0
+Anion Gap,Blood,Chemistry,14.0,mEq/L,8.0,20.0
+Bicarbonate,Blood,Chemistry,26.0,mEq/L,22.0,32.0
+Chloride,Blood,Chemistry,100.0,mEq/L,96.0,108.0
+Creatinine,Blood,Chemistry,1.8,mg/dL,0.5,1.2
+Potassium,Blood,Chemistry,4.1,mEq/L,3.3,5.1
+Sodium,Blood,Chemistry,136.0,mEq/L,133.0,145.0
+Urea Nitrogen,Blood,Chemistry,54.0,mg/dL,6.0,20.0
+
+The ED info:
+gender,age approximation,temperature,heartrate,resprate,oxygen saturation,systolic blood pressure,diastolic blood pressure,pain level
+M,87,nan,70.0,24.0,94.0,166.0,90.0,0
+
+The family history: Father and Mother died of MI (unknown age).
+The chief complaint: DYSPNEA
+The past medical history: -Type 2 Diabetes Mellitus, diet controlled  
+-Hypertension  
+-Hyperlipidemia  
+-Coronary Artery Disease  
+-CHF EF 40-45% in ___  
+-Atrial arrhythmias/PAF, not on anticoagulation  
+-CKD (Baseline creatinine 1.5)  
+-Chronic Obstructive Pulmonary Disease  
+-H/O Pulmonary Nodule: Stable right middle lobe and diffuse 
+nodules followed on serial CT scans  
+-DVT  
+-Lymphedema  
+-Senorineural Hearing Loss since age ___ (adept at sign language  
+-and can read lips when you speak very slowly)  
+-Chronic venous stasis with recurrent cellulitis  
+-Osteoarthritis  
+-Cataracts ___  
+-BPH s/p TURP
+The physical exam on admission : Vitals:afeb  77  120/61  24 94% 4LNC
+Cons: NAD, lying in bed 
+Eyes: PERRL, EOMI, no sclera icterus
+ENT: MMM, +roseacea changes
+Neck: nl ROM, no goiter
+Lymph: no cervical LAD
+Cardiovasc: rrr, distant heart sounds, mild ___ edema, left worse 
+than right, chronic per pt
+Resp: decreased BS at bases, no crackles, +upper airway 
+congestion, no resp distress, but prolonged exp phase and mildly 
+tachynpic
+GI: +bs, soft,nt, mildly distended
+MSK: mild kyphosis noted
+Skin: no rashes but severe B venostasis changes ___
+Neuro: no facial droop
+Psych: normal range of affect, very pleasant
+The report info:
+HISTORY:  Productive cough, dyspnea and hypoxia.  Evaluate for heart failure
+or a pneumothorax.
+
+COMPARISON:  Chest radiographs ___ and ___.
+IMPRESSION:
+1. Unchanged moderate cardiomegaly with mild pulmonary edema.
+2. Right lower lower lobe partial atelectasis. Coexisting pneumonia cannot be
+excluded in this region.  Follow up CXR is recommended to ensure resolution.

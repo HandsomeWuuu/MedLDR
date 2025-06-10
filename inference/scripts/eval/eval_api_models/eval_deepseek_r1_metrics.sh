@@ -7,35 +7,34 @@ python eval/compute_metrics.py \
     --predict_result $predict_result \
     --label_file $label_file
 
-# 计算 12 类的指标
+# Calculate metrics for 12 classes
 python eval/compute_metrics_class_12.py \
     --predict_result $predict_result \
     --label_file $label_file
 
 ######### Primary Accuracy of every disease ##############
-### 计算 40 类的 每种疾病的 primary accuracy
+### Calculate the primary accuracy for each disease in 40 classes
 python eval/disease_metrics/compute_40_metrics.py \
     --predict_result $predict_result \
     --label_file $label_file
 
-# ### 计算 12 类的 每种疾病的 primary accuracy ci
+# ### Calculate the primary accuracy confidence interval (CI) for each disease in 12 classes
 python eval/disease_metrics/compute_12_metrics_ci.py \
     --predict_result $predict_result \
     --label_file $label_file
 
 ############ Recall at N (Top-N accurcy) ##############
-## 计算 12 类的 recall N  ci
+## Calculate recall@N confidence interval (CI) for 12 classes
 python eval/recall_at_n/recall_at_n_12.py \
     --predict_result $predict_result \
     --label_file $label_file
 
-## 计算 40 类的 recall N  ci
+## Calculate recall@N confidence interval (CI) for 40 classes
 python eval/recall_at_n/recall_at_n_40.py \
     --predict_result $predict_result \
     --label_file $label_file
 
 ############ Distance Metrics ##############
-## 计算 distance 
 python eval/close_eval/close_eval_primary_v2.py \
     --predict_result $predict_result \
     --label_file $label_file

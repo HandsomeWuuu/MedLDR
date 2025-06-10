@@ -9,53 +9,52 @@ label_file=$base_path/datasets/mimic_multi_inputs_icd/split_by_patient/subset_to
 # predict_result=$base_path/infer_api/infer_api/results/subset_100/round_3/all_cursorai_gemini_2_5/processed_results/valid_results.csv
 # label_file=$base_path/datasets/mimic_multi_inputs_icd/split_by_patient/subset_top40_top1/infer_icd_report_data_100_subset.json
 
-# 计算 40 类的指标
+# Calculate metrics for 40 classes
 # python eval/compute_metrics.py \
 #     --predict_result $predict_result \
 #     --label_file $label_file
 
-
-# 计算 33 类的指标
+# Calculate metrics for 33 classes
 # python eval/compute_metrics_class_33.py \
 #     --predict_result $predict_result \
 #     --label_file $label_file
 
-# # 计算 12 类的指标
+# # Calculate metrics for 12 classes
 # python eval/compute_metrics_class_12.py \
 #     --predict_result $predict_result \
 #     --label_file $label_file
 
-# 计算置信区间 40 类
+# Calculate confidence interval for 40 classes
 # python eval/compute_metrics_ci.py \
 #     --predict_result $predict_result \
 #     --label_file $label_file
 
-# # 计算置信区间 class 33 类
+# # Calculate confidence interval for 33 classes
 # python eval/compute_metrics_class_33_ci.py \
 #     --predict_result $predict_result \
 #     --label_file $label_file
 
-# # 计算置信区间 class 12 类
+# # Calculate confidence interval for 12 classes
 # python eval/compute_metrics_class_12_ci.py \
 #     --predict_result $predict_result \
 #     --label_file $label_file
 
-# ### 计算 40 类的 每种疾病的 primary accuracy
+# ### Calculate primary accuracy for each disease in 40 classes
 # python eval/disease_metrics/compute_40_metrics.py \
 #     --predict_result $predict_result \
 #     --label_file $label_file
 
-### 计算 12 类的 每种疾病的 primary accuracy
+### Calculate primary accuracy for each disease in 12 classes
 # python eval/disease_metrics/compute_12_metrics.py \
 #     --predict_result $predict_result \
 #     --label_file $label_file
 
-# ### 计算 12 类的 每种疾病的 primary accuracy ci
+# ### Calculate primary accuracy confidence interval for each disease in 12 classes
 # python eval/disease_metrics/compute_12_metrics_ci.py \
 #     --predict_result $predict_result \
 #     --label_file $label_file
 
-## 计算 distance 
+## Calculate distance 
 # python eval/close_eval/close_eval_primary_v2.py \
 #     --predict_result $predict_result \
 #     --label_file $label_file

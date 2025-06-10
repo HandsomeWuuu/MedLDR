@@ -1,0 +1,2 @@
+deepseek-ai/DeepSeek-R1-Distill-Llama-8B: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
+aaditya/Llama3-OpenBioLLM-8B: https://huggingface.co/aaditya/Llama3-OpenBioLLM-8B
