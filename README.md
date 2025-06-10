@@ -141,6 +141,18 @@ bash ./finetune/scripts_train/openbio_8b/sft/train_sft_openbio_8b_mimic.sh
   bash ./inference/scripts/eval/eval_train_models/eval_sft_model.sh
   ```
 
+## Examples
+
+**Inference with API Models**
+Use the [`examples/inference_api.ipynb`](examples/inference_api.ipynb) notebook to perform inference with API models.
+
+**Inference with Fine-tuned Models**
+
+Use the [`examples/inference_ft.ipynb`](examples/inference_ft.ipynb) notebook to perform inference with fine-tuned models.
+
+
+
+
 
 <!-- # Citation
 If you find this project useful for your research, please consider citing:
