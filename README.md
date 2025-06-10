@@ -14,9 +14,8 @@ We constructed a long-context diagnostic reasoning (LDR) benchmark from the MIMI
 - As diagnostic assistants, RLMs provide superior differential diagnoses and higher clinical relevance, with only 29.2% completely unrelated predictions versus 37.6% for LLMs.
 - All evaluated models still produce 30%+ clinically irrelevant predictions, indicating significant room for improvement before clinical deployment.
 
-## Overview of model evaluation framework and LDR dataset construction pipeline
-
 ![Overview of model evaluation framework and LDR dataset construction pipeline](image/main_pipeline.jpg)
+> *Overview of model evaluation framework and LDR dataset construction pipeline*
 
 ## Data:
 
