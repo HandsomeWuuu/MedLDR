@@ -86,12 +86,12 @@ Replace the placeholder paths in the scripts with your actual prediction and ref
 
 ##  Fine-tuning models
 ### 1. Requirements
-### Model Preparation
+**Model Preparation**
 Download the models from the links provided in `models/download_link.txt`:
 - [DeepSeek-R1-Distill-Llama-8B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B)
 - [Llama3-OpenBioLLM-8B](https://huggingface.co/aaditya/Llama3-OpenBioLLM-8B)
 
-### Training Environment
+**Training Environment**
 Our training code is based on [open-r1](https://github.com/huggingface/open-r). Please set up your environment according to the requirements of open-r1.
 
 ### 2. Data Preparation
@@ -116,7 +116,7 @@ bash ./finetune/scripts_train/distill_llama_8b/grpo/train_grpo_llama_8b.sh
 ```
 bash ./finetune/scripts_train/openbio_8b/sft/train_sft_openbio_8b_mimic.sh
 ```
-## 4. Inference Evaluation Data
+### 4. Inference Evaluation Data
 
 1. **Run Inference**  
   Use the provided shell script to generate predictions:
