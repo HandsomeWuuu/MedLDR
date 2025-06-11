@@ -29,7 +29,7 @@ Then use our code in the `data/` directory to process and generate the LDR train
 Our code structure consists of three main parts: 
 - Data processing: scripts for preparing and processing the MIMIC-IV dataset into the LDR benchmark.
 - Inference code: scripts for model inference and evaluation via API.
-- Fine-tuning code: scripts for model training and fine-tuning.
+- Fine-tuning code: scripts for model fine-tuning on the LDR training set.
 
 The detailed structure of the code is as follows:
 
