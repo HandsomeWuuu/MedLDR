@@ -1,0 +1,74 @@
+A41.9: cardiovascular|shock / hypotension|sepsis; infectious diseases|systemic/other infections|sepsis
+D62: hematology|bleeding and red blood cell disorders|anemia|acute blood loss anemia
+D64.9: hematology|bleeding and red blood cell disorders|anemia|anemia of critical illness; hematology|bleeding and red blood cell disorders|anemia|multifactorial anemia
+D68.32: hematology|coagulation disorders|coagulopathy|coumadin administration
+D68.9: hematology|coagulation disorders|coagulopathy
+D69.6: hematology|platelet disorders|thrombocytopenia
+D72.829: infectious diseases|systemic/other infections|hematological effect of infection|leukocytosis; hematology|white blood cell disorders|leukocytosis
+E03.9: endocrine|thyroid|hypothyroidism
+E10.1: endocrine|glucose metabolism|DKA
+E16.2: endocrine|glucose metabolism|hypoglycemia
+E46: gastrointestinal|malnutrition|protein-calorie malnutrition; gastrointestinal|malnutrition|nutritional deficiency
+E66.9: gastrointestinal|abdominal/ general|obesity
+E78.5: cardiovascular|chest pain / ASHD|hyperlipidemia
+E83.42: renal|electrolyte imbalance|hypomagnesemia
+E83.51: renal|electrolyte imbalance|hypocalcemia
+E86.1: cardiovascular|shock / hypotension|hypovolemia; renal|fluid imbalance|hypovolemia
+E87.0: renal|electrolyte imbalance|hyponatremia
+E87.2: renal|disorder of acid base|metabolic acidosis; renal|disorder of acid base|metabolic acidosis|lactic acidosis
+E87.5: renal|electrolyte imbalance|hyperkalemia
+E87.6: renal|electrolyte imbalance|hypokalemia
+E87.70: renal|fluid imbalance|hypervolemia
+F03: neurologic|altered mental status / pain|dementia
+F05: neurologic|altered mental status / pain|delirium
+F10.239: neurologic|altered mental status / pain|drug withdrawal syndrome|alcohol
+F32.9: neurologic|altered mental status / pain|depression
+F41.9: neurologic|altered mental status / pain|anxiety
+F43.0: neurologic|altered mental status / pain|agitation
+G47.33: pulmonary|disorders of the airways|obstructive sleep apnea
+G93.40: neurologic|altered mental status / pain|encephalopathy
+G93.41: neurologic|altered mental status / pain|encephalopathy|metabolic
+I10: cardiovascular|vascular disorders|hypertension; cardiovascular|ventricular disorders|hypertension; cardiovascular|vascular disorders|hypertension|controlled
+I21.3: cardiovascular|chest pain / ASHD|acute coronary syndrome|acute myocardial infarction (with ST elevation)
+I21.4: cardiovascular|chest pain / ASHD|acute coronary syndrome|acute myocardial infarction (no ST elevation)
+I25.10: cardiovascular|chest pain / ASHD|coronary artery disease|known
+I46.9: cardiovascular|cardiac arrest|cardiac arrest; cardiovascular|cardiac arrest|cardiac arrest|witnessed, < 15 minutes CPR
+I48.0: cardiovascular|arrhythmias|atrial fibrillation|with controlled ventricular response; cardiovascular|arrhythmias|atrial fibrillation|with rapid ventricular response; cardiovascular|arrhythmias|atrial fibrillation
+I50.1: cardiovascular|ventricular disorders|acute pulmonary edema
+I50.9: cardiovascular|ventricular disorders|congestive heart failure
+I62.9: neurologic|disorders of vasculature|stroke|hemorrhagic stroke
+I63.50: neurologic|disorders of vasculature|stroke|ischemic stroke
+I67.8: neurologic|disorders of vasculature|stroke
+I95.9: cardiovascular|shock / hypotension|hypotension
+J18.9: pulmonary|pulmonary infections|pneumonia|community-acquired; infectious diseases|chest/pulmonary infections|pneumonia; pulmonary|pulmonary infections|pneumonia|hospital acquired (not ventilator-associated); pulmonary|pulmonary infections|pneumonia
+J44.1: pulmonary|disorders of the airways|acute COPD exacerbation
+J44.9: pulmonary|disorders of the airways|COPD
+J45: pulmonary|disorders of the airways|asthma / bronchospasm
+J69.0: pulmonary|pulmonary infections|pneumonia|aspiration
+J80: pulmonary|respiratory failure|ARDS
+J91.8: pulmonary|pleural disorders|pleural effusion; pulmonary|pleural disorders|pleural effusion|right; pulmonary|pleural disorders|pleural effusion|left
+J96.00: pulmonary|respiratory failure|acute respiratory failure|due to neurological process; pulmonary|respiratory failure|acute respiratory failure; pulmonary|respiratory failure|acute respiratory failure|due to pulmonary infiltrates
+J96.10: pulmonary|respiratory failure|chronic respiratory failure
+J96.91: pulmonary|respiratory failure|hypoxemia
+J96.92: pulmonary|respiratory failure|hypercarbia
+J98.11: pulmonary|disorders of lung parenchyma|atelectasis/collapse
+K92.2: gastrointestinal|GI bleeding / PUD|GI bleeding; gastrointestinal|GI bleeding / PUD|lower GI bleeding; gastrointestinal|GI bleeding / PUD|upper GI bleeding
+N17.9: renal|disorder of kidney|acute renal failure
+N18.3: renal|disorder of kidney|chronic kidney disease|Stage 3 (GFR 30-59)
+N18.6: renal|disorder of kidney|ESRD (end stage renal disease)
+N18.9: renal|disorder of kidney|chronic kidney disease; renal|disorder of kidney|chronic renal insufficiency
+N30.9: infectious diseases|GU infections|lower urinary tract infection
+N39.0: renal|disorder of urinary tract / renal system infection|urinary tract infection
+R00.0: cardiovascular|arrhythmias|sinus tachycardia
+R07.9: cardiovascular|chest pain / ASHD|chest pain
+R10.9: gastrointestinal|abdominal/ general|abdominal pain / tenderness
+R11.0: gastrointestinal|abdominal/ general|nausea
+R40.0: neurologic|altered mental status / pain|obtundation
+R41.82: neurologic|altered mental status / pain|change in mental status
+R50.9: infectious diseases|systemic/other infections|fever
+R56.9: neurologic|seizures|seizures
+R57.0: cardiovascular|shock / hypotension|cardiogenic shock
+R65.2: cardiovascular|shock / hypotension|sepsis|severe
+R65.20: infectious diseases|systemic/other infections|sepsis|severe; cardiovascular|shock / hypotension|sepsis|sepsis with multi-organ dysfunction
+R65.21: cardiovascular|shock / hypotension|septic shock
+R73.9: endocrine|glucose metabolism|hyperglycemia|stress related; endocrine|glucose metabolism|hyperglycemia

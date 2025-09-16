@@ -2,6 +2,7 @@ import sys
 import pandas as pd
 import ast
 import json
+import os
 
 #!/usr/bin/env python3
 
@@ -18,7 +19,10 @@ def compute_pair_consistency(dfA, dfB):
             topA = listA[:n]
             topB = listB[:n]
             # 计算前 n 个元素的交集占比
-            inter_ratio = len(set(topA) & set(topB)) / n
+            # inter_ratio = len(set(topA) & set(topB)) / n
+            # 也得用并集吧
+            inter_ratio = len(set(topA) & set(topB)) / len(set(topA) | set(topB))
+
             ratios.append(inter_ratio)
         top10_cons[f"top_{n}"] = round(sum(ratios) / len(ratios),4) if ratios else 0.0
     
@@ -32,12 +36,16 @@ def compute_pair_consistency(dfA, dfB):
             listA = dfA[dfA['case_id'] == case_id]['valid_prediction'].values[0]
             listB = dfB[dfB['case_id'] == case_id]['valid_prediction'].values[0]
             
+            print(f"listA: {listA}, listB: {listB}")
+            print(f'dfA row: {row}')
             # 计算前 n 个元素的交集占比
             if col == 'top1':
                 inter_ratio = len(set(listA[:1]) & set(listB[:1])) / 1
             else:
-                inter_ratio = len(set(listA) & set(listB)) / len(listA)
-            
+                # 这个设计不合理 -- 应该用并集合
+                # inter_ratio = len(set(listA) & set(listB)) / len(listA)
+                inter_ratio = len(set(listA) & set(listB)) / len(set(listA) | set(listB))
+
             ratios.append(inter_ratio)
         pred_cons[col] = round(sum(ratios) / len(ratios),4) if ratios else 0.0
     
@@ -59,7 +67,11 @@ def compute_three_consistency(df1, df2, df3):
             top2 = list2[:n]
             top3 = list3[:n]
             # 计算前 n 个元素的交集占比
-            inter_ratio = len(set(top1) & set(top2) & set(top3)) / n
+            # inter_ratio = len(set(top1) & set(top2) & set(top3)) / n
+
+            # 也得用并集吧
+            inter_ratio = len(set(top1) & set(top2) & set(top3)) / len(set(top1) | set(top2) | set(top3))
+
             ratios.append(inter_ratio)
         top10_cons[f"top_{n}"] = round(sum(ratios) / len(ratios),4) if ratios else 0.0
     
@@ -78,8 +90,10 @@ def compute_three_consistency(df1, df2, df3):
             if col == 'top1':
                 inter_ratio = len(set(list1[:1]) & set(list2[:1]) & set(list3[:1])) / 1
             else:
-                inter_ratio = len(set(list1) & set(list2) & set(list3)) / len(list1)
-            
+                # 这个设计不合理 -- 应该用并集合 -- 也是同样的问题
+                # inter_ratio = len(set(list1) & set(list2) & set(list3)) / len(list1)
+                inter_ratio = len(set(list1) & set(list2) & set(list3)) / len(set(list1) | set(list2) | set(list3))
+
             ratios.append(inter_ratio)
         pred_cons[col] = round(sum(ratios) / len(ratios),4) if ratios else 0.0
     
@@ -141,58 +155,58 @@ def main(file1, file2, file3,save_path=None):
             
     
 
-
-
-
 if __name__ == '__main__':
-    # if len(sys.argv) != 4:
-    #     print("用法: python check_consistency.py file1.csv file2.csv file3.csv")
-    #     sys.exit(1)
-    compare_model = 'gemini_2_5' # deepseek_r1, deepseek_v3, o3_mini, gpt_4o
+
+    import argparse
+    parser = argparse.ArgumentParser(description="Check consistency of add results")
+    parser.add_argument('--compare_model', type=str, required=True, help='Model to compare (claude-sonnet-4, qwen-plus, gemini_2_5_flash)')
+    parser.add_argument('--think_mode', type=str, required=True, help='Think mode (think, nothink)')
+    parser.add_argument('--temperature', type=float, required=True, help='Temperature value (0.1, 0.7, 1.0)')
+    args = parser.parse_args()
+
+    compare_model = args.compare_model # claude-sonnet-4, qwen-plus, gemini_2_5_flash, 
+
+    think_mode = args.think_mode # think, nothink
+    temperature = args.temperature # 0.1, 0.7, 1.0
+
+
+    prompt_name = 'current_human_designed'
+    prompt_type = '_'.join(prompt_name.split('_')[-2:]) # current_human_designed, current_automated_designed, current_human_automated_designed
 
     base_path = '/grp01/cs_yzyu/wushuai/model/llama_demo/infer_api/infer_api/'
 
-    if compare_model == 'deepseek_r1':
-        compare_list = ['results/all_deepseek_r1_zzz/processed_results/valid_results.csv',
-                        'results/subset_100/round_2/all_deepseek_r1_zzz/processed_results/valid_results.csv',
-                        'results/subset_100/round_3/all_deepseek_r1_zzz/processed_results/valid_results.csv']
-        
-        save_path = base_path + 'results/subset_100/deepseek_r1_consistency.json'
-    elif compare_model == 'deepseek_v3':
-        compare_list = ['results/all_deepseek_v3_zzz/processed_results/valid_results.csv',
-                        'results/subset_100/round_2/all_deepseek_v3_zzz/processed_results/valid_results.csv',
-                        'results/subset_100/round_3/all_deepseek_v3_zzz/processed_results/valid_results.csv']
-        save_path = base_path + 'results/subset_100/deepseek_v3_consistency.json'
+    print(f"compare_model: {compare_model}, think_mode: {think_mode}, temperature: {temperature}, prompt_name: {prompt_name}, prompt_type: {prompt_type}")
 
-    elif compare_model == 'o3_mini':
-        compare_list = ['results/all_o3_mini_zzz/processed_results/valid_results.csv',
-                        'results/subset_100/round_2/all_o3_mini_zzz/processed_results/valid_results.csv',
-                        'results/subset_100/round_3/all_o3_mini_zzz/processed_results/valid_results.csv']
-        save_path = base_path + 'results/subset_100/o3_mini_consistency.json'
-
-    elif compare_model == 'gpt_4o':
-        compare_list = ['results/all_gpt_4o_zzz/processed_results/valid_results.csv',
-                        'results/subset_100/round_2/all_gpt4o_zzz/processed_results/valid_results.csv',
-                        'results/subset_100/round_3/all_gpt4o_zzz/processed_results/valid_results.csv']
-        save_path = base_path + 'results/subset_100/gpt_4o_consistency.json'
+    if compare_model == 'gemini_2_5_flash':
+        sub_path = f'all_cursorai_gemini_2_5_flash_{think_mode}/prompt_{prompt_type}/prompt_{prompt_name}_temp_{temperature}/processed_results/valid_results.csv'
+        compare_list = [f'add_results/{sub_path}',
+                        f'add_results/subset_100/round_2/{sub_path}',
+                        f'add_results/subset_100/round_3/{sub_path}']
+    elif compare_model == 'claude-sonnet-4':
+        sub_path = f'all_cursorai_claude_sonnet_4_{think_mode}/prompt_{prompt_type}/prompt_{prompt_name}_temp_{temperature}/processed_results/valid_results.csv'
+        compare_list = [f'add_results/{sub_path}',
+                        f'add_results/subset_100/round_2/{sub_path}',
+                        f'add_results/subset_100/round_3/{sub_path}']
     
-    elif compare_model == 'grok_3':
-        compare_list = ['results/all_cursorai_grok_3/processed_results/valid_results.csv',
-                        'results/subset_100/round_2/all_cursorai_grok_3/processed_results/valid_results.csv',
-                        'results/subset_100/round_3/all_cursorai_grok_3/processed_results/valid_results.csv']
-        save_path = base_path + 'results/subset_100/grok_3_consistency.json'
+    elif compare_model == 'qwen-plus':
+        sub_path = f'all_official_qwen_plus_{think_mode}/prompt_{prompt_type}/prompt_{prompt_name}_temp_{temperature}/processed_results/valid_results.csv'
+        compare_list = [f'add_results/{sub_path}',
+                        f'add_results/subset_100/round_2/{sub_path}',
+                        f'add_results/subset_100/round_3/{sub_path}']
+    elif compare_model == 'qwen3_30b_a3b':
+        sub_path = f'all_official_qwen3_30b_a3b_{think_mode}/prompt_{prompt_type}/prompt_{prompt_name}_temp_{temperature}/processed_results/valid_results.csv'
+        compare_list = [f'add_results/{sub_path}',
+                        f'add_results/subset_100/round_2/{sub_path}',
+                        f'add_results/subset_100/round_3/{sub_path}']
+    else:
+
+        raise ValueError(f"Unsupported compare_model: {compare_model}")
+
+
+    save_path = base_path + f'add_results/subset_100/consistency/{compare_model}/{think_mode}/prompt_{prompt_name}_temp_{temperature}/consistency_new.json'
+
     
-    elif compare_model == 'grok_3_reasoning':
-        compare_list = ['results/all_cursorai_grok_3_reasoning/processed_results/valid_results.csv',
-                        'results/subset_100/round_2/all_cursorai_grok_3_reasoning/processed_results/valid_results.csv',
-                        'results/subset_100/round_3/all_cursorai_grok_3_reasoning/processed_results/valid_results.csv']
-        save_path = base_path + 'results/subset_100/grok_3_reasoning_consistency.json'
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
 
-    elif compare_model == 'gemini_2_5':
-        compare_list = ['results/all_cursorai_gemini_2_5/processed_results/valid_results.csv',
-                        'results/subset_100/round_2/all_cursorai_gemini_2_5/processed_results/valid_results.csv',
-                        'results/subset_100/round_3/all_cursorai_gemini_2_5/processed_results/valid_results.csv']
-
-        save_path = base_path + 'results/subset_100/consistency_common/gemini_2_5_consistency.json'
 
     main(base_path + compare_list[0], base_path + compare_list[1], base_path + compare_list[2], save_path)

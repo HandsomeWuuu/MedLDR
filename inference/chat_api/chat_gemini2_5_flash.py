@@ -1,17 +1,18 @@
-import os
-from openai import OpenAI
-import openai
+from openai import OpenAI  
+import re
 import requests
-import time
 import json
-import time
+import os   
 
-def chat_deepseek_cursorai(client, system, query, think, temperature=1.0):
 
-    if not think:
-        model_name = "deepseek-v3-250324"
+def chat_gemini_2_5_flash(client, system, query,think=False,temperature=1):
+    if think:
+        print('think is True')
+        model_name = "gemini-2.5-flash-thinking"
     else:
-        model_name = "deepseek-r1-250528"
+        print('think is False')
+        model_name = "gemini-2.5-flash-nothinking"
+        
 
     try:
         headers = {
@@ -28,6 +29,7 @@ def chat_deepseek_cursorai(client, system, query, think, temperature=1.0):
 
         }
 
+        
 
         response = client.post("https://api.cursorai.art/v1/chat/completions", headers=headers, json=payload)
 
@@ -37,7 +39,7 @@ def chat_deepseek_cursorai(client, system, query, think, temperature=1.0):
 
         resp_json = response.json()
 
-        print('deepseek response json:', resp_json)
+        # print('response json:', resp_json)
 
         if "choices" not in resp_json or not resp_json["choices"]:
             raise ValueError("API response does not contain valid choices")
@@ -54,8 +56,9 @@ def chat_deepseek_cursorai(client, system, query, think, temperature=1.0):
         }
 
         if think:
-            token_dict['reasoning_tokens'] = 0
-        
+            token_dict['reasoning_tokens'] = resp_json["usage"]["completion_tokens_details"]["reasoning_tokens"]
+            reasoning_content = resp_json["choices"][0]["message"]["reasoning_content"]
+            result_dict['reasoning'] = reasoning_content
         
 
         return result_dict, token_dict
@@ -63,22 +66,20 @@ def chat_deepseek_cursorai(client, system, query, think, temperature=1.0):
     except Exception as e:
         print(f"An error occurred: {e}")
         return None, None
-    
 
-if __name__ == "__main__":
-    
-    system_message = "You are a helpful assistant."
-    user_query = "What is the capital of France?"
-    
-    import requests
+def test_chat_gemini_2_5_flash():
     client = requests.Session()
+    system = "You are a helpful assistant."
+    query = "9.11 和 9.8 哪个大?"
+    
+    
+    response_content, token_dict = chat_gemini_2_5_flash(client, system, query,think=True,temperature=1)
+    # response_content, token_dict = chat_gemini_2_5_flash(client, system, query,think=False,temperature=1)
+    
+    print("Response Content:", response_content)
+    print("Token Dictionary:", token_dict)
+    
 
-    print("Testing chat_deepseek_cursorai think=True")
-    response, token_usage = chat_deepseek_cursorai(client, system_message, user_query, think=True)
-    # print("Testing chat_deepseek_cursorai think=False") 
-    # response, token_usage = chat_deepseek_cursorai(client, system_message, user_query, think=False)
-
-    print("Response from chat_deepseek_cursorai:")
-    print(response)
-    print("Token usage:")
-    print(token_usage)
+    
+if __name__ == "__main__":
+    test_chat_gemini_2_5_flash()

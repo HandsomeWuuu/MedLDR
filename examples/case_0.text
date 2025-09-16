@@ -1,3 +1,10 @@
+The chief complaint: DYSPNEA
+The ED info:
+gender,age approximation,temperature,heartrate,resprate,oxygen saturation,systolic blood pressure,diastolic blood pressure,pain level
+M,87,nan,70.0,24.0,94.0,166.0,90.0,0
+
+The family history: Father and Mother died of MI (unknown age).
+
 The following lab tests are available for the patient:
 labevents name,measurement fluid,measurement category,value,valueuom,lower_bound,upper_bound
 Hematocrit,Blood,Hematology,34.4,%,40.0,52.0
@@ -17,12 +24,6 @@ Potassium,Blood,Chemistry,4.1,mEq/L,3.3,5.1
 Sodium,Blood,Chemistry,136.0,mEq/L,133.0,145.0
 Urea Nitrogen,Blood,Chemistry,54.0,mg/dL,6.0,20.0
 
-The ED info:
-gender,age approximation,temperature,heartrate,resprate,oxygen saturation,systolic blood pressure,diastolic blood pressure,pain level
-M,87,nan,70.0,24.0,94.0,166.0,90.0,0
-
-The family history: Father and Mother died of MI (unknown age).
-The chief complaint: DYSPNEA
 The past medical history: -Type 2 Diabetes Mellitus, diet controlled  
 -Hypertension  
 -Hyperlipidemia  

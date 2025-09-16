@@ -1,12 +1,9 @@
 import json
 import argparse
 
-from ldr_process_data.organize_data import organize_input_data, system_message_dict
-
-
+from eicu_process_data.organize_eicu_data import organize_input_data, eicu_system_message_dict
 import os
 from tqdm import tqdm
-from openai import OpenAI
 from multiprocessing import Pool
 
 # think or not , temperature
@@ -24,7 +21,7 @@ parser.add_argument('--test_data_path', type=str, required=True, help='Test data
 parser.add_argument('--split_list', type=str, default=None, help='Split list')
 parser.add_argument('--task_type', type=str, required=True, help='Task type')
 parser.add_argument('--chat_model', type=str, required=True, help='Chat model')
-parser.add_argument('--think', type=bool, help='Whether to use "think" mode or not (default: False)')
+parser.add_argument('--think', type=bool, help='Whether to use reasoning (think) or not')  # If not specified, defaults to False
 parser.add_argument('--reasoning_effort', type=str, default=None, help='Reasoning effort: minimal, low, medium, high')
 parser.add_argument('--temperature', type=float, default=1.0, help='Temperature')
 parser.add_argument('--system_message_type', type=str, default=None, help='System message type')
@@ -37,23 +34,24 @@ args = parser.parse_args()
 task_type = args.task_type
 chat_model = args.chat_model
 
-system_message = system_message_dict[args.system_message_type]
-
-
-# Load data from dataset/split_by_patient/test_data.json
+system_message = eicu_system_message_dict[args.system_message_type]
 test_data_path = args.test_data_path
 
 temp_postfix = ''
+
 think_postfix = 'think' if args.think else 'nothink'
 prompt_group = '_'.join(args.system_message_type.split('_')[-2:])
 
 if args.num_round == 1:
     if args.chat_model == 'cursorai_gpt_5_mini':
-        save_data_path = f'./add_results/{task_type}_{chat_model}_{args.reasoning_effort}/prompt_{prompt_group}/prompt_{args.system_message_type}_temp_{args.temperature}/result_{chat_model}_{task_type}_full.jsonl'
+        save_data_path = f'./results_eicu/{task_type}_{chat_model}_{args.reasoning_effort}/prompt_{prompt_group}/prompt_{args.system_message_type}_temp_{args.temperature}/result_{chat_model}_{task_type}_full.jsonl'
     else:
-        save_data_path = f'./add_results/{task_type}_{chat_model}_{think_postfix}/prompt_{prompt_group}/prompt_{args.system_message_type}_temp_{args.temperature}/result_{chat_model}_{task_type}_full.jsonl'
+        save_data_path = f'./results_eicu/{task_type}_{chat_model}_{think_postfix}/prompt_{prompt_group}/prompt_{args.system_message_type}_temp_{args.temperature}/result_{chat_model}_{task_type}_full.jsonl'
 else:
-    save_data_path = f'./add_results/subset_100/round_{args.num_round}/{task_type}_{chat_model}_{think_postfix}/prompt_{prompt_group}/prompt_{args.system_message_type}_temp_{args.temperature}/result_{chat_model}_{task_type}_full.jsonl'
+    if args.chat_model == 'cursorai_gpt_5_mini':
+        save_data_path = f'./results_eicu/subset_100/round_{args.num_round}/{task_type}_{chat_model}_{args.reasoning_effort}/prompt_{prompt_group}/prompt_{args.system_message_type}_temp_{args.temperature}/result_{chat_model}_{task_type}_full.jsonl'
+    else:
+        save_data_path = f'./results_eicu/subset_100/round_{args.num_round}/{task_type}_{chat_model}_{think_postfix}/prompt_{prompt_group}/prompt_{args.system_message_type}_temp_{args.temperature}/result_{chat_model}_{task_type}_full.jsonl'
         
 
 os.makedirs(os.path.dirname(save_data_path), exist_ok=True)
@@ -78,20 +76,19 @@ print('**** Temperature : **** \n', args.temperature)
 print('**** System message type : **** \n', args.system_message_type)
 print('**** System message : **** \n', system_message)
 
-
 # sleep(5) # Wait for 5 seconds to ensure the logs are output correctly
+
 import time
 sleep_time= 3
 print(f'**** Sleeping for {sleep_time} seconds ****')
 time.sleep(sleep_time)
 
-# Prepare server/client
-
+# Prepare server
 if 'cursorai' in chat_model:
     import requests
     client = requests.Session()
 else:
-    # other clients init in chat_api files
+    # official API
     pass   
 
 
@@ -113,7 +110,7 @@ print('**** Remaining cases (to run) len: **** \n', len(process_data))
 
 def infer_data(data_list, save_path):
     max_retries = 10
-    # print('i am in infer_data')
+ 
     sub_completed_cases = set()
     if os.path.exists(save_path):
         with open(save_path, 'r') as f:
@@ -145,13 +142,12 @@ def infer_data(data_list, save_path):
 
             result_dict['input_data'] = input_data
             result_dict['estimate_token_count'] = token_count
-
+    
             retries = 0
             response, token_dict = None, None
             
             while retries < max_retries:
-    
-            
+                
                 # think or not , temperature
                 if chat_model == 'cursorai_gemini_2_5_flash' and args.think:
                     response, token_dict = chat_gemini_2_5_flash(client, system_message, input_data,think=True,temperature=args.temperature)
@@ -180,9 +176,10 @@ def infer_data(data_list, save_path):
                     response, token_dict = chat_gpt_5_mini(client, system_message, input_data, reasoning_effort=args.reasoning_effort)
 
                 elif chat_model == 'cursorai_deepseek' and args.think:
-                    response, token_dict = chat_deepseek_cursorai(None, system_message, input_data, think=True, temperature=1.0) # temperature can not be changed
+                    response, token_dict = chat_deepseek_cursorai(client, system_message, input_data, think=True, temperature=args.temperature)
                 elif chat_model == 'cursorai_deepseek' and not args.think:
-                    response, token_dict = chat_deepseek_cursorai(None, system_message, input_data, think=False, temperature=1.0)
+                    response, token_dict = chat_deepseek_cursorai(client, system_message, input_data, think=False, temperature=args.temperature)
+                
                 else:
                     raise ValueError(f"Unsupported chat model: {chat_model}")
 
@@ -195,18 +192,19 @@ def infer_data(data_list, save_path):
                 print(f"Failed to get response for {data_point['case_id']} after {max_retries} retries")
                 continue
             
-            # Extract reasoning part and answer part
+            # Extract the reasoning part and the answer part
             if  args.think:
                 print('extracting reasoning and response from response')
-                if chat_model == 'cursorai_claude_sonnet_4' or chat_model == 'cursorai_grok_3':
+                if chat_model == 'cursorai_claude_sonnet_4' or chat_model == 'cursorai_grok_3' or chat_model == 'cursorai_deepseek':
+                  
                     print('extracting reasoning from response')
-        
+                 
                     try:
                         reasoning_content = response['response'].split('<think>')[1].split('</think>')[0]
                         print('reasoning_content:', reasoning_content)
                         result_dict['reasoning'] = reasoning_content
                     
-                        # Clean the response by removing the reasoning part
+                        # Remove the reasoning part from the response
                         response['response'] = response['response'].replace(f'<think>{reasoning_content}</think>', '').strip()
                     
                     except IndexError:
@@ -229,7 +227,7 @@ def infer_data(data_list, save_path):
             
             print('* Token_usage:', token_dict)
 
-            # Save intermediate results
+            # Save the result
             f.write(json.dumps(result_dict, ensure_ascii=False) + '\n')
 
 
@@ -262,7 +260,7 @@ def main(test_data):
 
     merge_files(temp_files, save_data_path)
 
-    # Delete temporary files
+
     for temp_file in temp_files:
         os.remove(temp_file)
 

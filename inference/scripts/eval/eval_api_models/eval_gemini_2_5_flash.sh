@@ -1,6 +1,6 @@
-base_path=/grp01/cs_yzyu/wushuai/model/llama_demo
-predict_result=$base_path/infer_api/infer_api/results/all_deepseek_r1_zzz/processed_results/valid_results.csv
-label_file=$base_path/datasets/mimic_multi_inputs_icd/split_by_patient/subset_top40_top1/infer_icd_report_data_top.json
+base_path=./
+predict_result=$base_path/infer_api/infer_api/results/xxx/processed_results/valid_results.csv
+label_file=$base_path/examples/ldr_dataset/mimic_llm_sample_100_subset.json
 
 ########## Basic Metrics ##############
 python eval/compute_metrics.py \

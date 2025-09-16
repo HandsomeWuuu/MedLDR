@@ -143,6 +143,7 @@ bash ./finetune/scripts_train/openbio_8b/sft/train_sft_openbio_8b_mimic.sh
 
 ## Examples
 
+### One case testing:
 **Inference with API Models**
 
 Use the [`examples/inference_api.ipynb`](examples/inference_api.ipynb) notebook to perform inference with API models.
@@ -151,9 +152,44 @@ Use the [`examples/inference_api.ipynb`](examples/inference_api.ipynb) notebook 
 
 Use the [`examples/inference_ft.ipynb`](examples/inference_ft.ipynb) notebook to perform inference with fine-tuned models.
 
+### One hundred cases for batch testing:
 
+我们在 `examples/ldr_dataset/mimic_llm_sample_100_subset.json` 下提供了100 个 LDR 数据的测试案例。可以用于一致性的验证
 
+还在 `examples/eicu_dataset/eicu_llm_sample_100_subset.json` 下提供了 100 个外部数据集 eICU 的测试案例以用于一致性的验证。
 
+配置好 API KEY 后，
+
+**测试 LDR 数据集**
+
+1. 可以在 `inference/scripts/infer/infer_gemini_2_5_flash.sh` 对 LDR 数据一键开启测试。
+2. 然后提取每个模型每轮的推理结果
+```
+python inference/ldr_process_data/extract_result.py model_xx_output.jsonl
+```
+3. 计算重复一致性
+```
+bash inference/scripts/eval/lanuch_consistency.sh
+```
+4. 计算指标 (仅100 个 case 的指标可能距离整体数据集指标有偏差)
+```
+bash inference/scripts/eval/eval_api_models/eval_gemini_2_5_flash.sh
+```
+
+**测试外部 eICU 数据集**
+1. 在 `inference/scripts_eicu/infer/infer_gemini_2_5_flash.sh` 测试
+2. 然后提取每个模型每轮的推理结果
+```
+python inference/eicu_eval/extract_eicu_results.py model_xx_output.jsonl
+```
+3. 计算重复一致性
+```
+bash inference/scripts_eicu/eval/lanuch_consistency.sh
+```
+4. 计算指标 (仅100 个 case 的指标可能距离整体数据集指标有偏差)
+```
+bash inference/scripts_eicu/eval/eval_gemini_2_5_flash.sh
+```
 
 <!-- # Citation
 If you find this project useful for your research, please consider citing:
