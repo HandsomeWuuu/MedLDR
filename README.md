@@ -25,11 +25,22 @@ The detailed structure of the code is as follows:
 ```
 ├── README.md
 ├── LICENSE
-├── data/                # Dataset related (download scripts, preprocessing, example data)
-│   ├── preprocess/      # Preprocessing MIMIC-IV dataset, integrating each patient's admission information
-│   └── make_ldr/        # Scripts and workflow for constructing the LDR dataset
-├── inference/           # Inference model code (model loading, inference scripts, evaluation)
-└── examples/            # Example use cases, notebooks, etc.
+├── data/                        # Dataset related (download scripts, preprocessing, example data)
+│   ├── preprocess_mimic/        # Preprocessing MIMIC-IV dataset, integrating each patient's admission information
+│   ├── make_ldr_mimic/          # Scripts and workflow for constructing the LDR-MIMIC dataset
+│   └── make_ldr_eicu/           # Scripts and workflow for constructing the LDR-eICU dataset
+├── inference/                   # Inference and evaluation code (model loading, inference scripts, evaluation tools, etc.)
+│   ├── chat_api/                # API interfaces for different models
+│   ├── eicu_eval/               # Evaluation scripts for eICU dataset
+│   ├── eicu_process_data/       # Data processing scripts for eICU
+│   ├── ldr_eval/                # Evaluation scripts for LDR dataset
+│   ├── ldr_process_data/        # Data processing scripts for LDR
+│   ├── scripts/                 # Inference and evaluation shell scripts
+│   └── scripts_eicu/            # Inference and evaluation scripts for eICU
+├── examples/                    # Example use cases, notebooks, and sample data
+│   ├── eicu_dataset/            # Example data for eICU
+│   └── ldr_dataset/             # Example data for LDR-MIMIC
+└── utils.py                     # Utility functions
 ```
 
 ## Data Preparation:
