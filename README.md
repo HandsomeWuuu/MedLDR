@@ -114,7 +114,7 @@ Additionally, 100  LDR-eICU dataset test cases are available in `examples/eicu_d
 
 After configuring your API KEY:
 
-**Testing the LDR dataset**
+**Testing the LDR-MIMIC dataset**
 
 1. You can run batch testing on the LDR dataset using `inference/scripts/infer/infer_gemini_2_5_flash.sh`.
 2. Then, extract the inference results for each model and each round:
@@ -130,7 +130,7 @@ After configuring your API KEY:
   bash inference/scripts/eval/eval_api_models/eval_gemini_2_5_flash.sh
   ```
 
-**Testing the external eICU dataset**
+**Testing the LDR-eICU dataset**
 
 1. Run testing using `inference/scripts_eicu/infer/infer_gemini_2_5_flash.sh`.
 2. Then, extract the inference results for each model and each round:
