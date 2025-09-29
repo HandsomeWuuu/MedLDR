@@ -841,53 +841,6 @@
     }
   },
   {
-    "case_id": "1857138",
-    "input": {
-      "patient_info": "Patient demographics and basic information: gender: Female, age: 64",
-      "past_history": "Patient's medical history and past conditions: Organ Systems/Renal  (R)/Renal Failure/renal failure - hemodialysis, Organ Systems/Endocrine (R)/Insulin Dependent Diabetes/insulin dependent diabetes, Organ Systems/Cardiovascular (R)/Hypertension Requiring Treatment/hypertension requiring treatment, Organ Systems/Cardiovascular (R)/Pulmonary Embolism/pulmonary embolism - date unknown, Organ Systems/Cardiovascular (R)/Pacemaker/unknown pacer",
-      "physical_exam": "Physical examination findings and clinical observations: [scored: scored, HR Current: 74, BP (diastolic) Lowest: 41, HR Highest: 79, BP (systolic) Current: 118, BP (systolic) Lowest: 93, BP (systolic) Highest: 158, BP (diastolic) Current: 61, BP (diastolic) Highest: 72, Resp Current: 6, Resp Lowest: 6, Resp Highest: 6, O2 Sat% Current: 99, O2 Sat% Lowest: 97, O2 Sat% Highest: 100, HR Lowest: 70, Admission: 84.9, Delta: -0.7, PEEP: 5, Current: 84.2, 6: 6, 4: 4, 1: 1, BP (systolic) Highest: 117, BP (diastolic) Lowest: 46, BP (diastolic) Highest: 65, O2 Sat% Current: 100, O2 Sat% Lowest: 100, FiO2%: 100, 11: 11, HR Current: 60, HR Lowest: 60, HR Highest: 60, BP (systolic) Current: 119, BP (systolic) Lowest: 86, BP (systolic) Current: 111, BP (systolic) Highest: 111, BP (diastolic) Current: 60]",
-      "lab_results": "Laboratory test results with timestamps and measurements:\nlabresultoffset,labname,labresult,labmeasurenamesystem\n-240,bedside glucose_4h_avg,232.0,mg/dL\n0,bedside glucose_4h_avg,163.0,mg/dL\n0,glucose_4h_avg,174.0,mg/dL\n4,lactate,1.0,mmol/L\n8,ALT (SGPT),10.0,Units/L\n8,AST (SGOT),26.0,Units/L\n8,BUN,75.0,mg/dL\n8,PT,11.7,sec\n8,PT - INR,1.1,ratio\n8,albumin,2.6,g/dL\n8,alkaline phos.,654.0,Units/L\n8,bicarbonate,25.0,mmol/L\n8,calcium,10.3,mg/dL\n8,chloride,103.0,mmol/L\n8,creatinine,2.4,mg/dL\n8,direct bilirubin,0.7,mg/dL\n8,magnesium,2.4,mg/dL\n8,phosphate,4.1,mg/dL\n8,potassium,4.3,mmol/L\n8,sodium,135.0,mmol/L\n8,total bilirubin,1.3,mg/dL\n8,total protein,6.7,g/dL\n15,Base Excess,-4.8,mEq/L\n15,FiO2,100.0,%\n15,HCO3,22.0,mmol/L\n15,Oxyhemoglobin,98.0,%\n15,PEEP,5.0,cm H2O\n15,Respiratory Rate,12.0,/min\n15,Total CO2,24.0,\n15,pH,7.23,\n15,paCO2,55.0,mm Hg\n15,paO2,326.0,mm Hg\n240,bedside glucose_4h_avg,144.0,mg/dL\n720,bedside glucose_4h_avg,131.0,mg/dL\n960,glucose_4h_avg,152.0,mg/dL\n1140,BUN,50.0,mg/dL\n1140,albumin,2.3,g/dL\n1140,bicarbonate,27.0,mmol/L\n1140,calcium,8.7,mg/dL\n1140,chloride,101.0,mmol/L\n1140,creatinine,1.9,mg/dL\n1140,magnesium,2.1,mg/dL\n1140,phosphate,1.7,mg/dL\n1140,potassium,3.9,mmol/L\n1140,sodium,134.0,mmol/L\n1425,troponin - I,0.06,ng/mL\n1680,bedside glucose_4h_avg,160.0,mg/dL\n1920,bedside glucose_4h_avg,169.0,mg/dL\n1956,troponin - I,0.04,ng/mL\n2160,bedside glucose_4h_avg,181.0,mg/dL\n2400,glucose_4h_avg,158.0,mg/dL\n2571,-basos,0.0,%\n2571,-eos,2.0,%\n2571,-lymphs,10.0,%\n2571,-monos,10.0,%\n2571,-polys,78.0,%\n2571,BUN,39.0,mg/dL\n2571,Hct,21.5,%\n2571,Hgb,7.3,g/dL\n2571,MCH,31.9,pg\n2571,MCHC,34.2,g/dL\n2571,MCV,93.0,fL\n2571,RBC,2.3,M/mcL\n2571,RDW,20.4,%\n2571,WBC x 1000,13.4,K/mcL\n2571,bicarbonate,29.0,mmol/L\n2571,calcium,8.9,mg/dL\n2571,chloride,102.0,mmol/L\n2571,creatinine,1.5,mg/dL\n2571,magnesium,2.0,mg/dL\n2571,phosphate,1.5,mg/dL\n2571,platelets x 1000,301.0,K/mcL\n2571,potassium,3.8,mmol/L\n2571,sodium,137.0,mmol/L\n2571,troponin - I,0.05,ng/mL\n2625,Base Excess,4.2,mEq/L\n2625,FiO2,30.0,%\n2625,HCO3,27.0,mmol/L\n2625,Oxyhemoglobin,95.0,%\n2625,PEEP,5.0,cm H2O\n2625,Total CO2,28.0,\n2625,pH,7.52,\n2625,paCO2,33.0,mm Hg\n2625,paO2,73.0,mm Hg\n2640,bedside glucose_4h_avg,196.0,mg/dL\n2915,Base Excess,1.9,mEq/L\n2915,FiO2,40.0,%\n2915,HCO3,26.0,mmol/L\n2915,Oxyhemoglobin,97.0,%\n2915,PEEP,5.0,cm H2O\n2915,Peak Airway/Pressure,5.0,cm H2O\n2915,Total CO2,27.0,\n2915,pH,7.42,\n2915,paCO2,41.0,mm Hg\n2915,paO2,119.0,mm Hg\n3120,bedside glucose_4h_avg,172.0,mg/dL\n3320,Base Excess,1.4,mEq/L\n3320,FiO2,55.0,%\n3320,HCO3,28.0,mmol/L\n3320,Oxyhemoglobin,96.0,%\n3320,Total CO2,30.0,\n3320,pH,7.29,\n3320,paCO2,59.0,mm Hg\n3320,paO2,110.0,mm Hg\n3390,Base Excess,3.0,mEq/L\n3390,FiO2,55.0,%\n3390,HCO3,28.0,mmol/L\n3390,Oxyhemoglobin,97.0,%\n3390,Total CO2,30.0,\n3390,pH,7.36,\n3390,paCO2,51.0,mm Hg\n3390,paO2,129.0,mm Hg\n3470,Base Excess,4.4,mEq/L\n3470,FiO2,55.0,%\n3470,HCO3,29.0,mmol/L\n3470,Oxyhemoglobin,94.0,%\n3470,Total CO2,30.0,\n3470,pH,7.42,\n3470,paCO2,45.0,mm Hg\n3470,paO2,78.0,mm Hg\n3600,bedside glucose_4h_avg,135.0,mg/dL\n4013,Base Excess,1.6,mEq/L\n4013,FiO2,35.0,%\n4013,HCO3,26.0,mmol/L\n4013,Oxyhemoglobin,92.0,%\n4013,Total CO2,28.0,\n4013,pH,7.39,\n4013,paCO2,44.0,mm Hg\n4013,paO2,70.0,mm Hg\n4080,bedside glucose_4h_avg,112.0,mg/dL\n4320,bedside glucose_4h_avg,111.0,mg/dL\n4320,glucose_4h_avg,108.0,mg/dL\n4337,-basos,0.0,%\n4337,-eos,1.0,%\n4337,-lymphs,6.0,%\n4337,-monos,8.0,%\n4337,-polys,86.0,%\n4337,BUN,33.0,mg/dL\n4337,Hct,32.7,%\n4337,Hgb,11.2,g/dL\n4337,MCH,31.5,pg\n4337,MCHC,34.1,g/dL\n4337,MCV,92.0,fL\n4337,RBC,3.54,M/mcL\n4337,RDW,17.8,%\n4337,WBC x 1000,21.0,K/mcL\n4337,bicarbonate,27.0,mmol/L\n4337,calcium,8.7,mg/dL\n4337,chloride,100.0,mmol/L\n4337,creatinine,1.4,mg/dL\n4337,platelets x 1000,325.0,K/mcL\n4337,potassium,4.9,mmol/L\n4337,sodium,136.0,mmol/L\n4800,bedside glucose_4h_avg,92.0,mg/dL\n5040,bedside glucose_4h_avg,118.0,mg/dL\n5280,glucose_4h_avg,71.0,mg/dL\n5490,-basos,0.0,%\n5490,-eos,1.0,%\n5490,-lymphs,7.0,%\n5490,-monos,9.0,%\n5490,-polys,83.0,%\n5490,ALT (SGPT),10.0,Units/L\n5490,AST (SGOT),26.0,Units/L\n5490,BUN,25.0,mg/dL\n5490,Hct,27.9,%\n5490,Hgb,9.4,g/dL\n5490,MCH,31.6,pg\n5490,MCHC,33.9,g/dL\n5490,MCV,93.0,fL\n5490,RBC,2.98,M/mcL\n5490,RDW,17.8,%\n5490,WBC x 1000,16.6,K/mcL\n5490,albumin,2.9,g/dL\n5490,alkaline phos.,634.0,Units/L\n5490,bicarbonate,30.0,mmol/L\n5490,calcium,8.6,mg/dL\n5490,chloride,100.0,mmol/L\n5490,creatinine,1.4,mg/dL\n5490,direct bilirubin,1.9,mg/dL\n5490,platelets x 1000,301.0,K/mcL\n5490,potassium,4.5,mmol/L\n5490,sodium,135.0,mmol/L\n5490,total bilirubin,2.6,mg/dL\n5490,total protein,6.7,g/dL\n5760,bedside glucose_4h_avg,32.0,mg/dL\n6000,bedside glucose_4h_avg,99.66666666666669,mg/dL\n6240,bedside glucose_4h_avg,74.0,mg/dL\n6720,bedside glucose_4h_avg,138.66666666666666,mg/dL\n6720,glucose_4h_avg,145.0,mg/dL\n6870,BUN,39.0,mg/dL\n6870,bicarbonate,26.0,mmol/L\n6870,calcium,8.8,mg/dL\n6870,chloride,99.0,mmol/L\n6870,creatinine,2.1,mg/dL\n6870,potassium,4.2,mmol/L\n6870,sodium,134.0,mmol/L\n7200,bedside glucose_4h_avg,113.0,mg/dL\n7440,bedside glucose_4h_avg,149.0,mg/dL\n7920,bedside glucose_4h_avg,117.0,mg/dL\n8310,ALT (SGPT),9.0,Units/L\n8310,AST (SGOT),23.0,Units/L\n8310,albumin,2.9,g/dL\n8310,alkaline phos.,614.0,Units/L\n8310,direct bilirubin,2.8,mg/dL\n8310,total bilirubin,4.0,mg/dL\n8310,total protein,7.1,g/dL\n8400,bedside glucose_4h_avg,129.0,mg/dL\n8640,bedside glucose_4h_avg,184.0,mg/dL\n9120,bedside glucose_4h_avg,176.0,mg/dL\n9600,bedside glucose_4h_avg,187.0,mg/dL\n9840,bedside glucose_4h_avg,156.0,mg/dL\n9978,-bands,5.0,%\n9978,-eos,1.0,%\n9978,-lymphs,9.0,%\n9978,-monos,3.0,%\n9978,-polys,82.0,%\n9978,Hct,24.0,%\n9978,Hgb,8.6,g/dL\n9978,MCH,35.3,pg\n9978,MCHC,35.7,g/dL\n9978,MCV,99.0,fL\n9978,RBC,2.43,M/mcL\n9978,RDW,17.8,%\n9978,WBC x 1000,20.6,K/mcL\n9978,platelets x 1000,238.0,K/mcL\n10080,bedside glucose_4h_avg,164.0,mg/dL\n10203,ALT (SGPT),11.0,Units/L\n10203,AST (SGOT),24.0,Units/L\n10203,albumin,2.9,g/dL\n10203,alkaline phos.,563.0,Units/L\n10203,direct bilirubin,2.6,mg/dL\n10203,total bilirubin,3.6,mg/dL\n10203,total protein,7.0,g/dL\n10217,PT,11.3,sec\n10217,PT - INR,1.1,ratio\n10217,PTT,26.0,sec\n10320,bedside glucose_4h_avg,160.0,mg/dL\n10560,bedside glucose_4h_avg,124.0,mg/dL\n10560,glucose_4h_avg,119.0,mg/dL\n10580,BUN,14.0,mg/dL\n10580,bicarbonate,28.0,mmol/L\n10580,calcium,8.4,mg/dL\n10580,chloride,98.0,mmol/L\n10580,creatinine,1.3,mg/dL\n10580,potassium,3.0,mmol/L\n10580,sodium,134.0,mmol/L\n10800,bedside glucose_4h_avg,163.0,mg/dL\n11280,bedside glucose_4h_avg,120.0,mg/dL\n11520,bedside glucose_4h_avg,182.0,mg/dL\n"
-    },
-    "output": {
-      "all_diseases": [
-        {
-          "name": "renal|disorder of kidney|ESRD (end stage renal disease)",
-          "icd9code": "585.6",
-          "icd10code": "N18.6"
-        },
-        {
-          "name": "cardiovascular|shock / hypotension|hypotension",
-          "icd9code": "458.9",
-          "icd10code": "I95.9"
-        },
-        {
-          "name": "cardiovascular|shock / hypotension|sepsis",
-          "icd9code": "038.9",
-          "icd10code": "A41.9"
-        }
-      ],
-      "primary_diseases": [],
-      "major_diseases": [],
-      "other_diseases": [
-        {
-          "name": "renal|disorder of kidney|ESRD (end stage renal disease)",
-          "icd9code": "585.6",
-          "icd10code": "N18.6"
-        },
-        {
-          "name": "cardiovascular|shock / hypotension|hypotension",
-          "icd9code": "458.9",
-          "icd10code": "I95.9"
-        },
-        {
-          "name": "cardiovascular|shock / hypotension|sepsis",
-          "icd9code": "038.9",
-          "icd10code": "A41.9"
-        }
-      ]
-    }
-  },
-  {
     "case_id": "173317",
     "input": {
       "patient_info": "Patient demographics and basic information: gender: Male, age: 73",
@@ -1442,64 +1395,6 @@
           "name": "hematology|bleeding and red blood cell disorders|anemia|acute blood loss anemia",
           "icd9code": "285.1",
           "icd10code": "D62"
-        }
-      ]
-    }
-  },
-  {
-    "case_id": "2704725",
-    "input": {
-      "patient_info": "Patient demographics and basic information: gender: Female, age: 78",
-      "past_history": "Patient's medical history and past conditions: Organ Systems/Cardiovascular (R)/Coronary Artery Bypass/CABG - remote, Organ Systems/Cardiovascular (R)/Congestive Heart Failure/CHF, Organ Systems/Cardiovascular (R)/Hypertension Requiring Treatment/hypertension requiring treatment, Organ Systems/Cardiovascular (R)/Arrhythmias/SVT- other",
-      "physical_exam": "Physical examination findings and clinical observations: [4: 4, 5: 5, O2 Sat% Highest: 92, 6: 6, Admission: 62.6, FiO2%: 40, O2 Sat% Lowest: 92, BP (systolic) Lowest: 101, Resp Highest: 31, O2 Sat% Current: 92, scored: scored, HR Current: 101, HR Highest: 105, BP (systolic) Current: 104, HR Lowest: 101, BP (systolic) Highest: 104, BP (diastolic) Current: 71, BP (diastolic) Lowest: 52, BP (diastolic) Highest: 71, Resp Current: 31, Resp Lowest: 31]",
-      "lab_results": "Laboratory test results with timestamps and measurements:\nlabresultoffset,labname,labresult,labmeasurenamesystem\n-240,glucose_4h_avg,187.0,mg/dL\n-112,-basos,0.0,%\n-112,-eos,0.0,%\n-112,-lymphs,6.0,%\n-112,-monos,3.0,%\n-112,-polys,91.0,%\n-112,ALT (SGPT),23.0,Units/L\n-112,AST (SGOT),26.0,Units/L\n-112,BUN,32.0,mg/dL\n-112,Hct,55.2,%\n-112,Hgb,18.6,g/dL\n-112,MCH,29.7,pg\n-112,MCHC,33.7,g/dL\n-112,MCV,88.0,fL\n-112,PT,14.9,sec\n-112,PT - INR,1.2,ratio\n-112,RBC,6.26,M/mcL\n-112,RDW,15.0,%\n-112,WBC x 1000,16.5,K/mcL\n-112,albumin,3.8,g/dL\n-112,alkaline phos.,85.0,Units/L\n-112,anion gap,18.0,\n-112,bicarbonate,24.0,mmol/L\n-112,calcium,9.1,mg/dL\n-112,chloride,103.0,mmol/L\n-112,creatinine,1.8,mg/dL\n-112,magnesium,2.2,mg/dL\n-112,platelets x 1000,143.0,K/mcL\n-112,potassium,5.0,mmol/L\n-112,sodium,140.0,mmol/L\n-112,total bilirubin,1.1,mg/dL\n-112,total protein,8.3,g/dL\n-112,troponin - I,0.2,ng/mL\n-97,WBC's in urine,351.0,\n-97,urinary specific gravity,1.024,\n-70,lactate,2.9,mmol/L\n-17,WBC's in urine,85.0,\n-17,urinary specific gravity,1.012,\n108,lactate,2.5,mmol/L\n240,glucose_4h_avg,165.0,mg/dL\n248,lactate,2.1,mmol/L\n308,BUN,38.0,mg/dL\n308,anion gap,20.1,\n308,bicarbonate,19.0,mmol/L\n308,calcium,8.5,mg/dL\n308,chloride,105.0,mmol/L\n308,creatinine,2.2,mg/dL\n308,potassium,6.1,mmol/L\n308,sodium,138.0,mmol/L\n308,troponin - I,0.3,ng/mL\n608,Base Deficit,10.2,mEq/L\n608,Carboxyhemoglobin,1.0,%\n608,FiO2,40.0,%\n608,HCO3,17.2,mmol/L\n608,Methemoglobin,0.3,%\n608,O2 Content,23.5,mls/dL\n608,O2 Sat (%),93.0,%\n608,Temperature,37.9,&#176;C\n608,pH,7.208,\n608,paCO2,44.7,mm Hg\n608,paO2,74.0,mm Hg\n703,ALT (SGPT),24.0,Units/L\n703,AST (SGOT),24.0,Units/L\n703,BUN,41.0,mg/dL\n703,albumin,2.9,g/dL\n703,alkaline phos.,74.0,Units/L\n703,anion gap,18.6,\n703,bicarbonate,20.0,mmol/L\n703,calcium,8.2,mg/dL\n703,chloride,110.0,mmol/L\n703,creatinine,2.5,mg/dL\n703,potassium,5.6,mmol/L\n703,sodium,143.0,mmol/L\n703,total bilirubin,0.8,mg/dL\n703,total protein,6.8,g/dL\n720,bedside glucose_4h_avg,156.0,mg/dL\n720,glucose_4h_avg,157.0,mg/dL\n1200,bedside glucose_4h_avg,126.0,mg/dL\n1376,potassium,5.3,mmol/L\n1680,glucose_4h_avg,166.0,mg/dL\n1773,Hct,50.8,%\n1773,Hgb,16.6,g/dL\n1773,MCH,29.8,pg\n1773,MCHC,32.7,g/dL\n1773,MCV,91.0,fL\n1773,RBC,5.57,M/mcL\n1773,RDW,16.1,%\n1773,WBC x 1000,13.7,K/mcL\n1773,magnesium,2.1,mg/dL\n1773,platelets x 1000,90.0,K/mcL\n1920,bedside glucose_4h_avg,192.0,mg/dL\n1920,glucose_4h_avg,172.0,mg/dL\n2078,BUN,58.0,mg/dL\n2078,anion gap,21.6,\n2078,bicarbonate,18.0,mmol/L\n2078,calcium,7.5,mg/dL\n2078,chloride,116.0,mmol/L\n2078,creatinine,3.4,mg/dL\n2078,potassium,4.6,mmol/L\n2078,sodium,151.0,mmol/L\n2160,bedside glucose_4h_avg,148.0,mg/dL\n2258,urinary specific gravity,1.025,\n2278,TSH,0.38,mcU/ml\n2278,free T4,1.02,ng/dL\n2400,bedside glucose_4h_avg,154.0,mg/dL\n2633,BUN,66.0,mg/dL\n2633,anion gap,17.6,\n2633,bicarbonate,20.0,mmol/L\n2633,calcium,6.6,mg/dL\n2633,chloride,113.0,mmol/L\n2633,creatinine,3.3,mg/dL\n2633,potassium,3.6,mmol/L\n2633,sodium,147.0,mmol/L\n2640,bedside glucose_4h_avg,219.0,mg/dL\n2640,glucose_4h_avg,215.0,mg/dL\n3098,ALT (SGPT),1382.0,Units/L\n3098,AST (SGOT),1407.0,Units/L\n3098,BUN,67.0,mg/dL\n3098,CPK,142.0,Units/L\n3098,ESR,9.0,mm/hr\n3098,HDL,40.0,mg/dL\n3098,Hct,47.7,%\n3098,Hgb,16.0,g/dL\n3098,LDL,64.0,mg/dL\n3098,MCH,30.4,pg\n3098,MCHC,33.5,g/dL\n3098,MCV,91.0,fL\n3098,RBC,5.26,M/mcL\n3098,RDW,16.2,%\n3098,WBC x 1000,16.9,K/mcL\n3098,albumin,2.6,g/dL\n3098,alkaline phos.,59.0,Units/L\n3098,anion gap,18.5,\n3098,bicarbonate,19.0,mmol/L\n3098,calcium,6.7,mg/dL\n3098,chloride,109.0,mmol/L\n3098,creatinine,3.4,mg/dL\n3098,lactate,2.1,mmol/L\n3098,magnesium,2.2,mg/dL\n3098,phosphate,7.0,mg/dL\n3098,platelets x 1000,58.0,K/mcL\n3098,potassium,3.5,mmol/L\n3098,sodium,143.0,mmol/L\n3098,total bilirubin,1.3,mg/dL\n3098,total cholesterol,118.0,mg/dL\n3098,total protein,5.8,g/dL\n3098,triglycerides,68.0,mg/dL\n3098,uric acid,8.5,mg/dL\n3120,bedside glucose_4h_avg,104.0,mg/dL\n3120,glucose_4h_avg,123.0,mg/dL\n3308,Base Deficit,12.4,mEq/L\n3308,Carboxyhemoglobin,1.1,%\n3308,FiO2,35.0,%\n3308,HCO3,16.0,mmol/L\n3308,Methemoglobin,0.1,%\n3308,O2 Content,19.6,mls/dL\n3308,O2 Sat (%),89.0,%\n3308,Temperature,37.9,&#176;C\n3308,Vent Rate,18.0,/min\n3308,pH,7.152,\n3308,paCO2,47.3,mm Hg\n3308,paO2,70.0,mm Hg\n3360,bedside glucose_4h_avg,142.0,mg/dL\n3578,BUN,69.0,mg/dL\n3578,anion gap,17.4,\n3578,bicarbonate,22.0,mmol/L\n3578,calcium,6.3,mg/dL\n3578,chloride,109.0,mmol/L\n3578,creatinine,3.3,mg/dL\n3578,potassium,3.4,mmol/L\n3578,sodium,145.0,mmol/L\n3600,glucose_4h_avg,143.0,mg/dL\n3683,Base Deficit,8.9,mEq/L\n3683,Carboxyhemoglobin,1.1,%\n3683,FiO2,50.0,%\n3683,HCO3,17.7,mmol/L\n3683,Methemoglobin,0.1,%\n3683,O2 Content,20.1,mls/dL\n3683,O2 Sat (%),96.0,%\n3683,Temperature,37.9,&#176;C\n3683,pH,7.246,\n3683,paCO2,42.1,mm Hg\n3683,paO2,95.0,mm Hg\n3840,bedside glucose_4h_avg,187.0,mg/dL\n3840,glucose_4h_avg,193.0,mg/dL\n3938,Acetaminophen,1.7,mcg/mL\n3938,BUN,77.0,mg/dL\n3938,anion gap,19.3,\n3938,bicarbonate,21.0,mmol/L\n3938,calcium,6.3,mg/dL\n3938,chloride,107.0,mmol/L\n3938,creatinine,3.5,mg/dL\n3938,potassium,3.3,mmol/L\n3938,sodium,144.0,mmol/L\n4080,bedside glucose_4h_avg,125.0,mg/dL\n4188,lactate,2.4,mmol/L\n4295,ALT (SGPT),2890.0,Units/L\n4295,AST (SGOT),2820.0,Units/L\n4295,BUN,74.0,mg/dL\n4295,albumin,2.4,g/dL\n4295,anion gap,14.4,\n4295,bicarbonate,23.0,mmol/L\n4295,calcium,6.5,mg/dL\n4295,chloride,109.0,mmol/L\n4295,creatinine,3.4,mg/dL\n4295,potassium,3.4,mmol/L\n4295,sodium,143.0,mmol/L\n4295,total bilirubin,1.6,mg/dL\n4295,total protein,5.4,g/dL\n4320,glucose_4h_avg,141.0,mg/dL\n4382,lactate,2.2,mmol/L\n4560,bedside glucose_4h_avg,138.0,mg/dL\n4560,glucose_4h_avg,161.0,mg/dL\n4612,Base Deficit,8.5,mEq/L\n4612,Carboxyhemoglobin,1.0,%\n4612,FiO2,45.0,%\n4612,HCO3,18.7,mmol/L\n4612,Methemoglobin,0.1,%\n4612,O2 Content,20.2,mls/dL\n4612,O2 Sat (%),95.0,%\n4612,Temperature,36.6,&#176;C\n4612,Vent Rate,16.0,/min\n4612,pH,7.244,\n4612,paCO2,43.9,mm Hg\n4612,paO2,84.0,mm Hg\n4628,-basos,0.0,%\n4628,-eos,0.0,%\n4628,-lymphs,7.0,%\n4628,-monos,5.0,%\n4628,-polys,88.0,%\n4628,ALT (SGPT),2925.0,Units/L\n4628,AST (SGOT),2188.0,Units/L\n4628,BUN,86.0,mg/dL\n4628,Hct,43.6,%\n4628,Hgb,14.3,g/dL\n4628,MCH,29.7,pg\n4628,MCHC,32.8,g/dL\n4628,MCV,91.0,fL\n4628,PT,24.0,sec\n4628,PT - INR,2.2,ratio\n4628,PTT,37.3,sec\n4628,RBC,4.82,M/mcL\n4628,RDW,16.2,%\n4628,WBC x 1000,16.6,K/mcL\n4628,albumin,2.5,g/dL\n4628,alkaline phos.,56.0,Units/L\n4628,anion gap,17.6,\n4628,bicarbonate,23.0,mmol/L\n4628,calcium,6.5,mg/dL\n4628,chloride,107.0,mmol/L\n4628,creatinine,3.5,mg/dL\n4628,magnesium,2.1,mg/dL\n4628,platelets x 1000,32.0,K/mcL\n4628,potassium,3.6,mmol/L\n4628,sodium,144.0,mmol/L\n4628,total bilirubin,1.8,mg/dL\n4628,total protein,5.5,g/dL\n4738,lactate,2.0,mmol/L\n5040,glucose_4h_avg,188.0,mg/dL\n5095,Base Deficit,11.5,mEq/L\n5095,Carboxyhemoglobin,0.9,%\n5095,FiO2,100.0,%\n5095,HCO3,17.8,mmol/L\n5095,Methemoglobin,0.1,%\n5095,O2 Content,19.2,mls/dL\n5095,O2 Sat (%),97.0,%\n5095,PEEP,5.0,cm H2O\n5095,TV,290.0,mls\n5095,Temperature,37.3,&#176;C\n5095,Vent Rate,20.0,/min\n5095,pH,7.132,\n5095,paCO2,54.8,mm Hg\n5095,paO2,112.0,mm Hg\n5097,-basos,0.0,%\n5097,-eos,0.0,%\n5097,-lymphs,7.0,%\n5097,-monos,4.0,%\n5097,-polys,89.0,%\n5097,BUN,88.0,mg/dL\n5097,CPK,252.0,Units/L\n5097,CPK-MB,6.8,ng/mL\n5097,CPK-MB INDEX,2.7,%\n5097,Hct,40.9,%\n5097,Hgb,13.3,g/dL\n5097,MCH,29.8,pg\n5097,MCHC,32.5,g/dL\n5097,MCV,92.0,fL\n5097,RBC,4.47,M/mcL\n5097,RDW,16.4,%\n5097,WBC x 1000,14.6,K/mcL\n5097,anion gap,20.0,\n5097,bicarbonate,20.0,mmol/L\n5097,calcium,6.4,mg/dL\n5097,chloride,107.0,mmol/L\n5097,creatinine,3.7,mg/dL\n5097,magnesium,2.1,mg/dL\n5097,platelets x 1000,91.0,K/mcL\n5097,potassium,4.0,mmol/L\n5097,sodium,143.0,mmol/L\n5097,troponin - I,1.48,ng/mL\n5280,bedside glucose_4h_avg,115.0,mg/dL\n5318,lactate,7.3,mmol/L\n5378,Base Deficit,4.5,mEq/L\n5378,Carboxyhemoglobin,0.6,%\n5378,FiO2,45.0,%\n5378,HCO3,18.1,mmol/L\n5378,Methemoglobin,0.3,%\n5378,O2 Content,19.6,mls/dL\n5378,O2 Sat (%),97.0,%\n5378,PEEP,8.0,cm H2O\n5378,TV,320.0,mls\n5378,Temperature,38.1,&#176;C\n5378,Vent Rate,26.0,/min\n5378,pH,7.419,\n5378,paCO2,29.0,mm Hg\n5378,paO2,102.0,mm Hg\n5520,bedside glucose_4h_avg,102.0,mg/dL\n5573,lactate,7.4,mmol/L\n5808,lactate,7.5,mmol/L\n6000,bedside glucose_4h_avg,126.0,mg/dL\n6000,glucose_4h_avg,158.0,mg/dL\n6053,ALT (SGPT),5371.0,Units/L\n6053,AST (SGOT),5533.0,Units/L\n6053,BUN,56.0,mg/dL\n6053,Hct,42.0,%\n6053,Hgb,14.0,g/dL\n6053,MCH,29.7,pg\n6053,MCHC,33.3,g/dL\n6053,MCV,89.0,fL\n6053,RBC,4.71,M/mcL\n6053,RDW,16.2,%\n6053,WBC x 1000,19.0,K/mcL\n6053,albumin,2.5,g/dL\n6053,alkaline phos.,69.0,Units/L\n6053,anion gap,21.5,\n6053,bicarbonate,20.0,mmol/L\n6053,calcium,6.5,mg/dL\n6053,chloride,103.0,mmol/L\n6053,creatinine,3.3,mg/dL\n6053,platelets x 1000,40.0,K/mcL\n6053,potassium,3.5,mmol/L\n6053,sodium,141.0,mmol/L\n6053,total bilirubin,3.5,mg/dL\n6053,total protein,5.2,g/dL\n6195,Base Deficit,8.4,mEq/L\n6195,Carboxyhemoglobin,0.9,%\n6195,FiO2,35.0,%\n6195,HCO3,14.1,mmol/L\n6195,Methemoglobin,0.0,%\n6195,O2 Content,19.3,mls/dL\n6195,O2 Sat (%),96.0,%\n6195,PEEP,8.0,cm H2O\n6195,Peak Airway/Pressure,29.0,cm H2O\n6195,Respiratory Rate,22.0,/min\n6195,TV,320.0,mls\n6195,Temperature,38.6,&#176;C\n6195,Vent Rate,22.0,/min\n6195,pH,7.383,\n6195,paCO2,24.6,mm Hg\n6195,paO2,93.0,mm Hg\n6240,bedside glucose_4h_avg,132.0,mg/dL\n6376,LDH,5367.0,Units/L\n6376,fibrinogen,249.0,mg/dL\n6960,bedside glucose_4h_avg,121.0,mg/dL\n"
-    },
-    "output": {
-      "all_diseases": [
-        {
-          "name": "pulmonary|disorders of the airways|acute COPD exacerbation",
-          "icd9code": "491.21",
-          "icd10code": "J44.1"
-        },
-        {
-          "name": "infectious diseases|GU infections|lower urinary tract infection",
-          "icd9code": "595.9",
-          "icd10code": "N30.9"
-        },
-        {
-          "name": "infectious diseases|systemic/other infections|sepsis|severe",
-          "icd9code": "995.92",
-          "icd10code": "R65.20"
-        },
-        {
-          "name": "cardiovascular|ventricular disorders|congestive heart failure",
-          "icd9code": "428.0",
-          "icd10code": "I50.9"
-        }
-      ],
-      "primary_diseases": [],
-      "major_diseases": [
-        {
-          "name": "pulmonary|disorders of the airways|acute COPD exacerbation",
-          "icd9code": "491.21",
-          "icd10code": "J44.1"
-        },
-        {
-          "name": "infectious diseases|GU infections|lower urinary tract infection",
-          "icd9code": "595.9",
-          "icd10code": "N30.9"
-        },
-        {
-          "name": "cardiovascular|ventricular disorders|congestive heart failure",
-          "icd9code": "428.0",
-          "icd10code": "I50.9"
-        }
-      ],
-      "other_diseases": [
-        {
-          "name": "infectious diseases|systemic/other infections|sepsis|severe",
-          "icd9code": "995.92",
-          "icd10code": "R65.20"
         }
       ]
     }
@@ -2212,192 +2107,6 @@
     }
   },
   {
-    "case_id": "1729490",
-    "input": {
-      "patient_info": "Patient demographics and basic information: gender: Female, age: 59",
-      "past_history": "Patient's medical history and past conditions: Organ Systems/Endocrine (R)/Insulin Dependent Diabetes/insulin dependent diabetes, Organ Systems/Cardiovascular (R)/Procedural Coronary Intervention/procedural coronary intervention - date unknown, Organ Systems/Cardiovascular (R)/Myocardial Infarction/MI - date unknown, Organ Systems/Endocrine (R)/Hypothyroidism/hypothyroidism",
-      "physical_exam": "Physical examination findings and clinical observations: [no edema: no edema, BP (systolic) Current: 138, scored: scored, sinus: sinus, non-icteric: non-icteric, HR Current: 70, HR Lowest: 59, HR Highest: 82, BP (systolic) Lowest: 121, within normal limits: nan, BP (diastolic) Current: 67, clear to auscultation: clear to auscultation, S2 normal: S2 normal, S1 normal: S1 normal, diffuse: diffuse, mild pain on palpation: mild pain on palpation, no masses: no masses, no organomegaly: no organomegaly, diffusely decreased breath sounds: diffusely decreased breath sounds, adequate: adequate, BP (systolic) Highest: 145, within normal limits: nan, within normal limits: nan, not in acute distress: not in acute distress, 6: 6, 4: 4, react to light: react to light, non-tender: non-tender, equal: equal, JVD absent: JVD absent, spontaneous: spontaneous, healthy appearing: healthy appearing, well developed: well developed, normal LOC: normal LOC, oriented x3: oriented x3, appropriate: calm/appropriate, normal: normal, normal: normal, normal mobility: normal mobility, 5: 5, BP (diastolic) Lowest: 29, BP (diastolic) Current: 60, BP (systolic) Highest: 150, BP (systolic) Lowest: 155, BP (systolic) Current: 136, HR Highest: 106, HR Lowest: 82, HR Current: 86, O2 Sat% Highest: 100, O2 Sat% Current: 98, BP (diastolic) Current: 53, BP (systolic) Current: 131, Resp Highest: 18, Resp Lowest: 9, Resp Current: 11, HR Highest: 86, HR Current: 107, O2 Sat% Lowest: 94, Admission: 107, Admission: 107.0000, FiO2%: 21, Resp Current: 18, O2 Sat% Current: 99, BP (diastolic) Lowest: 59, BP (diastolic) Highest: 76, Resp Current: 15, Resp Highest: 21, O2 Sat% Lowest: 92, HR Current: 63, HR Lowest: 63, BP (diastolic) Highest: 86, Resp Lowest: 14, BP (diastolic) Highest: 101, BP (diastolic) Lowest: 49, BP (systolic) Highest: 137, BP (systolic) Lowest: 110, O2 Sat% Lowest: 93, O2 Sat% Current: 96, Resp Highest: 22, 15: 15]",
-      "lab_results": "Laboratory test results with timestamps and measurements:\nlabresultoffset,labname,labresult,labmeasurenamesystem\n-480,glucose_4h_avg,327.0,mg/dL\n-314,-basos,0.5,%\n-314,-eos,0.2,%\n-314,-lymphs,6.0,%\n-314,-monos,3.7,%\n-314,-polys,89.6,%\n-314,ALT (SGPT),10.0,Units/L\n-314,AST (SGOT),11.0,Units/L\n-314,BUN,8.8,mg/dL\n-314,Hct,50.4,%\n-314,Hgb,16.5,g/dL\n-314,MCH,28.4,pg\n-314,MCHC,32.8,g/dL\n-314,MCV,86.7,fL\n-314,MPV,9.6,fL\n-314,RBC,5.81,M/mcL\n-314,RDW,14.0,%\n-314,WBC x 1000,9.1,K/mcL\n-314,albumin,4.0,g/dL\n-314,alkaline phos.,122.0,Units/L\n-314,anion gap,35.0,\n-314,bicarbonate,13.0,mmol/L\n-314,calcium,9.5,mg/dL\n-314,chloride,92.0,mmol/L\n-314,creatinine,0.82,mg/dL\n-314,lipase,5.0,Units/L\n-314,platelets x 1000,160.0,K/mcL\n-314,potassium,5.0,mmol/L\n-314,sodium,135.0,mmol/L\n-314,total bilirubin,0.8,mg/dL\n-314,total protein,7.4,g/dL\n-269,urinary specific gravity,1.02,\n-240,bedside glucose_4h_avg,294.0,mg/dL\n0,glucose_4h_avg,160.0,mg/dL\n41,CPK,39.0,Units/L\n240,bedside glucose_4h_avg,130.25,mg/dL\n240,glucose_4h_avg,177.0,mg/dL\n288,BUN,10.3,mg/dL\n288,anion gap,24.4,\n288,bicarbonate,14.0,mmol/L\n288,calcium,8.6,mg/dL\n288,chloride,102.0,mmol/L\n288,creatinine,0.82,mg/dL\n288,potassium,4.4,mmol/L\n288,sodium,136.0,mmol/L\n480,bedside glucose_4h_avg,165.0,mg/dL\n480,glucose_4h_avg,218.0,mg/dL\n505,BUN,10.6,mg/dL\n505,CPK,51.0,Units/L\n505,anion gap,14.4,\n505,bicarbonate,16.0,mmol/L\n505,calcium,8.2,mg/dL\n505,chloride,107.0,mmol/L\n505,creatinine,0.68,mg/dL\n505,potassium,4.4,mmol/L\n505,sodium,133.0,mmol/L\n581,Hct,42.3,%\n581,Hgb,14.0,g/dL\n581,MCH,28.7,pg\n581,MCHC,33.1,g/dL\n581,MCV,86.7,fL\n581,MPV,8.6,fL\n581,RBC,4.87,M/mcL\n581,RDW,13.9,%\n581,WBC x 1000,7.4,K/mcL\n581,platelets x 1000,145.0,K/mcL\n720,glucose_4h_avg,179.0,mg/dL\n760,BUN,9.3,mg/dL\n760,anion gap,10.9,\n760,bicarbonate,18.0,mmol/L\n760,calcium,8.2,mg/dL\n760,chloride,108.0,mmol/L\n760,creatinine,0.66,mg/dL\n760,potassium,3.9,mmol/L\n760,sodium,133.0,mmol/L\n960,glucose_4h_avg,156.0,mg/dL\n1034,BUN,7.2,mg/dL\n1034,anion gap,18.0,\n1034,bicarbonate,20.0,mmol/L\n1034,calcium,8.4,mg/dL\n1034,chloride,101.0,mmol/L\n1034,creatinine,0.67,mg/dL\n1034,potassium,4.0,mmol/L\n1034,sodium,135.0,mmol/L\n1680,bedside glucose_4h_avg,152.8,mg/dL\n1920,glucose_4h_avg,176.0,mg/dL\n1934,-basos,0.4,%\n1934,-eos,2.4,%\n1934,-lymphs,21.3,%\n1934,-monos,12.0,%\n1934,-polys,63.9,%\n1934,ALT (SGPT),7.0,Units/L\n1934,AST (SGOT),10.0,Units/L\n1934,BUN,3.7,mg/dL\n1934,Hct,39.7,%\n1934,Hgb,13.1,g/dL\n1934,MCH,28.8,pg\n1934,MCHC,32.8,g/dL\n1934,MCV,87.7,fL\n1934,MPV,8.6,fL\n1934,RBC,4.53,M/mcL\n1934,RDW,13.7,%\n1934,WBC x 1000,5.1,K/mcL\n1934,albumin,2.9,g/dL\n1934,alkaline phos.,73.0,Units/L\n1934,anion gap,18.7,\n1934,bicarbonate,20.0,mmol/L\n1934,calcium,8.2,mg/dL\n1934,chloride,101.0,mmol/L\n1934,creatinine,0.56,mg/dL\n1934,platelets x 1000,158.0,K/mcL\n1934,potassium,3.7,mmol/L\n1934,sodium,136.0,mmol/L\n1934,total bilirubin,0.6,mg/dL\n1934,total protein,5.2,g/dL\n2400,glucose_4h_avg,104.0,mg/dL\n2448,BUN,2.5,mg/dL\n2448,anion gap,14.5,\n2448,bicarbonate,23.0,mmol/L\n2448,calcium,8.3,mg/dL\n2448,chloride,102.0,mmol/L\n2448,creatinine,0.55,mg/dL\n2448,potassium,3.5,mmol/L\n2448,sodium,136.0,mmol/L\n2640,glucose_4h_avg,168.0,mg/dL\n2690,BUN,2.2,mg/dL\n2690,anion gap,13.7,\n2690,bicarbonate,24.0,mmol/L\n2690,calcium,8.1,mg/dL\n2690,chloride,102.0,mmol/L\n2690,creatinine,0.49,mg/dL\n2690,potassium,3.7,mmol/L\n2690,sodium,136.0,mmol/L\n3120,bedside glucose_4h_avg,205.4,mg/dL\n3360,bedside glucose_4h_avg,143.44444444444446,mg/dL\n3360,glucose_4h_avg,158.0,mg/dL\n3370,-basos,1.6,%\n3370,-eos,5.2,%\n3370,-lymphs,28.4,%\n3370,-monos,12.0,%\n3370,-polys,52.8,%\n3370,BUN,1.6,mg/dL\n3370,Hct,39.7,%\n3370,Hgb,13.2,g/dL\n3370,MCH,29.0,pg\n3370,MCHC,33.2,g/dL\n3370,MCV,87.2,fL\n3370,MPV,8.8,fL\n3370,RBC,4.56,M/mcL\n3370,RDW,12.9,%\n3370,WBC x 1000,3.1,K/mcL\n3370,anion gap,13.6,\n3370,bicarbonate,24.0,mmol/L\n3370,calcium,8.1,mg/dL\n3370,chloride,102.0,mmol/L\n3370,creatinine,0.53,mg/dL\n3370,platelets x 1000,148.0,K/mcL\n3370,potassium,3.6,mmol/L\n3370,sodium,136.0,mmol/L\n4080,bedside glucose_4h_avg,183.0,mg/dL\n4320,bedside glucose_4h_avg,154.0,mg/dL\n4560,bedside glucose_4h_avg,159.5,mg/dL\n4800,bedside glucose_4h_avg,125.0,mg/dL\n4800,glucose_4h_avg,124.0,mg/dL\n4911,-basos,1.2,%\n4911,-eos,5.2,%\n4911,-lymphs,35.2,%\n4911,-monos,10.7,%\n4911,-polys,47.7,%\n4911,ALT (SGPT),7.0,Units/L\n4911,AST (SGOT),9.0,Units/L\n4911,BUN,2.4,mg/dL\n4911,Hct,38.3,%\n4911,Hgb,12.9,g/dL\n4911,MCH,29.0,pg\n4911,MCHC,33.7,g/dL\n4911,MCV,86.1,fL\n4911,MPV,8.6,fL\n4911,RBC,4.46,M/mcL\n4911,RDW,14.1,%\n4911,WBC x 1000,3.4,K/mcL\n4911,albumin,2.9,g/dL\n4911,alkaline phos.,83.0,Units/L\n4911,anion gap,13.9,\n4911,bicarbonate,29.0,mmol/L\n4911,calcium,8.4,mg/dL\n4911,chloride,101.0,mmol/L\n4911,creatinine,0.55,mg/dL\n4911,platelets x 1000,144.0,K/mcL\n4911,potassium,3.9,mmol/L\n4911,sodium,140.0,mmol/L\n4911,total bilirubin,0.6,mg/dL\n4911,total protein,5.3,g/dL\n5280,bedside glucose_4h_avg,330.0,mg/dL\n5520,bedside glucose_4h_avg,265.0,mg/dL\n5760,bedside glucose_4h_avg,49.0,mg/dL\n6240,bedside glucose_4h_avg,82.0,mg/dL\n6240,glucose_4h_avg,84.0,mg/dL\n6386,-basos,1.0,%\n6386,-eos,7.3,%\n6386,-lymphs,36.0,%\n6386,-monos,10.7,%\n6386,-polys,45.0,%\n6386,BUN,5.1,mg/dL\n6386,Hct,40.3,%\n6386,Hgb,13.1,g/dL\n6386,MCH,28.3,pg\n6386,MCHC,32.5,g/dL\n6386,MCV,87.2,fL\n6386,MPV,9.0,fL\n6386,RBC,4.62,M/mcL\n6386,RDW,13.1,%\n6386,WBC x 1000,3.2,K/mcL\n6386,anion gap,13.0,\n6386,bicarbonate,31.0,mmol/L\n6386,calcium,8.5,mg/dL\n6386,chloride,100.0,mmol/L\n6386,creatinine,0.51,mg/dL\n6386,platelets x 1000,153.0,K/mcL\n6386,potassium,4.0,mmol/L\n6386,sodium,140.0,mmol/L\n6720,bedside glucose_4h_avg,315.0,mg/dL\n6960,bedside glucose_4h_avg,41.5,mg/dL\n7200,bedside glucose_4h_avg,197.0,mg/dL\n7680,bedside glucose_4h_avg,142.0,mg/dL\n8160,bedside glucose_4h_avg,249.0,mg/dL\n"
-    },
-    "output": {
-      "all_diseases": [
-        {
-          "name": "renal|disorder of acid base|metabolic acidosis",
-          "icd9code": "276.2",
-          "icd10code": "E87.2"
-        },
-        {
-          "name": "pulmonary|disorders of the airways|COPD",
-          "icd9code": "491.20",
-          "icd10code": "J44.9"
-        },
-        {
-          "name": "endocrine|glucose metabolism|DKA",
-          "icd9code": "250.13",
-          "icd10code": "E10.1"
-        },
-        {
-          "name": "endocrine|glucose metabolism|hypoglycemia",
-          "icd9code": "251.1",
-          "icd10code": "E16.2"
-        },
-        {
-          "name": "endocrine|thyroid|hypothyroidism",
-          "icd9code": "244.9",
-          "icd10code": "E03.9"
-        },
-        {
-          "name": "endocrine|glucose metabolism|hyperglycemia",
-          "icd9code": "790.6",
-          "icd10code": "R73.9"
-        },
-        {
-          "name": "gastrointestinal|abdominal/ general|nausea",
-          "icd9code": "787.02",
-          "icd10code": "R11.0"
-        }
-      ],
-      "primary_diseases": [],
-      "major_diseases": [
-        {
-          "name": "gastrointestinal|abdominal/ general|nausea",
-          "icd9code": "787.02",
-          "icd10code": "R11.0"
-        }
-      ],
-      "other_diseases": [
-        {
-          "name": "renal|disorder of acid base|metabolic acidosis",
-          "icd9code": "276.2",
-          "icd10code": "E87.2"
-        },
-        {
-          "name": "pulmonary|disorders of the airways|COPD",
-          "icd9code": "491.20",
-          "icd10code": "J44.9"
-        },
-        {
-          "name": "endocrine|glucose metabolism|DKA",
-          "icd9code": "250.13",
-          "icd10code": "E10.1"
-        },
-        {
-          "name": "endocrine|glucose metabolism|hypoglycemia",
-          "icd9code": "251.1",
-          "icd10code": "E16.2"
-        },
-        {
-          "name": "endocrine|thyroid|hypothyroidism",
-          "icd9code": "244.9",
-          "icd10code": "E03.9"
-        },
-        {
-          "name": "endocrine|glucose metabolism|hyperglycemia",
-          "icd9code": "790.6",
-          "icd10code": "R73.9"
-        }
-      ]
-    }
-  },
-  {
-    "case_id": "338711",
-    "input": {
-      "patient_info": "Patient demographics and basic information: gender: Female, age: 89",
-      "past_history": "Patient's medical history and past conditions: Organ Systems/Pulmonary/Asthma/asthma, Organ Systems/Pulmonary/COPD/COPD  - moderate, Organ Systems/Cardiovascular (R)/Congestive Heart Failure/CHF, Organ Systems/Endocrine (R)/Non-Insulin Dependent Diabetes/medication dependent, Organ Systems/Cardiovascular (R)/Hypertension Requiring Treatment/hypertension requiring treatment",
-      "physical_exam": "Physical examination findings and clinical observations: [BP (systolic) Lowest: 135, HR Current: 96, HR Lowest: 96, HR Highest: 96, BP (systolic) Current: 135, BP (systolic) Highest: 131, 3: 3, BP (diastolic) Lowest: 53, BP (diastolic) Highest: 60, Resp Current: 20, Resp Lowest: 20, O2 Sat% Current: 95, O2 Sat% Lowest: 95, O2 Sat% Highest: 95, FiO2%: 25, Admission: 50.16, sinus: sinus, 6: 6, 4: 4, BP (diastolic) Current: 53, Resp Highest: 20, scored: scored]",
-      "lab_results": "Laboratory test results with timestamps and measurements:\nlabresultoffset,labname,labresult,labmeasurenamesystem\n-1680,glucose_4h_avg,287.0,mg/dL\n-1504,BNP,1140.7,pg/mL\n-1498,BUN,25.0,mg/dL\n-1498,bicarbonate,26.9,mmol/L\n-1498,chloride,104.0,mmol/L\n-1498,creatinine,1.0,mg/dL\n-1498,ionized calcium,1.08,mg/dL\n-1498,lactate,1.6,mmol/L\n-1498,potassium,5.07,mmol/L\n-1498,sodium,134.1,mmol/L\n-1494,-lymphs,15.4,%\n-1494,-polys,76.7,%\n-1494,Hct,37.1,%\n-1494,Hgb,12.0,g/dL\n-1494,MCH,30.5,pg\n-1494,MCHC,32.3,g/dL\n-1494,MCV,94.2,fL\n-1494,RBC,3.94,M/mcL\n-1494,WBC x 1000,7.3,K/mcL\n-1494,platelets x 1000,231.0,K/mcL\n-1416,urinary specific gravity,1.019,\n-1200,bedside glucose_4h_avg,261.0,mg/dL\n-960,bedside glucose_4h_avg,193.0,mg/dL\n-480,bedside glucose_4h_avg,129.5,mg/dL\n-480,glucose_4h_avg,59.0,mg/dL\n-471,-eos,4.0,%\n-471,-lymphs,12.0,%\n-471,-monos,7.0,%\n-471,-polys,77.0,%\n-471,BNP,877.0,pg/mL\n-471,BUN,24.0,mg/dL\n-471,Hct,35.7,%\n-471,Hgb,11.6,g/dL\n-471,MCH,31.0,pg\n-471,MCHC,33.0,g/dL\n-471,MCV,94.0,fL\n-471,RBC,3.8,M/mcL\n-471,RDW,14.5,%\n-471,WBC x 1000,10.2,K/mcL\n-471,bicarbonate,34.0,mmol/L\n-471,calcium,8.4,mg/dL\n-471,chloride,99.0,mmol/L\n-471,creatinine,1.03,mg/dL\n-471,platelets x 1000,221.0,K/mcL\n-471,potassium,4.4,mmol/L\n-471,sodium,138.0,mmol/L\n-240,bedside glucose_4h_avg,274.0,mg/dL\n-143,Base Excess,1.6,mEq/L\n-143,HCO3,30.9,mmol/L\n-143,LPM O2,2.0,L/min\n-143,pH,7.244,\n-143,paCO2,73.1,mm Hg\n-143,paO2,147.5,mm Hg\n0,bedside glucose_4h_avg,159.0,mg/dL\n249,ALT (SGPT),16.0,Units/L\n249,AST (SGOT),24.0,Units/L\n249,CPK,28.0,Units/L\n249,albumin,2.7,g/dL\n249,alkaline phos.,80.0,Units/L\n249,ammonia,38.0,mcg/dL\n249,direct bilirubin,0.1,mg/dL\n249,total bilirubin,0.3,mg/dL\n249,total protein,7.7,g/dL\n249,troponin - I,0.118,ng/mL\n480,bedside glucose_4h_avg,527.0,mg/dL\n578,FiO2,24.0,%\n720,bedside glucose_4h_avg,537.0,mg/dL\n720,glucose_4h_avg,624.0,mg/dL\n960,bedside glucose_4h_avg,294.0,mg/dL\n960,glucose_4h_avg,235.0,mg/dL\n1044,BUN,30.0,mg/dL\n1044,Hct,32.9,%\n1044,Hgb,10.8,g/dL\n1044,MCH,31.0,pg\n1044,MCHC,33.0,g/dL\n1044,MCV,94.0,fL\n1044,RBC,3.5,M/mcL\n1044,RDW,13.8,%\n1044,WBC x 1000,7.3,K/mcL\n1044,bicarbonate,33.0,mmol/L\n1044,calcium,8.4,mg/dL\n1044,chloride,101.0,mmol/L\n1044,creatinine,1.04,mg/dL\n1044,platelets x 1000,206.0,K/mcL\n1044,potassium,5.1,mmol/L\n1044,sodium,141.0,mmol/L\n1200,bedside glucose_4h_avg,80.0,mg/dL\n1440,bedside glucose_4h_avg,290.0,mg/dL\n1680,bedside glucose_4h_avg,422.0,mg/dL\n1920,bedside glucose_4h_avg,404.0,mg/dL\n2160,bedside glucose_4h_avg,321.0,mg/dL\n2400,bedside glucose_4h_avg,152.0,mg/dL\n2400,glucose_4h_avg,156.0,mg/dL\n2479,-eos,0.0,%\n2479,-lymphs,16.0,%\n2479,-monos,8.0,%\n2479,-polys,76.0,%\n2479,BUN,38.0,mg/dL\n2479,Hct,34.8,%\n2479,Hgb,11.1,g/dL\n2479,MCH,31.0,pg\n2479,MCHC,32.0,g/dL\n2479,MCV,95.0,fL\n2479,RBC,3.65,M/mcL\n2479,RDW,14.2,%\n2479,WBC x 1000,11.8,K/mcL\n2479,bicarbonate,38.0,mmol/L\n2479,calcium,8.7,mg/dL\n2479,chloride,93.0,mmol/L\n2479,creatinine,1.15,mg/dL\n2479,platelets x 1000,235.0,K/mcL\n2479,potassium,4.3,mmol/L\n2479,sodium,137.0,mmol/L\n2640,bedside glucose_4h_avg,144.0,mg/dL\n2880,bedside glucose_4h_avg,223.0,mg/dL\n3360,bedside glucose_4h_avg,430.0,mg/dL\n3600,bedside glucose_4h_avg,273.0,mg/dL\n3840,bedside glucose_4h_avg,104.0,mg/dL\n4080,bedside glucose_4h_avg,175.0,mg/dL\n4080,glucose_4h_avg,174.0,mg/dL\n4110,BUN,46.0,mg/dL\n4110,bicarbonate,38.0,mmol/L\n4110,calcium,9.0,mg/dL\n4110,chloride,92.0,mmol/L\n4110,creatinine,1.03,mg/dL\n4110,potassium,4.5,mmol/L\n4110,sodium,138.0,mmol/L\n4320,bedside glucose_4h_avg,251.0,mg/dL\n4560,bedside glucose_4h_avg,279.0,mg/dL\n4800,bedside glucose_4h_avg,345.0,mg/dL\n5040,bedside glucose_4h_avg,182.0,mg/dL\n5280,bedside glucose_4h_avg,99.0,mg/dL\n5520,bedside glucose_4h_avg,289.0,mg/dL\n6000,bedside glucose_4h_avg,313.0,mg/dL\n6240,bedside glucose_4h_avg,284.0,mg/dL\n6480,bedside glucose_4h_avg,96.0,mg/dL\n6720,bedside glucose_4h_avg,99.0,mg/dL\n7200,bedside glucose_4h_avg,361.0,mg/dL\n7440,bedside glucose_4h_avg,398.5,mg/dL\n7680,bedside glucose_4h_avg,384.0,mg/dL\n7920,bedside glucose_4h_avg,295.0,mg/dL\n8160,bedside glucose_4h_avg,113.0,mg/dL\n8400,bedside glucose_4h_avg,73.0,mg/dL\n8640,bedside glucose_4h_avg,64.0,mg/dL\n8880,bedside glucose_4h_avg,284.0,mg/dL\n"
-    },
-    "output": {
-      "all_diseases": [
-        {
-          "name": "pulmonary|disorders of the airways|COPD",
-          "icd9code": "491.20",
-          "icd10code": "J44.9"
-        },
-        {
-          "name": "endocrine|glucose metabolism|hypoglycemia",
-          "icd9code": "251.1",
-          "icd10code": "E16.2"
-        },
-        {
-          "name": "pulmonary|disorders of the airways|asthma / bronchospasm",
-          "icd9code": "493.90",
-          "icd10code": "J45"
-        },
-        {
-          "name": "neurologic|altered mental status / pain|encephalopathy",
-          "icd9code": "348.30",
-          "icd10code": "G93.40"
-        },
-        {
-          "name": "cardiovascular|ventricular disorders|hypertension",
-          "icd9code": "401.9",
-          "icd10code": "I10"
-        },
-        {
-          "name": "cardiovascular|chest pain / ASHD|hyperlipidemia",
-          "icd9code": "272.4",
-          "icd10code": "E78.5"
-        },
-        {
-          "name": "cardiovascular|ventricular disorders|congestive heart failure",
-          "icd9code": "428.0",
-          "icd10code": "I50.9"
-        },
-        {
-          "name": "renal|electrolyte imbalance|hyperkalemia",
-          "icd9code": "276.7",
-          "icd10code": "E87.5"
-        }
-      ],
-      "primary_diseases": [],
-      "major_diseases": [
-        {
-          "name": "pulmonary|disorders of the airways|COPD",
-          "icd9code": "491.20",
-          "icd10code": "J44.9"
-        },
-        {
-          "name": "endocrine|glucose metabolism|hypoglycemia",
-          "icd9code": "251.1",
-          "icd10code": "E16.2"
-        },
-        {
-          "name": "pulmonary|disorders of the airways|asthma / bronchospasm",
-          "icd9code": "493.90",
-          "icd10code": "J45"
-        },
-        {
-          "name": "neurologic|altered mental status / pain|encephalopathy",
-          "icd9code": "348.30",
-          "icd10code": "G93.40"
-        },
-        {
-          "name": "cardiovascular|ventricular disorders|hypertension",
-          "icd9code": "401.9",
-          "icd10code": "I10"
-        },
-        {
-          "name": "cardiovascular|ventricular disorders|congestive heart failure",
-          "icd9code": "428.0",
-          "icd10code": "I50.9"
-        }
-      ],
-      "other_diseases": [
-        {
-          "name": "cardiovascular|chest pain / ASHD|hyperlipidemia",
-          "icd9code": "272.4",
-          "icd10code": "E78.5"
-        },
-        {
-          "name": "renal|electrolyte imbalance|hyperkalemia",
-          "icd9code": "276.7",
-          "icd10code": "E87.5"
-        }
-      ]
-    }
-  },
-  {
     "case_id": "1781220",
     "input": {
       "patient_info": "Patient demographics and basic information: gender: Female, age: 82",
@@ -3056,43 +2765,6 @@
         }
       ],
       "major_diseases": [],
-      "other_diseases": []
-    }
-  },
-  {
-    "case_id": "699797",
-    "input": {
-      "patient_info": "Patient demographics and basic information: gender: Male, age: 71",
-      "past_history": "Patient's medical history and past conditions: Organ Systems/Cardiovascular (R)/Congestive Heart Failure/CHF, Organ Systems/Cardiovascular (R)/Pulmonary Embolism/pulmonary embolism - date unknown",
-      "physical_exam": "Physical examination findings and clinical observations: [scored: scored, 6: 6, 5: 5, 4: 4, Admission: 87.9]",
-      "lab_results": "Laboratory test results with timestamps and measurements:\nlabresultoffset,labname,labresult,labmeasurenamesystem\n-480,glucose_4h_avg,96.0,mg/dL\n-358,BUN,25.0,mg/dL\n-358,Hct,23.7,%\n-358,Hgb,7.7,g/dL\n-358,MCH,32.5,pg\n-358,MCHC,32.5,g/dL\n-358,MCV,100.0,fL\n-358,MPV,10.8,fL\n-358,RBC,2.37,M/mcL\n-358,RDW,18.1,%\n-358,WBC x 1000,12.6,K/mcL\n-358,anion gap,7.0,\n-358,bicarbonate,23.0,mmol/L\n-358,calcium,8.4,mg/dL\n-358,chloride,114.0,mmol/L\n-358,creatinine,1.45,mg/dL\n-358,platelets x 1000,35.0,K/mcL\n-358,potassium,3.9,mmol/L\n-358,sodium,144.0,mmol/L\n-42,HCO3,15.0,mmol/L\n-42,O2 Sat (%),100.0,%\n-42,pH,7.08,\n-42,paCO2,51.0,mm Hg\n-42,paO2,375.0,mm Hg\n0,bedside glucose_4h_avg,285.0,mg/dL\n0,glucose_4h_avg,284.0,mg/dL\n7,Base Excess,-8.8,mEq/L\n7,HCO3,15.9,mmol/L\n7,O2 Sat (%),99.9,%\n7,PEEP,5.0,cm H2O\n7,TV,500.0,mls\n7,pH,7.321,\n7,paCO2,31.7,mm Hg\n7,paO2,333.0,mm Hg\n12,BUN,22.0,mg/dL\n12,Hct,28.6,%\n12,Hgb,9.5,g/dL\n12,MCH,31.0,pg\n12,MCHC,33.2,g/dL\n12,MCV,94.0,fL\n12,MPV,11.7,fL\n12,PT,15.5,sec\n12,PT - INR,1.2,ratio\n12,PTT,33.0,sec\n12,RBC,3.06,M/mcL\n12,RDW,16.3,%\n12,WBC x 1000,26.9,K/mcL\n12,anion gap,15.0,\n12,bicarbonate,17.0,mmol/L\n12,calcium,7.6,mg/dL\n12,chloride,111.0,mmol/L\n12,creatinine,1.21,mg/dL\n12,magnesium,1.9,mg/dL\n12,platelets x 1000,41.0,K/mcL\n12,potassium,4.1,mmol/L\n12,sodium,143.0,mmol/L\n18,FiO2,40.0,%\n112,lactate,4.1,mmol/L\n240,bedside glucose_4h_avg,222.0,mg/dL\n480,bedside glucose_4h_avg,151.0,mg/dL\n720,bedside glucose_4h_avg,139.0,mg/dL\n720,glucose_4h_avg,137.0,mg/dL\n787,BUN,22.0,mg/dL\n787,Hct,27.0,%\n787,Hgb,9.2,g/dL\n787,MCH,31.0,pg\n787,MCHC,34.1,g/dL\n787,MCV,91.0,fL\n787,MPV,11.7,fL\n787,RBC,2.97,M/mcL\n787,RDW,17.1,%\n787,WBC x 1000,30.9,K/mcL\n787,anion gap,10.0,\n787,bicarbonate,22.0,mmol/L\n787,calcium,8.0,mg/dL\n787,chloride,112.0,mmol/L\n787,creatinine,1.2,mg/dL\n787,magnesium,2.2,mg/dL\n787,platelets x 1000,50.0,K/mcL\n787,potassium,4.1,mmol/L\n787,sodium,144.0,mmol/L\n789,Base Excess,-3.3,mEq/L\n789,FiO2,40.0,%\n789,HCO3,19.8,mmol/L\n789,O2 Sat (%),99.5,%\n789,PEEP,5.0,cm H2O\n789,TV,450.0,mls\n789,pH,7.428,\n789,paCO2,30.5,mm Hg\n789,paO2,144.0,mm Hg\n960,bedside glucose_4h_avg,134.0,mg/dL\n1200,bedside glucose_4h_avg,122.0,mg/dL\n1377,Hct,24.4,%\n1377,Hgb,8.2,g/dL\n1440,bedside glucose_4h_avg,117.0,mg/dL\n1680,bedside glucose_4h_avg,129.0,mg/dL\n1887,Hct,23.4,%\n1887,Hgb,8.0,g/dL\n1920,bedside glucose_4h_avg,125.0,mg/dL\n2160,bedside glucose_4h_avg,133.0,mg/dL\n2160,glucose_4h_avg,126.0,mg/dL\n2207,Base Excess,-2.1,mEq/L\n2207,FiO2,40.0,%\n2207,HCO3,21.6,mmol/L\n2207,O2 Sat (%),98.9,%\n2207,PEEP,5.0,cm H2O\n2207,TV,450.0,mls\n2207,pH,7.409,\n2207,paCO2,34.8,mm Hg\n2207,paO2,145.0,mm Hg\n2252,ALT (SGPT),41.0,Units/L\n2252,AST (SGOT),41.0,Units/L\n2252,BUN,23.0,mg/dL\n2252,Hct,24.0,%\n2252,Hgb,8.1,g/dL\n2252,MCH,31.2,pg\n2252,MCHC,33.8,g/dL\n2252,MCV,92.0,fL\n2252,MPV,11.1,fL\n2252,RBC,2.6,M/mcL\n2252,RDW,17.3,%\n2252,WBC x 1000,25.1,K/mcL\n2252,albumin,2.7,g/dL\n2252,alkaline phos.,88.0,Units/L\n2252,anion gap,8.0,\n2252,bicarbonate,23.0,mmol/L\n2252,calcium,7.9,mg/dL\n2252,chloride,111.0,mmol/L\n2252,creatinine,1.04,mg/dL\n2252,platelets x 1000,61.0,K/mcL\n2252,potassium,3.4,mmol/L\n2252,sodium,142.0,mmol/L\n2252,total bilirubin,0.3,mg/dL\n2252,total protein,4.9,g/dL\n2400,bedside glucose_4h_avg,116.0,mg/dL\n2640,bedside glucose_4h_avg,114.0,mg/dL\n2767,Base Excess,-1.5,mEq/L\n2767,HCO3,21.1,mmol/L\n2767,O2 Sat (%),99.2,%\n2767,PEEP,0.0,cm H2O\n2767,Pressure Support,5.0,cm H2O\n2767,pH,7.478,\n2767,paCO2,28.8,mm Hg\n2767,paO2,125.0,mm Hg\n3120,bedside glucose_4h_avg,129.0,mg/dL\n3237,magnesium,1.8,mg/dL\n3237,phosphate,2.9,mg/dL\n3237,potassium,3.7,mmol/L\n3360,bedside glucose_4h_avg,122.0,mg/dL\n3600,bedside glucose_4h_avg,133.0,mg/dL\n3600,glucose_4h_avg,123.0,mg/dL\n3667,BUN,22.0,mg/dL\n3667,Hct,24.8,%\n3667,Hgb,8.2,g/dL\n3667,MCH,30.9,pg\n3667,MCHC,33.1,g/dL\n3667,MCV,94.0,fL\n3667,MPV,11.2,fL\n3667,RBC,2.65,M/mcL\n3667,RDW,17.1,%\n3667,WBC x 1000,25.7,K/mcL\n3667,anion gap,6.0,\n3667,bicarbonate,24.0,mmol/L\n3667,calcium,8.0,mg/dL\n3667,chloride,112.0,mmol/L\n3667,creatinine,0.87,mg/dL\n3667,magnesium,1.8,mg/dL\n3667,phosphate,2.7,mg/dL\n3667,platelets x 1000,100.0,K/mcL\n3667,potassium,3.9,mmol/L\n3667,sodium,142.0,mmol/L\n3840,bedside glucose_4h_avg,114.0,mg/dL\n4080,bedside glucose_4h_avg,122.0,mg/dL\n4227,magnesium,2.0,mg/dL\n4227,potassium,4.0,mmol/L\n5040,glucose_4h_avg,101.0,mg/dL\n5127,BUN,20.0,mg/dL\n5127,Hct,22.2,%\n5127,Hgb,7.3,g/dL\n5127,MCH,31.2,pg\n5127,MCHC,32.9,g/dL\n5127,MCV,95.0,fL\n5127,MPV,11.0,fL\n5127,PT,13.9,sec\n5127,PT - INR,1.1,ratio\n5127,RBC,2.34,M/mcL\n5127,RDW,17.1,%\n5127,WBC x 1000,16.8,K/mcL\n5127,anion gap,7.0,\n5127,bicarbonate,24.0,mmol/L\n5127,calcium,7.7,mg/dL\n5127,chloride,112.0,mmol/L\n5127,creatinine,0.92,mg/dL\n5127,platelets x 1000,102.0,K/mcL\n5127,potassium,3.4,mmol/L\n5127,sodium,143.0,mmol/L\n5532,Hct,22.4,%\n5532,Hgb,7.3,g/dL\n"
-    },
-    "output": {
-      "all_diseases": [
-        {
-          "name": "cardiovascular|cardiac arrest|cardiac arrest",
-          "icd9code": "427.5",
-          "icd10code": "I46.9"
-        },
-        {
-          "name": "pulmonary|respiratory failure|acute respiratory failure",
-          "icd9code": "518.81",
-          "icd10code": "J96.00"
-        }
-      ],
-      "primary_diseases": [],
-      "major_diseases": [
-        {
-          "name": "cardiovascular|cardiac arrest|cardiac arrest",
-          "icd9code": "427.5",
-          "icd10code": "I46.9"
-        },
-        {
-          "name": "pulmonary|respiratory failure|acute respiratory failure",
-          "icd9code": "518.81",
-          "icd10code": "J96.00"
-        }
-      ],
       "other_diseases": []
     }
   },
@@ -5874,43 +5546,6 @@
     }
   },
   {
-    "case_id": "321653",
-    "input": {
-      "patient_info": "Patient demographics and basic information: gender: Male, age: 78",
-      "past_history": "Patient's medical history and past conditions: Organ Systems/Cardiovascular (R)/Angina/angina, Organ Systems/Endocrine (R)/Insulin Dependent Diabetes/insulin dependent diabetes, Organ Systems/Pulmonary/COPD/COPD  - moderate, Organ Systems/Cardiovascular (R)/Hypertension Requiring Treatment/hypertension requiring treatment",
-      "physical_exam": "Physical examination findings and clinical observations: [BP (systolic) Highest: 127, BP (diastolic) Current: 72, BP (diastolic) Lowest: 72, BP (systolic) Lowest: 126, scored: scored, Resp Current: 24, BP (systolic) Current: 127, Resp Highest: 24, Resp Lowest: 23, 5: 5, 4: 4, BP (diastolic) Highest: 72, HR Highest: 93, O2 Sat% Lowest: 94, 15: 15, 6: 6, HR Lowest: 90, HR Current: 93, FiO2%: 40, O2 Sat% Highest: 97, O2 Sat% Current: 94]",
-      "lab_results": "Laboratory test results with timestamps and measurements:\nlabresultoffset,labname,labresult,labmeasurenamesystem\n0,glucose_4h_avg,172.0,mg/dL\n25,Base Deficit,2.3,mEq/L\n25,FiO2,40.0,%\n25,HCO3,21.2,mmol/L\n25,Vent Rate,12.0,/min\n25,pH,7.43,\n25,paCO2,32.7,mm Hg\n25,paO2,81.2,mm Hg\n106,-eos,0.0,%\n106,-lymphs,5.0,%\n106,-monos,9.0,%\n106,-polys,86.0,%\n106,ALT (SGPT),18.0,Units/L\n106,AST (SGOT),19.0,Units/L\n106,BNP,50.8,pg/mL\n106,BUN,29.0,mg/dL\n106,Hct,35.3,%\n106,Hgb,12.3,g/dL\n106,MCH,32.0,pg\n106,MCHC,35.0,g/dL\n106,MCV,92.0,fL\n106,RBC,3.86,M/mcL\n106,RDW,14.8,%\n106,WBC x 1000,15.2,K/mcL\n106,albumin,3.4,g/dL\n106,alkaline phos.,63.0,Units/L\n106,bicarbonate,22.0,mmol/L\n106,calcium,9.4,mg/dL\n106,chloride,102.0,mmol/L\n106,creatinine,1.42,mg/dL\n106,platelets x 1000,253.0,K/mcL\n106,potassium,4.6,mmol/L\n106,sodium,135.0,mmol/L\n106,total bilirubin,0.6,mg/dL\n106,total protein,6.2,g/dL\n240,bedside glucose_4h_avg,167.0,mg/dL\n480,bedside glucose_4h_avg,179.0,mg/dL\n720,bedside glucose_4h_avg,171.0,mg/dL\n960,bedside glucose_4h_avg,203.0,mg/dL\n1200,bedside glucose_4h_avg,219.0,mg/dL\n1920,bedside glucose_4h_avg,272.0,mg/dL\n2114,-eos,0.0,%\n2114,-lymphs,6.0,%\n2114,-monos,11.0,%\n2114,-polys,84.0,%\n2114,BUN,41.0,mg/dL\n2114,Hct,34.2,%\n2114,Hgb,11.9,g/dL\n2114,MCH,32.0,pg\n2114,MCHC,35.0,g/dL\n2114,MCV,91.0,fL\n2114,RBC,3.76,M/mcL\n2114,RDW,14.3,%\n2114,WBC x 1000,12.5,K/mcL\n2114,bicarbonate,22.0,mmol/L\n2114,calcium,8.5,mg/dL\n2114,chloride,107.0,mmol/L\n2114,creatinine,1.38,mg/dL\n2114,platelets x 1000,311.0,K/mcL\n2114,potassium,4.0,mmol/L\n2114,sodium,138.0,mmol/L\n2160,bedside glucose_4h_avg,177.0,mg/dL\n2160,glucose_4h_avg,187.0,mg/dL\n2400,bedside glucose_4h_avg,305.0,mg/dL\n2640,bedside glucose_4h_avg,241.0,mg/dL\n3120,bedside glucose_4h_avg,137.0,mg/dL\n3360,glucose_4h_avg,187.0,mg/dL\n3544,-eos,0.0,%\n3544,-lymphs,7.0,%\n3544,-monos,10.0,%\n3544,-polys,82.0,%\n3544,BUN,41.0,mg/dL\n3544,Hct,35.2,%\n3544,Hgb,12.3,g/dL\n3544,MCH,32.0,pg\n3544,MCHC,35.0,g/dL\n3544,MCV,90.0,fL\n3544,RBC,3.89,M/mcL\n3544,RDW,14.5,%\n3544,WBC x 1000,11.1,K/mcL\n3544,bicarbonate,24.0,mmol/L\n3544,calcium,8.4,mg/dL\n3544,chloride,107.0,mmol/L\n3544,creatinine,1.4,mg/dL\n3544,platelets x 1000,322.0,K/mcL\n3544,potassium,4.4,mmol/L\n3544,sodium,139.0,mmol/L\n3600,bedside glucose_4h_avg,185.0,mg/dL\n4080,bedside glucose_4h_avg,235.0,mg/dL\n4320,bedside glucose_4h_avg,271.0,mg/dL\n5040,bedside glucose_4h_avg,175.0,mg/dL\n5280,bedside glucose_4h_avg,257.0,mg/dL\n5520,bedside glucose_4h_avg,120.0,mg/dL\n"
-    },
-    "output": {
-      "all_diseases": [
-        {
-          "name": "pulmonary|disorders of the airways|COPD",
-          "icd9code": "491.20",
-          "icd10code": "J44.9"
-        },
-        {
-          "name": "cardiovascular|vascular disorders|hypertension",
-          "icd9code": "401.9",
-          "icd10code": "I10"
-        }
-      ],
-      "primary_diseases": [],
-      "major_diseases": [
-        {
-          "name": "pulmonary|disorders of the airways|COPD",
-          "icd9code": "491.20",
-          "icd10code": "J44.9"
-        },
-        {
-          "name": "cardiovascular|vascular disorders|hypertension",
-          "icd9code": "401.9",
-          "icd10code": "I10"
-        }
-      ],
-      "other_diseases": []
-    }
-  },
-  {
     "case_id": "899593",
     "input": {
       "patient_info": "Patient demographics and basic information: gender: Male, age: 84",
@@ -5993,121 +5628,6 @@
           "name": "cardiovascular|shock / hypotension|hypovolemia",
           "icd9code": "276.52",
           "icd10code": "E86.1"
-        }
-      ]
-    }
-  },
-  {
-    "case_id": "2400108",
-    "input": {
-      "patient_info": "Patient demographics and basic information: gender: Female, age: 80",
-      "past_history": "Patient's medical history and past conditions: Organ Systems/Cardiovascular (R)/Congestive Heart Failure/CHF",
-      "physical_exam": "Physical examination findings and clinical observations: [BP (diastolic) Highest: 73, Output Total: 1400, HR Current: 101, HR Lowest: 101, HR Highest: 101, BP (systolic) Current: 98, BP (systolic) Lowest: 98, BP (systolic) Highest: 119, BP (diastolic) Current: 67, BP (diastolic) Lowest: 67, Resp Current: 30, Resp Lowest: 30, Resp Highest: 30, O2 Sat% Current: 96, O2 Sat% Lowest: 96, O2 Sat% Highest: 96, FiO2%: 30, 3: 3, 5: 5, 6: 6, Total Net: -1400, Dialysis Net: 0, Admission: 68, Intake Total: 0, scored: scored, Delta: +0.9, Current: 68.9]",
-      "lab_results": "Laboratory test results with timestamps and measurements:\nlabresultoffset,labname,labresult,labmeasurenamesystem\n-240,glucose_4h_avg,132.0,mg/dL\n-113,-basos,1.0,%\n-113,-eos,4.0,%\n-113,-lymphs,19.0,%\n-113,-monos,15.0,%\n-113,-polys,61.0,%\n-113,BUN,14.0,mg/dL\n-113,CPK,56.0,Units/L\n-113,CPK-MB,2.0,ng/mL\n-113,Hct,47.6,%\n-113,Hgb,16.0,g/dL\n-113,MCH,30.0,pg\n-113,MCHC,33.6,g/dL\n-113,MCV,89.1,fL\n-113,MPV,10.7,fL\n-113,RBC,5.34,M/mcL\n-113,RDW,16.3,%\n-113,WBC x 1000,6.4,K/mcL\n-113,bicarbonate,23.0,mmol/L\n-113,calcium,9.3,mg/dL\n-113,chloride,100.0,mmol/L\n-113,creatinine,0.9,mg/dL\n-113,platelets x 1000,192.0,K/mcL\n-113,potassium,3.9,mmol/L\n-113,sodium,136.0,mmol/L\n1440,glucose_4h_avg,97.0,mg/dL\n1506,BUN,10.0,mg/dL\n1506,bicarbonate,28.0,mmol/L\n1506,calcium,8.4,mg/dL\n1506,chloride,94.0,mmol/L\n1506,creatinine,0.7,mg/dL\n1506,potassium,3.2,mmol/L\n1506,sodium,136.0,mmol/L\n2880,glucose_4h_avg,250.0,mg/dL\n2971,-basos,0.0,%\n2971,-eos,0.0,%\n2971,-lymphs,14.0,%\n2971,-monos,15.0,%\n2971,-polys,71.0,%\n2971,BUN,16.0,mg/dL\n2971,Hct,44.2,%\n2971,Hgb,15.0,g/dL\n2971,MCH,30.2,pg\n2971,MCHC,33.9,g/dL\n2971,MCV,89.1,fL\n2971,MPV,10.2,fL\n2971,RBC,4.96,M/mcL\n2971,RDW,15.7,%\n2971,WBC x 1000,4.7,K/mcL\n2971,bicarbonate,31.0,mmol/L\n2971,calcium,8.6,mg/dL\n2971,chloride,90.0,mmol/L\n2971,creatinine,0.7,mg/dL\n2971,platelets x 1000,188.0,K/mcL\n2971,potassium,3.3,mmol/L\n2971,sodium,135.0,mmol/L\n4320,glucose_4h_avg,139.0,mg/dL\n4456,BUN,19.0,mg/dL\n4456,bicarbonate,32.0,mmol/L\n4456,calcium,9.0,mg/dL\n4456,chloride,93.0,mmol/L\n4456,creatinine,0.6,mg/dL\n4456,potassium,3.7,mmol/L\n4456,sodium,137.0,mmol/L\n7200,glucose_4h_avg,128.0,mg/dL\n7321,-basos,0.0,%\n7321,-eos,0.0,%\n7321,-lymphs,17.0,%\n7321,-monos,10.0,%\n7321,-polys,73.0,%\n7321,BUN,22.0,mg/dL\n7321,Hct,46.2,%\n7321,Hgb,15.6,g/dL\n7321,MCH,30.1,pg\n7321,MCHC,33.8,g/dL\n7321,MCV,89.2,fL\n7321,MPV,9.8,fL\n7321,RBC,5.18,M/mcL\n7321,RDW,15.5,%\n7321,WBC x 1000,12.2,K/mcL\n7321,bicarbonate,29.0,mmol/L\n7321,calcium,9.3,mg/dL\n7321,chloride,101.0,mmol/L\n7321,creatinine,0.6,mg/dL\n7321,platelets x 1000,207.0,K/mcL\n7321,potassium,3.9,mmol/L\n7321,sodium,141.0,mmol/L\n"
-    },
-    "output": {
-      "all_diseases": [
-        {
-          "name": "cardiovascular|ventricular disorders|congestive heart failure",
-          "icd9code": "428.0",
-          "icd10code": "I50.9"
-        },
-        {
-          "name": "cardiovascular|arrhythmias|atrial fibrillation|with rapid ventricular response",
-          "icd9code": "427.31",
-          "icd10code": "I48.0"
-        }
-      ],
-      "primary_diseases": [],
-      "major_diseases": [
-        {
-          "name": "cardiovascular|ventricular disorders|congestive heart failure",
-          "icd9code": "428.0",
-          "icd10code": "I50.9"
-        },
-        {
-          "name": "cardiovascular|arrhythmias|atrial fibrillation|with rapid ventricular response",
-          "icd9code": "427.31",
-          "icd10code": "I48.0"
-        }
-      ],
-      "other_diseases": []
-    }
-  },
-  {
-    "case_id": "1753608",
-    "input": {
-      "patient_info": "Patient demographics and basic information: gender: Male, age: 57",
-      "past_history": "Patient's medical history and past conditions: Organ Systems/Cardiovascular (R)/Hypertension Requiring Treatment/hypertension requiring treatment, Organ Systems/Endocrine (R)/Hypothyroidism/hypothyroidism",
-      "physical_exam": "Physical examination findings and clinical observations: [Admission: 92.2, 15: 15, 6: 6, HR Current: 75, 4: 4, HR Lowest: 71, scored: scored, HR Lowest: 61, HR Current: 64, FiO2%: 21, HR Highest: 82, BP (systolic) Current: 112, HR Highest: 71, BP (systolic) Current: 95, BP (systolic) Lowest: 95, lower: lower, 5: 5, Resp Current: 12, Resp Lowest: 12, Resp Highest: 17, BP (systolic) Highest: 95, O2 Sat% Current: 98, O2 Sat% Lowest: 96, O2 Sat% Highest: 99, BP (diastolic) Highest: 136, BP (diastolic) Lowest: 67, NG tube: NG tube, mediastinal tube(s): mediastinal tube(s), non-icteric: non-icteric, lower: lower, Resp Current: 1, Current: 98.5, normal LOC: normal LOC, Resp Lowest: 0, Resp Current: 14, CVP: 11, ventilated: ventilated, sinus: sinus, regular: regular, narrow complex: narrow complex, intubated: intubated, BP (systolic) Lowest: 94, BP (systolic) Highest: 142, BP (diastolic) Current: 67, BP (diastolic) Lowest: 51, BP (diastolic) Highest: 72, Delta: +6.3, Admission: 92.2000, FiO2%: 32, CVP: 26, O2 Sat% Highest: 100, O2 Sat% Lowest: 94, O2 Sat% Current: 97, Resp Highest: 16, BP (diastolic) Current: 57, BP (diastolic) Lowest: 57, BP (diastolic) Highest: 57, Resp Lowest: 1, Resp Highest: 20, O2 Sat% Current: 100, FiO2%: 100, PEEP: 5, Current: 98.5000, BP (systolic) Highest: 146, oriented x3: oriented x3, focally decreased breath sounds: focally decreased breath sounds, Vent Rate Current: 14, within normal limits: nan, within normal limits: nan, within normal limits: nan, within normal limits: Print \"within normal limits\", no edema: no edema, adequate: adequate, no organomegaly: no organomegaly, no masses: no masses, no pain on palpation: no pain on palpation, S1 normal: S1 normal, S2 normal: S2 normal, equal: equal, appropriate: calm/appropriate, 1: 1, Resp Current: 15, HR Current: 62, HR Lowest: 62, BP (systolic) Current: 161, BP (systolic) Lowest: 130, BP (systolic) Highest: 162, BP (diastolic) Current: 80, BP (diastolic) Lowest: 63, BP (diastolic) Highest: 137, 3: 3, Resp Lowest: 10, O2 Sat% Lowest: 95, FiO2%: 28, BP (systolic) Current: 162, BP (systolic) Lowest: 149, BP (diastolic) Current: 136, not intubated: not intubated, HR Current: 80, FiO2%: 50, CVP: 14, O2 Sat% Lowest: 97, Resp Highest: 15, 10: 10, Resp Current: 7, BP (diastolic) Current: 63, BP (systolic) Lowest: 96, BP (systolic) Current: 119, HR Highest: 83, HR Current: 78, BP (diastolic) Highest: 78, HR Lowest: 74, BP (systolic) Current: 149, BP (systolic) Highest: 149, Resp Current: 8, BP (diastolic) Current: 64, HR Current: 79, BP (diastolic) Highest: 125, BP (systolic) Highest: 145, BP (systolic) Current: 140, O2 Sat% Current: 99, clear to auscultation: clear to auscultation, O2 Sat% Highest: 98, CVP: 15, HR Highest: 79, HR Current: 77, BP (diastolic) Highest: 67]",
-      "lab_results": "Laboratory test results with timestamps and measurements:\nlabresultoffset,labname,labresult,labmeasurenamesystem\n-260,-basos,0.5,%\n-260,-eos,2.1,%\n-260,-lymphs,30.7,%\n-260,-monos,8.9,%\n-260,-polys,57.8,%\n-260,ALT (SGPT),53.0,Units/L\n-260,AST (SGOT),53.0,Units/L\n-260,BUN,8.0,mg/dL\n-260,CPK,278.0,Units/L\n-260,CPK-MB,4.7,ng/mL\n-260,Hct,50.6,%\n-260,Hgb,16.4,g/dL\n-260,MCH,31.4,pg\n-260,MCHC,32.4,g/dL\n-260,MCV,96.8,fL\n-260,MPV,8.6,fL\n-260,PT,10.7,sec\n-260,PT - INR,1.0,ratio\n-260,PTT,31.0,sec\n-260,RBC,5.23,M/mcL\n-260,RDW,15.6,%\n-260,TSH,64.37,mcU/ml\n-260,WBC x 1000,10.7,K/mcL\n-260,albumin,4.7,g/dL\n-260,alkaline phos.,62.0,Units/L\n-260,anion gap,15.2,\n-260,bicarbonate,22.0,mmol/L\n-260,calcium,9.6,mg/dL\n-260,chloride,100.0,mmol/L\n-260,creatinine,1.02,mg/dL\n-260,ethanol,135.0,mg/dL\n-260,free T4,0.36,ng/dL\n-260,platelets x 1000,203.0,K/mcL\n-260,potassium,3.2,mmol/L\n-260,sodium,134.0,mmol/L\n-260,total bilirubin,0.5,mg/dL\n-260,total protein,8.2,g/dL\n-260,troponin - I,0.03,ng/mL\n-260,urinary specific gravity,1.003,\n-240,glucose_4h_avg,105.0,mg/dL\n-160,magnesium,1.9,mg/dL\n211,-basos,0.7,%\n211,-eos,1.2,%\n211,-lymphs,23.2,%\n211,-monos,10.3,%\n211,-polys,64.6,%\n211,ALT (SGPT),45.0,Units/L\n211,AST (SGOT),74.0,Units/L\n211,BUN,5.0,mg/dL\n211,Hct,45.2,%\n211,Hgb,15.0,g/dL\n211,MCH,31.9,pg\n211,MCHC,33.3,g/dL\n211,MCV,95.8,fL\n211,MPV,8.8,fL\n211,RBC,4.72,M/mcL\n211,RDW,15.6,%\n211,TSH,48.12,mcU/ml\n211,WBC x 1000,8.7,K/mcL\n211,albumin,3.9,g/dL\n211,alkaline phos.,49.0,Units/L\n211,anion gap,10.9,\n211,bicarbonate,24.0,mmol/L\n211,calcium,8.5,mg/dL\n211,chloride,104.0,mmol/L\n211,creatinine,0.8,mg/dL\n211,free T4,0.38,ng/dL\n211,platelets x 1000,169.0,K/mcL\n211,potassium,3.9,mmol/L\n211,sodium,135.0,mmol/L\n211,total bilirubin,0.6,mg/dL\n211,total protein,6.9,g/dL\n211,troponin - I,8.45,ng/mL\n240,glucose_4h_avg,98.0,mg/dL\n329,HDL,58.0,mg/dL\n329,LDL,97.0,mg/dL\n329,total cholesterol,174.0,mg/dL\n329,triglycerides,95.0,mg/dL\n503,troponin - I,7.45,ng/mL\n2976,magnesium,1.9,mg/dL\n3360,glucose_4h_avg,105.0,mg/dL\n3429,-basos,0.6,%\n3429,-eos,0.3,%\n3429,-lymphs,17.1,%\n3429,-monos,6.6,%\n3429,-polys,75.4,%\n3429,ALT (SGPT),33.0,Units/L\n3429,AST (SGOT),37.0,Units/L\n3429,BUN,15.0,mg/dL\n3429,Hct,42.4,%\n3429,Hgb,14.0,g/dL\n3429,MCH,31.7,pg\n3429,MCHC,33.0,g/dL\n3429,MCV,96.2,fL\n3429,MPV,9.0,fL\n3429,RBC,4.41,M/mcL\n3429,RDW,16.0,%\n3429,WBC x 1000,13.1,K/mcL\n3429,albumin,4.0,g/dL\n3429,alkaline phos.,46.0,Units/L\n3429,anion gap,7.3,\n3429,bicarbonate,26.0,mmol/L\n3429,calcium,8.9,mg/dL\n3429,chloride,103.0,mmol/L\n3429,creatinine,0.94,mg/dL\n3429,magnesium,2.4,mg/dL\n3429,platelets x 1000,133.0,K/mcL\n3429,potassium,3.3,mmol/L\n3429,sodium,133.0,mmol/L\n3429,total bilirubin,0.6,mg/dL\n3429,total protein,6.9,g/dL\n4320,glucose_4h_avg,99.0,mg/dL\n4399,ALT (SGPT),33.0,Units/L\n4399,AST (SGOT),33.0,Units/L\n4399,BUN,16.0,mg/dL\n4399,Hct,41.4,%\n4399,Hgb,13.6,g/dL\n4399,MCH,31.9,pg\n4399,MCHC,33.0,g/dL\n4399,MCV,96.8,fL\n4399,MPV,9.6,fL\n4399,RBC,4.27,M/mcL\n4399,RDW,14.8,%\n4399,WBC x 1000,9.0,K/mcL\n4399,albumin,3.5,g/dL\n4399,alkaline phos.,49.0,Units/L\n4399,anion gap,8.6,\n4399,bicarbonate,26.0,mmol/L\n4399,calcium,8.6,mg/dL\n4399,chloride,104.0,mmol/L\n4399,creatinine,0.83,mg/dL\n4399,platelets x 1000,131.0,K/mcL\n4399,potassium,3.6,mmol/L\n4399,sodium,135.0,mmol/L\n4399,total bilirubin,0.4,mg/dL\n4399,total protein,6.2,g/dL\n5760,glucose_4h_avg,105.0,mg/dL\n5868,-basos,0.0,%\n5868,-eos,1.7,%\n5868,-lymphs,17.0,%\n5868,-monos,8.1,%\n5868,-polys,73.2,%\n5868,ALT (SGPT),28.0,Units/L\n5868,AST (SGOT),22.0,Units/L\n5868,BUN,13.0,mg/dL\n5868,Hct,38.9,%\n5868,Hgb,12.9,g/dL\n5868,MCH,31.7,pg\n5868,MCHC,33.2,g/dL\n5868,MCV,95.4,fL\n5868,MPV,9.3,fL\n5868,RBC,4.08,M/mcL\n5868,RDW,14.4,%\n5868,WBC x 1000,8.3,K/mcL\n5868,albumin,3.4,g/dL\n5868,alkaline phos.,42.0,Units/L\n5868,anion gap,7.8,\n5868,bicarbonate,27.0,mmol/L\n5868,calcium,8.6,mg/dL\n5868,chloride,102.0,mmol/L\n5868,creatinine,0.81,mg/dL\n5868,platelets x 1000,117.0,K/mcL\n5868,potassium,3.8,mmol/L\n5868,sodium,133.0,mmol/L\n5868,total bilirubin,0.5,mg/dL\n5868,total protein,6.3,g/dL\n6720,bedside glucose_4h_avg,131.33333333333334,mg/dL\n6720,glucose_4h_avg,126.0,mg/dL\n6784,BUN,10.0,mg/dL\n6784,Hct,26.9,%\n6784,Hgb,8.8,g/dL\n6784,MCH,31.6,pg\n6784,MCHC,32.7,g/dL\n6784,MCV,96.7,fL\n6784,MPV,7.2,fL\n6784,PT,12.9,sec\n6784,PT - INR,1.19,ratio\n6784,PTT,35.0,sec\n6784,RBC,2.78,M/mcL\n6784,RDW,15.2,%\n6784,WBC x 1000,8.9,K/mcL\n6784,anion gap,4.2,\n6784,bicarbonate,28.0,mmol/L\n6784,calcium,6.5,mg/dL\n6784,chloride,109.0,mmol/L\n6784,creatinine,0.67,mg/dL\n6784,magnesium,2.3,mg/dL\n6784,platelets x 1000,190.0,K/mcL\n6784,potassium,3.2,mmol/L\n6784,sodium,138.0,mmol/L\n6825,Base Excess,1.7,mEq/L\n6825,FiO2,100.0,%\n6825,HCO3,27.3,mmol/L\n6825,Oxyhemoglobin,98.0,%\n6825,PEEP,5.0,cm H2O\n6825,TV,500.0,mls\n6825,pH,7.37,\n6825,paCO2,47.8,mm Hg\n6825,paO2,326.7,mm Hg\n7064,phosphate,2.9,mg/dL\n7200,glucose_4h_avg,137.0,mg/dL\n7339,-basos,0.1,%\n7339,-eos,0.1,%\n7339,-lymphs,7.8,%\n7339,-monos,8.4,%\n7339,-polys,83.6,%\n7339,ALT (SGPT),18.0,Units/L\n7339,AST (SGOT),44.0,Units/L\n7339,BUN,9.0,mg/dL\n7339,Hct,25.1,%\n7339,Hgb,8.4,g/dL\n7339,MCH,32.2,pg\n7339,MCHC,33.4,g/dL\n7339,MCV,96.2,fL\n7339,MPV,7.9,fL\n7339,RBC,2.61,M/mcL\n7339,RDW,15.9,%\n7339,WBC x 1000,7.1,K/mcL\n7339,albumin,2.8,g/dL\n7339,alkaline phos.,25.0,Units/L\n7339,anion gap,8.8,\n7339,bicarbonate,24.0,mmol/L\n7339,calcium,7.3,mg/dL\n7339,chloride,107.0,mmol/L\n7339,creatinine,0.79,mg/dL\n7339,platelets x 1000,199.0,K/mcL\n7339,potassium,3.8,mmol/L\n7339,sodium,136.0,mmol/L\n7339,total bilirubin,0.4,mg/dL\n7339,total protein,4.6,g/dL\n7920,bedside glucose_4h_avg,192.0,mg/dL\n8160,bedside glucose_4h_avg,135.52173913043478,mg/dL\n8640,bedside glucose_4h_avg,104.0,mg/dL\n8640,glucose_4h_avg,128.0,mg/dL\n8719,ALT (SGPT),21.0,Units/L\n8719,AST (SGOT),41.0,Units/L\n8719,BUN,9.0,mg/dL\n8719,Hct,26.2,%\n8719,Hgb,8.5,g/dL\n8719,MCH,31.5,pg\n8719,MCHC,32.6,g/dL\n8719,MCV,96.6,fL\n8719,MPV,8.9,fL\n8719,PT,11.5,sec\n8719,PT - INR,1.07,ratio\n8719,RBC,2.71,M/mcL\n8719,RDW,15.9,%\n8719,WBC x 1000,8.9,K/mcL\n8719,albumin,3.0,g/dL\n8719,alkaline phos.,32.0,Units/L\n8719,anion gap,6.6,\n8719,bicarbonate,25.0,mmol/L\n8719,calcium,7.6,mg/dL\n8719,chloride,103.0,mmol/L\n8719,creatinine,0.87,mg/dL\n8719,magnesium,2.1,mg/dL\n8719,platelets x 1000,171.0,K/mcL\n8719,potassium,3.6,mmol/L\n8719,sodium,131.0,mmol/L\n8719,total bilirubin,0.6,mg/dL\n8719,total protein,5.1,g/dL\n9120,bedside glucose_4h_avg,160.0,mg/dL\n9600,bedside glucose_4h_avg,134.0,mg/dL\n10080,glucose_4h_avg,112.0,mg/dL\n10099,BUN,12.0,mg/dL\n10099,Hct,27.4,%\n10099,Hgb,9.0,g/dL\n10099,MCH,31.7,pg\n10099,MCHC,32.9,g/dL\n10099,MCV,96.6,fL\n10099,MPV,8.9,fL\n10099,PT,11.2,sec\n10099,PT - INR,1.04,ratio\n10099,RBC,2.84,M/mcL\n10099,RDW,15.9,%\n10099,WBC x 1000,10.4,K/mcL\n10099,anion gap,8.2,\n10099,bicarbonate,32.0,mmol/L\n10099,calcium,8.3,mg/dL\n10099,chloride,95.0,mmol/L\n10099,creatinine,0.93,mg/dL\n10099,magnesium,2.1,mg/dL\n10099,platelets x 1000,203.0,K/mcL\n10099,potassium,3.2,mmol/L\n10099,sodium,132.0,mmol/L\n10654,potassium,2.9,mmol/L\n11040,bedside glucose_4h_avg,127.0,mg/dL\n11104,potassium,3.7,mmol/L\n11513,BUN,13.0,mg/dL\n11513,PT,10.7,sec\n11513,PT - INR,1.0,ratio\n11513,anion gap,7.3,\n11513,bicarbonate,35.0,mmol/L\n11513,calcium,8.6,mg/dL\n11513,chloride,92.0,mmol/L\n11513,creatinine,0.88,mg/dL\n11513,magnesium,2.1,mg/dL\n11513,potassium,3.3,mmol/L\n11513,sodium,131.0,mmol/L\n11520,bedside glucose_4h_avg,116.0,mg/dL\n11520,glucose_4h_avg,125.0,mg/dL\n12000,bedside glucose_4h_avg,101.0,mg/dL\n12240,bedside glucose_4h_avg,137.0,mg/dL\n12480,bedside glucose_4h_avg,119.0,mg/dL\n12960,bedside glucose_4h_avg,116.0,mg/dL\n12960,glucose_4h_avg,106.0,mg/dL\n13069,-basos,0.2,%\n13069,-eos,2.2,%\n13069,-lymphs,12.1,%\n13069,-monos,13.9,%\n13069,-polys,71.6,%\n13069,BUN,17.0,mg/dL\n13069,Hct,27.4,%\n13069,Hgb,9.1,g/dL\n13069,MCH,31.5,pg\n13069,MCHC,33.2,g/dL\n13069,MCV,94.9,fL\n13069,MPV,8.3,fL\n13069,PT,11.0,sec\n13069,PT - INR,1.03,ratio\n13069,RBC,2.89,M/mcL\n13069,RDW,15.2,%\n13069,WBC x 1000,10.3,K/mcL\n13069,anion gap,10.1,\n13069,bicarbonate,34.0,mmol/L\n13069,calcium,8.9,mg/dL\n13069,chloride,91.0,mmol/L\n13069,creatinine,1.02,mg/dL\n13069,platelets x 1000,293.0,K/mcL\n13069,potassium,3.1,mmol/L\n13069,sodium,132.0,mmol/L\n13200,bedside glucose_4h_avg,155.0,mg/dL\n13680,bedside glucose_4h_avg,122.0,mg/dL\n13920,bedside glucose_4h_avg,109.0,mg/dL\n14400,glucose_4h_avg,138.0,mg/dL\n14459,-basos,0.3,%\n14459,-eos,2.4,%\n14459,-lymphs,11.5,%\n14459,-monos,10.8,%\n14459,-polys,75.0,%\n14459,ALT (SGPT),21.0,Units/L\n14459,AST (SGOT),21.0,Units/L\n14459,BUN,18.0,mg/dL\n14459,Hct,27.3,%\n14459,Hgb,9.1,g/dL\n14459,MCH,31.6,pg\n14459,MCHC,33.2,g/dL\n14459,MCV,95.0,fL\n14459,MPV,8.1,fL\n14459,PT,11.7,sec\n14459,PT - INR,1.09,ratio\n14459,RBC,2.87,M/mcL\n14459,RDW,15.1,%\n14459,WBC x 1000,10.0,K/mcL\n14459,albumin,3.5,g/dL\n14459,alkaline phos.,53.0,Units/L\n14459,anion gap,10.7,\n14459,bicarbonate,36.0,mmol/L\n14459,calcium,8.9,mg/dL\n14459,chloride,89.0,mmol/L\n14459,creatinine,0.93,mg/dL\n14459,platelets x 1000,306.0,K/mcL\n14459,potassium,2.7,mmol/L\n14459,sodium,133.0,mmol/L\n14459,total bilirubin,0.5,mg/dL\n14459,total protein,6.6,g/dL\n14640,bedside glucose_4h_avg,138.0,mg/dL\n14747,potassium,3.2,mmol/L\n15120,bedside glucose_4h_avg,105.0,mg/dL\n15360,bedside glucose_4h_avg,120.0,mg/dL\n15840,bedside glucose_4h_avg,107.0,mg/dL\n15840,glucose_4h_avg,107.0,mg/dL\n15965,-basos,0.4,%\n15965,-eos,2.8,%\n15965,-lymphs,13.9,%\n15965,-monos,9.9,%\n15965,-polys,73.0,%\n15965,BUN,17.0,mg/dL\n15965,Hct,28.5,%\n15965,Hgb,9.5,g/dL\n15965,MCH,31.5,pg\n15965,MCHC,33.4,g/dL\n15965,MCV,94.5,fL\n15965,MPV,8.2,fL\n15965,RBC,3.02,M/mcL\n15965,RDW,15.4,%\n15965,WBC x 1000,11.4,K/mcL\n15965,anion gap,10.2,\n15965,bicarbonate,36.0,mmol/L\n15965,calcium,9.0,mg/dL\n15965,chloride,91.0,mmol/L\n15965,creatinine,1.0,mg/dL\n15965,platelets x 1000,358.0,K/mcL\n15965,potassium,3.2,mmol/L\n15965,sodium,134.0,mmol/L\n16320,bedside glucose_4h_avg,107.0,mg/dL\n16560,bedside glucose_4h_avg,113.0,mg/dL\n16609,potassium,3.5,mmol/L\n16800,bedside glucose_4h_avg,117.0,mg/dL\n17280,glucose_4h_avg,109.0,mg/dL\n17359,BUN,16.0,mg/dL\n17359,Hct,27.1,%\n17359,Hgb,8.9,g/dL\n17359,MCH,31.2,pg\n17359,MCHC,32.6,g/dL\n17359,MCV,95.7,fL\n17359,MPV,8.2,fL\n17359,PT,13.4,sec\n17359,PT - INR,1.23,ratio\n17359,RBC,2.84,M/mcL\n17359,RDW,15.3,%\n17359,WBC x 1000,12.3,K/mcL\n17359,anion gap,11.2,\n17359,bicarbonate,32.0,mmol/L\n17359,calcium,8.9,mg/dL\n17359,chloride,92.0,mmol/L\n17359,creatinine,0.97,mg/dL\n17359,platelets x 1000,352.0,K/mcL\n17359,potassium,3.2,mmol/L\n17359,sodium,132.0,mmol/L\n17520,bedside glucose_4h_avg,103.0,mg/dL\n18000,bedside glucose_4h_avg,125.0,mg/dL\n18076,potassium,4.3,mmol/L\n18240,bedside glucose_4h_avg,113.0,mg/dL\n18720,bedside glucose_4h_avg,116.0,mg/dL\n18960,bedside glucose_4h_avg,115.0,mg/dL\n18984,potassium,3.9,mmol/L\n"
-    },
-    "output": {
-      "all_diseases": [
-        {
-          "name": "cardiovascular|ventricular disorders|hypertension",
-          "icd9code": "401.9",
-          "icd10code": "I10"
-        },
-        {
-          "name": "cardiovascular|arrhythmias|atrial fibrillation",
-          "icd9code": "427.31",
-          "icd10code": "I48.0"
-        },
-        {
-          "name": "cardiovascular|chest pain / ASHD|hyperlipidemia",
-          "icd9code": "272.4",
-          "icd10code": "E78.5"
-        },
-        {
-          "name": "cardiovascular|chest pain / ASHD|acute coronary syndrome|acute myocardial infarction (no ST elevation)",
-          "icd9code": "410.71",
-          "icd10code": "I21.4"
-        },
-        {
-          "name": "pulmonary|respiratory failure|acute respiratory failure",
-          "icd9code": "518.81",
-          "icd10code": "J96.00"
-        },
-        {
-          "name": "endocrine|thyroid|hypothyroidism",
-          "icd9code": "244.9",
-          "icd10code": "E03.9"
-        }
-      ],
-      "primary_diseases": [],
-      "major_diseases": [
-        {
-          "name": "cardiovascular|arrhythmias|atrial fibrillation",
-          "icd9code": "427.31",
-          "icd10code": "I48.0"
-        }
-      ],
-      "other_diseases": [
-        {
-          "name": "cardiovascular|ventricular disorders|hypertension",
-          "icd9code": "401.9",
-          "icd10code": "I10"
-        },
-        {
-          "name": "cardiovascular|chest pain / ASHD|hyperlipidemia",
-          "icd9code": "272.4",
-          "icd10code": "E78.5"
-        },
-        {
-          "name": "cardiovascular|chest pain / ASHD|acute coronary syndrome|acute myocardial infarction (no ST elevation)",
-          "icd9code": "410.71",
-          "icd10code": "I21.4"
-        },
-        {
-          "name": "pulmonary|respiratory failure|acute respiratory failure",
-          "icd9code": "518.81",
-          "icd10code": "J96.00"
-        },
-        {
-          "name": "endocrine|thyroid|hypothyroidism",
-          "icd9code": "244.9",
-          "icd10code": "E03.9"
         }
       ]
     }
@@ -6398,6 +5918,493 @@
           "name": "pulmonary|pulmonary infections|pneumonia",
           "icd9code": "486",
           "icd10code": "J18.9"
+        }
+      ],
+      "other_diseases": []
+    }
+  },
+  {
+    "case_id": "1521527",
+    "input": {
+      "patient_info": "Patient demographics and basic information: gender: Male, age: 81",
+      "past_history": "Patient's medical history and past conditions: Organ Systems/Cardiovascular (R)/Myocardial Infarction/MI - within 6 months, Organ Systems/Cardiovascular (R)/Hypertension Requiring Treatment/hypertension requiring treatment, Organ Systems/Cardiovascular (R)/Arrhythmias/atrial fibrillation - chronic",
+      "physical_exam": "Physical examination findings and clinical observations: [scored: scored, BP (systolic) Lowest: 81, BP (diastolic) Highest: 99, BP (diastolic) Lowest: 41, BP (systolic) Highest: 124, 4: 4, HR Highest: 86, O2 Sat% Highest: 100, HR Lowest: 79, FiO2%: 50, Admission: 64.6, BP (systolic) Current: 128, BP (diastolic) Current: 50, HR Current: 81, O2 Sat% Lowest: 99, Output Total: 325, Total Net: -8, 6: 6, Current: 64.6, 5: 5, Dialysis Net: 0, O2 Sat% Current: 100, Intake Total: 317, Delta: 0]",
+      "lab_results": "Laboratory test results with timestamps and measurements:\nlabresultoffset,labname,labresult,labmeasurenamesystem\n0,glucose_4h_avg,125.0,mg/dL\n72,-basos,0.0,%\n72,-eos,0.0,%\n72,-lymphs,2.0,%\n72,-monos,4.0,%\n72,-polys,94.0,%\n72,ALT (SGPT),9.0,Units/L\n72,AST (SGOT),14.0,Units/L\n72,BNP,9510.0,pg/mL\n72,BUN,17.0,mg/dL\n72,Digoxin,1.0,ng/mL\n72,Hct,31.9,%\n72,Hgb,9.6,g/dL\n72,MCHC,30.1,g/dL\n72,MCV,78.8,fL\n72,PT,21.7,sec\n72,PT - INR,1.96,ratio\n72,RBC,4.05,M/mcL\n72,RDW,18.3,%\n72,WBC x 1000,21.9,K/mcL\n72,albumin,3.0,g/dL\n72,alkaline phos.,45.0,Units/L\n72,bicarbonate,23.0,mmol/L\n72,calcium,9.2,mg/dL\n72,chloride,99.0,mmol/L\n72,creatinine,1.16,mg/dL\n72,lactate,3.4,mmol/L\n72,magnesium,1.7,mg/dL\n72,platelets x 1000,290.0,K/mcL\n72,potassium,4.6,mmol/L\n72,sodium,136.0,mmol/L\n72,total bilirubin,0.5,mg/dL\n72,total protein,6.4,g/dL\n240,glucose_4h_avg,151.0,mg/dL\n408,ALT (SGPT),8.0,Units/L\n408,AST (SGOT),14.0,Units/L\n408,BUN,16.0,mg/dL\n408,Hct,28.6,%\n408,Hgb,8.9,g/dL\n408,MCHC,31.1,g/dL\n408,MCV,78.4,fL\n408,RBC,3.65,M/mcL\n408,RDW,18.4,%\n408,WBC x 1000,25.4,K/mcL\n408,albumin,3.0,g/dL\n408,alkaline phos.,44.0,Units/L\n408,bicarbonate,21.0,mmol/L\n408,calcium,8.9,mg/dL\n408,chloride,99.0,mmol/L\n408,creatinine,0.99,mg/dL\n408,lactate,2.1,mmol/L\n408,magnesium,1.7,mg/dL\n408,platelets x 1000,307.0,K/mcL\n408,potassium,4.2,mmol/L\n408,sodium,135.0,mmol/L\n408,total bilirubin,0.5,mg/dL\n408,total protein,6.3,g/dL\n808,PT,22.5,sec\n808,PT - INR,2.05,ratio\n1860,BUN,18.0,mg/dL\n1860,Hct,24.9,%\n1860,Hgb,7.7,g/dL\n1860,MCHC,30.9,g/dL\n1860,MCV,78.1,fL\n1860,PT,26.5,sec\n1860,PT - INR,2.54,ratio\n1860,RBC,3.19,M/mcL\n1860,RDW,18.9,%\n1860,WBC x 1000,18.9,K/mcL\n1860,bicarbonate,23.0,mmol/L\n1860,calcium,9.2,mg/dL\n1860,chloride,102.0,mmol/L\n1860,creatinine,0.78,mg/dL\n1860,magnesium,2.4,mg/dL\n1860,platelets x 1000,294.0,K/mcL\n1860,potassium,4.4,mmol/L\n1860,sodium,137.0,mmol/L\n1920,glucose_4h_avg,130.0,mg/dL\n2620,Carboxyhemoglobin,1.8,%\n2620,Methemoglobin,0.9,%\n2620,O2 Sat (%),52.8,%\n3120,glucose_4h_avg,114.0,mg/dL\n3298,BUN,20.0,mg/dL\n3298,Carboxyhemoglobin,2.5,%\n3298,FiO2,25.0,%\n3298,Hct,22.2,%\n3298,Hgb,6.6,g/dL\n3298,MCHC,29.7,g/dL\n3298,MCV,79.3,fL\n3298,Methemoglobin,1.0,%\n3298,O2 Sat (%),70.0,%\n3298,PT,22.5,sec\n3298,PT - INR,2.05,ratio\n3298,RBC,2.8,M/mcL\n3298,RDW,18.7,%\n3298,WBC x 1000,12.8,K/mcL\n3298,bicarbonate,27.0,mmol/L\n3298,calcium,8.5,mg/dL\n3298,chloride,104.0,mmol/L\n3298,creatinine,0.7,mg/dL\n3298,magnesium,2.4,mg/dL\n3298,platelets x 1000,264.0,K/mcL\n3298,potassium,3.5,mmol/L\n3298,sodium,139.0,mmol/L\n3733,Hct,29.1,%\n3733,Hgb,8.8,g/dL\n3733,MCHC,30.2,g/dL\n3733,MCV,80.6,fL\n3733,RBC,3.61,M/mcL\n3733,RDW,18.0,%\n3733,WBC x 1000,18.3,K/mcL\n3733,platelets x 1000,304.0,K/mcL\n4560,glucose_4h_avg,104.0,mg/dL\n4708,BUN,21.0,mg/dL\n4708,Hct,28.0,%\n4708,Hgb,8.5,g/dL\n4708,MCHC,30.4,g/dL\n4708,MCV,80.5,fL\n4708,PT,25.2,sec\n4708,PT - INR,2.38,ratio\n4708,RBC,3.48,M/mcL\n4708,RDW,18.0,%\n4708,WBC x 1000,13.7,K/mcL\n4708,bicarbonate,29.0,mmol/L\n4708,calcium,8.7,mg/dL\n4708,chloride,102.0,mmol/L\n4708,creatinine,0.7,mg/dL\n4708,platelets x 1000,297.0,K/mcL\n4708,potassium,3.5,mmol/L\n4708,sodium,140.0,mmol/L\n6000,glucose_4h_avg,138.0,mg/dL\n6143,BUN,24.0,mg/dL\n6143,Hct,30.0,%\n6143,Hgb,9.3,g/dL\n6143,MCHC,31.0,g/dL\n6143,MCV,79.6,fL\n6143,PT,25.5,sec\n6143,PT - INR,2.42,ratio\n6143,RBC,3.77,M/mcL\n6143,RDW,18.2,%\n6143,WBC x 1000,7.0,K/mcL\n6143,bicarbonate,29.0,mmol/L\n6143,calcium,8.7,mg/dL\n6143,chloride,100.0,mmol/L\n6143,creatinine,0.71,mg/dL\n6143,platelets x 1000,313.0,K/mcL\n6143,potassium,3.6,mmol/L\n6143,sodium,140.0,mmol/L\n7575,BUN,25.0,mg/dL\n7575,Hct,31.6,%\n7575,Hgb,9.4,g/dL\n7575,MCHC,29.7,g/dL\n7575,MCV,80.6,fL\n7575,PT,22.1,sec\n7575,PT - INR,2.0,ratio\n7575,RBC,3.92,M/mcL\n7575,RDW,18.3,%\n7575,WBC x 1000,11.2,K/mcL\n7575,bicarbonate,29.0,mmol/L\n7575,calcium,9.0,mg/dL\n7575,chloride,95.0,mmol/L\n7575,creatinine,0.76,mg/dL\n7575,platelets x 1000,340.0,K/mcL\n7575,potassium,3.9,mmol/L\n7575,sodium,136.0,mmol/L\n7680,glucose_4h_avg,120.0,mg/dL\n9063,PT,23.0,sec\n9063,PT - INR,2.11,ratio\n9328,BUN,23.0,mg/dL\n9328,bicarbonate,31.0,mmol/L\n9328,calcium,9.1,mg/dL\n9328,chloride,95.0,mmol/L\n9328,creatinine,0.78,mg/dL\n9328,potassium,4.5,mmol/L\n9328,sodium,136.0,mmol/L\n9360,glucose_4h_avg,166.0,mg/dL\n10320,glucose_4h_avg,112.0,mg/dL\n10443,BUN,26.0,mg/dL\n10443,PT,22.4,sec\n10443,PT - INR,2.04,ratio\n10443,bicarbonate,32.0,mmol/L\n10443,calcium,8.5,mg/dL\n10443,chloride,97.0,mmol/L\n10443,creatinine,0.79,mg/dL\n10443,potassium,4.2,mmol/L\n10443,sodium,136.0,mmol/L\n11760,glucose_4h_avg,148.0,mg/dL\n11888,BUN,24.0,mg/dL\n11888,PT,23.4,sec\n11888,PT - INR,2.16,ratio\n11888,bicarbonate,27.0,mmol/L\n11888,calcium,8.7,mg/dL\n11888,chloride,95.0,mmol/L\n11888,creatinine,0.86,mg/dL\n11888,potassium,5.0,mmol/L\n11888,sodium,132.0,mmol/L\n"
+    },
+    "output": {
+      "all_diseases": [
+        {
+          "name": "cardiovascular|shock / hypotension|hypovolemia",
+          "icd9code": "276.52",
+          "icd10code": "E86.1"
+        },
+        {
+          "name": "hematology|bleeding and red blood cell disorders|anemia|anemia of critical illness",
+          "icd9code": "285.9",
+          "icd10code": "D64.9"
+        },
+        {
+          "name": "cardiovascular|shock / hypotension|septic shock",
+          "icd9code": "785.52",
+          "icd10code": "R65.21"
+        },
+        {
+          "name": "cardiovascular|ventricular disorders|congestive heart failure",
+          "icd9code": "428.0",
+          "icd10code": "I50.9"
+        },
+        {
+          "name": "pulmonary|pulmonary infections|pneumonia",
+          "icd9code": "486",
+          "icd10code": "J18.9"
+        }
+      ],
+      "primary_diseases": [
+        {
+          "name": "cardiovascular|ventricular disorders|congestive heart failure",
+          "icd9code": "428.0",
+          "icd10code": "I50.9"
+        }
+      ],
+      "major_diseases": [
+        {
+          "name": "hematology|bleeding and red blood cell disorders|anemia|anemia of critical illness",
+          "icd9code": "285.9",
+          "icd10code": "D64.9"
+        },
+        {
+          "name": "cardiovascular|shock / hypotension|septic shock",
+          "icd9code": "785.52",
+          "icd10code": "R65.21"
+        },
+        {
+          "name": "pulmonary|pulmonary infections|pneumonia",
+          "icd9code": "486",
+          "icd10code": "J18.9"
+        }
+      ],
+      "other_diseases": [
+        {
+          "name": "cardiovascular|shock / hypotension|hypovolemia",
+          "icd9code": "276.52",
+          "icd10code": "E86.1"
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "2732158",
+    "input": {
+      "patient_info": "Patient demographics and basic information: gender: Male, age: > 89",
+      "past_history": "Patient's medical history and past conditions: Organ Systems/Endocrine (R)/Non-Insulin Dependent Diabetes/non-medication dependent, Organ Systems/Pulmonary/COPD/COPD  - moderate, Organ Systems/Neurologic/Seizures/other seizures, Organ Systems/Cardiovascular (R)/Hypertension Requiring Treatment/hypertension requiring treatment, Organ Systems/Cardiovascular (R)/Arrhythmias/atrial fibrillation - chronic, Organ Systems/Neurologic/Strokes/stroke - within 5 years",
+      "physical_exam": "Physical examination findings and clinical observations: [BP (systolic) Lowest: 160, BP (systolic) Highest: 163, scored: scored, BP (systolic) Current: 160, HR Highest: 93, HR Lowest: 93, HR Current: 93, BP (diastolic) Current: 74, Resp Highest: 22, 4: 4, 4: 4, 6: 6, O2 Sat% Highest: 98, O2 Sat% Lowest: 98, O2 Sat% Current: 98, Resp Lowest: 22, Resp Current: 22, BP (diastolic) Highest: 82, BP (diastolic) Lowest: 74]",
+      "lab_results": "Laboratory test results with timestamps and measurements:\nlabresultoffset,labname,labresult,labmeasurenamesystem\n-201,-basos,0.3,%\n-201,-eos,3.9,%\n-201,-lymphs,18.6,%\n-201,-monos,6.0,%\n-201,-polys,71.2,%\n-201,ALT (SGPT),22.0,Units/L\n-201,AST (SGOT),22.0,Units/L\n-201,BUN,17.0,mg/dL\n-201,CPK,32.0,Units/L\n-201,CPK-MB,2.2,ng/mL\n-201,Hct,40.5,%\n-201,Hgb,13.2,g/dL\n-201,MCH,32.2,pg\n-201,MCHC,32.7,g/dL\n-201,MCV,98.5,fL\n-201,PT,12.3,sec\n-201,PT - INR,1.1,ratio\n-201,RBC,4.11,M/mcL\n-201,RDW,14.2,%\n-201,WBC x 1000,8.4,K/mcL\n-201,albumin,3.5,g/dL\n-201,alkaline phos.,65.0,Units/L\n-201,anion gap,7.0,\n-201,bicarbonate,29.0,mmol/L\n-201,calcium,9.1,mg/dL\n-201,chloride,102.0,mmol/L\n-201,creatinine,0.8,mg/dL\n-201,platelets x 1000,141.0,K/mcL\n-201,potassium,4.3,mmol/L\n-201,sodium,138.0,mmol/L\n-201,total bilirubin,0.5,mg/dL\n-201,total protein,6.2,g/dL\n0,bedside glucose_4h_avg,203.0,mg/dL\n240,bedside glucose_4h_avg,158.0,mg/dL\n714,-basos,0.3,%\n714,-eos,0.1,%\n714,-lymphs,5.0,%\n714,-monos,5.3,%\n714,-polys,89.3,%\n714,BUN,17.0,mg/dL\n714,Hct,41.4,%\n714,Hgb,13.7,g/dL\n714,MCH,32.3,pg\n714,MCHC,33.2,g/dL\n714,MCV,97.4,fL\n714,RBC,4.25,M/mcL\n714,RDW,14.0,%\n714,WBC x 1000,12.4,K/mcL\n714,anion gap,7.0,\n714,bicarbonate,26.0,mmol/L\n714,calcium,8.7,mg/dL\n714,chloride,104.0,mmol/L\n714,creatinine,0.8,mg/dL\n714,platelets x 1000,150.0,K/mcL\n714,potassium,3.9,mmol/L\n714,sodium,137.0,mmol/L\n720,glucose_4h_avg,144.0,mg/dL\n960,bedside glucose_4h_avg,131.0,mg/dL\n1440,bedside glucose_4h_avg,141.0,mg/dL\n1680,bedside glucose_4h_avg,124.0,mg/dL\n2160,bedside glucose_4h_avg,125.0,mg/dL\n2400,bedside glucose_4h_avg,121.0,mg/dL\n2509,-basos,0.0,%\n2509,-eos,0.0,%\n2509,-lymphs,2.0,%\n2509,-monos,1.0,%\n2509,-polys,97.0,%\n2509,BUN,21.0,mg/dL\n2509,Hct,38.5,%\n2509,Hgb,12.9,g/dL\n2509,MCH,32.8,pg\n2509,MCHC,33.4,g/dL\n2509,MCV,98.3,fL\n2509,RBC,3.92,M/mcL\n2509,RDW,14.6,%\n2509,WBC x 1000,12.1,K/mcL\n2509,anion gap,9.0,\n2509,bicarbonate,23.0,mmol/L\n2509,calcium,8.3,mg/dL\n2509,chloride,105.0,mmol/L\n2509,creatinine,0.8,mg/dL\n2509,platelets x 1000,132.0,K/mcL\n2509,potassium,3.4,mmol/L\n2509,sodium,137.0,mmol/L\n"
+    },
+    "output": {
+      "all_diseases": [
+        {
+          "name": "neurologic|disorders of vasculature|stroke|ischemic stroke",
+          "icd9code": "434.91",
+          "icd10code": "I63.50"
+        },
+        {
+          "name": "cardiovascular|vascular disorders|hypertension",
+          "icd9code": "401.9",
+          "icd10code": "I10"
+        },
+        {
+          "name": "pulmonary|disorders of the airways|COPD",
+          "icd9code": "491.20",
+          "icd10code": "J44.9"
+        },
+        {
+          "name": "cardiovascular|arrhythmias|atrial fibrillation",
+          "icd9code": "427.31",
+          "icd10code": "I48.0"
+        }
+      ],
+      "primary_diseases": [
+        {
+          "name": "neurologic|disorders of vasculature|stroke|ischemic stroke",
+          "icd9code": "434.91",
+          "icd10code": "I63.50"
+        }
+      ],
+      "major_diseases": [
+        {
+          "name": "cardiovascular|vascular disorders|hypertension",
+          "icd9code": "401.9",
+          "icd10code": "I10"
+        }
+      ],
+      "other_diseases": [
+        {
+          "name": "pulmonary|disorders of the airways|COPD",
+          "icd9code": "491.20",
+          "icd10code": "J44.9"
+        },
+        {
+          "name": "cardiovascular|arrhythmias|atrial fibrillation",
+          "icd9code": "427.31",
+          "icd10code": "I48.0"
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "1113619",
+    "input": {
+      "patient_info": "Patient demographics and basic information: gender: Female, age: 57",
+      "past_history": "Patient's medical history and past conditions: Organ Systems/Gastrointestinal (R)/Peptic Ulcer Disease/peptic ulcer disease with h/o GI bleeding, Organ Systems/Hematology/Oncology (R)/Cancer/Cancer-Primary Site/other, Organ Systems/Hematology/Oncology (R)/Cancer Therapy/Chemotherapy/chemotherapy within past 6 mos., Organ Systems/Renal  (R)/Renal Insufficiency/renal insufficiency - creatinine 1-2, Organ Systems/Pulmonary/Asthma/asthma",
+      "physical_exam": "Physical examination findings and clinical observations: [BP (systolic) Lowest: 67, Total Net: +680, Dialysis Net: 0, Output Total: 50, Intake Total: 730, pRBC's: 730, Urine: 50, Delta: +0.09, Urine: 205, Output Total: 955, Urine: 100, BP (systolic) Current: 107, Output Total: 350, HR Lowest: 66, HR Current: 82, scored: scored, BP (systolic) Lowest: 104, Intake Total: 0, Current: 64.09, Admission: 64, O2 Sat% Highest: 100, O2 Sat% Lowest: 74, O2 Sat% Current: 81, Resp Highest: 18, Resp Lowest: 7, Resp Current: 15, HR Highest: 89, BP (systolic) Current: 104, HR Lowest: 77, HR Current: 79, BP (systolic) Highest: 104, HR Highest: 88, BP (diastolic) Highest: 64, Total Net: -225, 5: 5, 4: 4, BP (diastolic) Highest: 131, BP (diastolic) Lowest: 64, BP (diastolic) Current: 70, BP (diastolic) Current: 64, BP (systolic) Highest: 177, BP (systolic) Current: 94, BP (systolic) Highest: 121, Total Net: -350, 6: 6, O2 Sat% Highest: 96, O2 Sat% Lowest: 82, O2 Sat% Current: 82, Resp Highest: 15, Resp Lowest: 8, Resp Current: 10, BP (diastolic) Highest: 81, BP (diastolic) Lowest: 60, BP (diastolic) Current: 60, BP (systolic) Lowest: 94, BP (diastolic) Lowest: 49]",
+      "lab_results": "Laboratory test results with timestamps and measurements:\nlabresultoffset,labname,labresult,labmeasurenamesystem\n-1920,glucose_4h_avg,111.5,mg/dL\n-1779,-basos,0.0,%\n-1779,-eos,0.0,%\n-1779,-lymphs,4.0,%\n-1779,-monos,2.0,%\n-1779,-polys,93.0,%\n-1779,ALT (SGPT),14.0,Units/L\n-1779,AST (SGOT),29.0,Units/L\n-1779,BUN,11.0,mg/dL\n-1779,Hct,25.3,%\n-1779,MCH,28.9,pg\n-1779,MCHC,32.0,g/dL\n-1779,MCV,90.4,fL\n-1779,MPV,9.2,fL\n-1779,PT,15.2,sec\n-1779,PT - INR,1.23,ratio\n-1779,PTT,45.0,sec\n-1779,RBC,2.8,M/mcL\n-1779,RDW,18.5,%\n-1779,WBC x 1000,23.89,K/mcL\n-1779,albumin,1.5,g/dL\n-1779,alkaline phos.,195.0,Units/L\n-1779,anion gap,22.0,\n-1779,bicarbonate,14.0,mmol/L\n-1779,calcium,6.3,mg/dL\n-1779,chloride,107.0,mmol/L\n-1779,creatinine,1.0,mg/dL\n-1779,ionized calcium,3.44,mg/dL\n-1779,lactate,3.7,mmol/L\n-1779,platelets x 1000,252.0,K/mcL\n-1779,potassium,3.8,mmol/L\n-1779,sodium,139.0,mmol/L\n-1779,total bilirubin,0.6,mg/dL\n-1779,total protein,7.0,g/dL\n-1779,troponin - T,0.041,ng/mL\n-1569,Hgb,7.1,g/dL\n-1569,ionized calcium,3.72,mg/dL\n-1524,urinary specific gravity,1.023,\n-1374,lactate,2.4,mmol/L\n-1015,lactate,2.1,mmol/L\n-720,glucose_4h_avg,77.0,mg/dL\n-598,BUN,13.0,mg/dL\n-598,PT,14.4,sec\n-598,PT - INR,1.14,ratio\n-598,bicarbonate,14.0,mmol/L\n-598,calcium,5.9,mg/dL\n-598,chloride,106.0,mmol/L\n-598,creatinine,1.1,mg/dL\n-598,potassium,4.2,mmol/L\n-598,sodium,135.0,mmol/L\n-525,-basos,1.0,%\n-525,-eos,3.0,%\n-525,-lymphs,9.0,%\n-525,-monos,5.0,%\n-525,-polys,81.0,%\n-525,Hct,19.7,%\n-525,Hgb,6.5,g/dL\n-525,MCH,29.8,pg\n-525,MCHC,33.0,g/dL\n-525,MCV,90.4,fL\n-525,MPV,9.3,fL\n-525,RBC,2.18,M/mcL\n-525,RDW,18.6,%\n-525,WBC x 1000,10.83,K/mcL\n-525,lactate,1.7,mmol/L\n-525,platelets x 1000,203.0,K/mcL\n-480,bedside glucose_4h_avg,71.0,mg/dL\n-284,urinary specific gravity,1.016,\n-240,bedside glucose_4h_avg,102.0,mg/dL\n0,bedside glucose_4h_avg,113.0,mg/dL\n240,glucose_4h_avg,132.0,mg/dL\n291,-lymphs,3.0,%\n291,-monos,1.0,%\n291,-polys,96.0,%\n291,ALT (SGPT),9.0,Units/L\n291,AST (SGOT),21.0,Units/L\n291,BUN,13.0,mg/dL\n291,PT,15.0,sec\n291,PT - INR,1.21,ratio\n291,PTT,48.0,sec\n291,albumin,1.2,g/dL\n291,alkaline phos.,143.0,Units/L\n291,bicarbonate,15.0,mmol/L\n291,calcium,6.2,mg/dL\n291,chloride,108.0,mmol/L\n291,creatinine,1.1,mg/dL\n291,ionized calcium,3.76,mg/dL\n291,magnesium,0.9,mg/dL\n291,phosphate,3.9,mg/dL\n291,potassium,4.7,mmol/L\n291,sodium,138.0,mmol/L\n291,total bilirubin,0.4,mg/dL\n291,total protein,5.6,g/dL\n389,Hct,31.8,%\n389,Hgb,10.9,g/dL\n389,MCH,29.1,pg\n389,MCHC,34.3,g/dL\n389,MCV,85.0,fL\n389,MPV,8.9,fL\n389,PT,14.8,sec\n389,PT - INR,1.19,ratio\n389,RBC,3.74,M/mcL\n389,RDW,16.2,%\n389,WBC x 1000,15.36,K/mcL\n389,platelets x 1000,136.0,K/mcL\n720,glucose_4h_avg,121.0,mg/dL\n857,-basos,0.0,%\n857,-eos,0.0,%\n857,-lymphs,8.0,%\n857,-monos,3.0,%\n857,-polys,88.0,%\n857,BUN,14.0,mg/dL\n857,Hct,32.0,%\n857,Hgb,10.8,g/dL\n857,MCH,29.3,pg\n857,MCHC,33.8,g/dL\n857,MCV,86.7,fL\n857,MPV,9.1,fL\n857,PT,13.7,sec\n857,PT - INR,1.07,ratio\n857,RBC,3.69,M/mcL\n857,RDW,17.1,%\n857,WBC x 1000,12.11,K/mcL\n857,bicarbonate,15.0,mmol/L\n857,calcium,6.5,mg/dL\n857,chloride,106.0,mmol/L\n857,creatinine,1.2,mg/dL\n857,platelets x 1000,145.0,K/mcL\n857,potassium,5.0,mmol/L\n857,sodium,137.0,mmol/L\n960,bedside glucose_4h_avg,122.0,mg/dL\n1200,glucose_4h_avg,127.0,mg/dL\n1306,BUN,11.0,mg/dL\n1306,MCH,29.2,pg\n1306,MCHC,34.2,g/dL\n1306,MCV,85.4,fL\n1306,MPV,9.1,fL\n1306,PT,16.6,sec\n1306,PT - INR,1.38,ratio\n1306,RBC,2.6,M/mcL\n1306,RDW,16.9,%\n1306,WBC x 1000,12.37,K/mcL\n1306,bicarbonate,13.0,mmol/L\n1306,calcium,5.0,mg/dL\n1306,chloride,112.0,mmol/L\n1306,creatinine,0.9,mg/dL\n1306,platelets x 1000,117.0,K/mcL\n1306,potassium,3.5,mmol/L\n1306,sodium,139.0,mmol/L\n1411,Hct,29.3,%\n1411,Hgb,10.2,g/dL\n1440,bedside glucose_4h_avg,135.0,mg/dL\n1531,Hct,28.6,%\n1531,Hgb,10.0,g/dL\n1531,MCH,29.9,pg\n1531,MCHC,35.0,g/dL\n1531,MCV,85.4,fL\n1531,MPV,9.1,fL\n1531,PT,14.5,sec\n1531,PT - INR,1.16,ratio\n1531,RBC,3.35,M/mcL\n1531,RDW,17.1,%\n1531,WBC x 1000,18.92,K/mcL\n1531,platelets x 1000,157.0,K/mcL\n1680,glucose_4h_avg,142.0,mg/dL\n1766,BUN,14.0,mg/dL\n1766,bicarbonate,17.0,mmol/L\n1766,calcium,6.0,mg/dL\n1766,chloride,102.0,mmol/L\n1766,creatinine,1.2,mg/dL\n1766,magnesium,0.9,mg/dL\n1766,phosphate,3.4,mg/dL\n1766,potassium,4.1,mmol/L\n1766,sodium,135.0,mmol/L\n1861,PT,14.4,sec\n1861,PT - INR,1.14,ratio\n2160,glucose_4h_avg,136.0,mg/dL\n2186,-basos,0.0,%\n2186,-eos,0.0,%\n2186,-lymphs,6.0,%\n2186,-monos,3.0,%\n2186,-polys,90.0,%\n2186,BUN,14.0,mg/dL\n2186,Hct,27.5,%\n2186,Hgb,9.4,g/dL\n2186,MCH,29.3,pg\n2186,MCHC,34.2,g/dL\n2186,MCV,85.7,fL\n2186,MPV,9.3,fL\n2186,PT,14.6,sec\n2186,PT - INR,1.17,ratio\n2186,RBC,3.21,M/mcL\n2186,RDW,17.4,%\n2186,WBC x 1000,15.63,K/mcL\n2186,bicarbonate,20.0,mmol/L\n2186,calcium,6.5,mg/dL\n2186,chloride,102.0,mmol/L\n2186,creatinine,1.1,mg/dL\n2186,ionized calcium,4.04,mg/dL\n2186,magnesium,1.1,mg/dL\n2186,platelets x 1000,134.0,K/mcL\n2186,potassium,3.9,mmol/L\n2186,sodium,139.0,mmol/L\n2400,bedside glucose_4h_avg,149.0,mg/dL\n2640,glucose_4h_avg,182.0,mg/dL\n2651,Hgb,9.7,g/dL\n2672,BUN,13.0,mg/dL\n2672,bicarbonate,22.0,mmol/L\n2672,calcium,6.4,mg/dL\n2672,chloride,102.0,mmol/L\n2672,creatinine,1.0,mg/dL\n2672,ionized calcium,3.88,mg/dL\n2672,lactate,3.4,mmol/L\n2672,magnesium,1.1,mg/dL\n2672,potassium,3.4,mmol/L\n2672,sodium,140.0,mmol/L\n3120,bedside glucose_4h_avg,174.0,mg/dL\n3120,glucose_4h_avg,263.0,mg/dL\n3176,BUN,12.0,mg/dL\n3176,Hgb,9.0,g/dL\n3176,bicarbonate,24.0,mmol/L\n3176,calcium,6.0,mg/dL\n3176,chloride,99.0,mmol/L\n3176,creatinine,0.9,mg/dL\n3176,magnesium,1.3,mg/dL\n3176,phosphate,2.5,mg/dL\n3176,potassium,3.3,mmol/L\n3176,sodium,140.0,mmol/L\n3600,bedside glucose_4h_avg,121.0,mg/dL\n3600,glucose_4h_avg,137.0,mg/dL\n3616,-basos,0.0,%\n3616,-eos,0.0,%\n3616,-lymphs,9.0,%\n3616,-monos,3.0,%\n3616,-polys,87.0,%\n3616,BUN,12.0,mg/dL\n3616,Hct,27.4,%\n3616,Hgb,9.3,g/dL\n3616,MCH,29.5,pg\n3616,MCHC,33.9,g/dL\n3616,MCV,87.0,fL\n3616,MPV,9.3,fL\n3616,PT,13.5,sec\n3616,PT - INR,1.05,ratio\n3616,RBC,3.15,M/mcL\n3616,RDW,17.5,%\n3616,WBC x 1000,10.83,K/mcL\n3616,bicarbonate,23.0,mmol/L\n3616,calcium,6.6,mg/dL\n3616,chloride,104.0,mmol/L\n3616,creatinine,0.9,mg/dL\n3616,platelets x 1000,135.0,K/mcL\n3616,potassium,4.0,mmol/L\n3616,sodium,140.0,mmol/L\n4056,ionized calcium,3.92,mg/dL\n4056,lactate,3.4,mmol/L\n4080,bedside glucose_4h_avg,143.0,mg/dL\n5040,glucose_4h_avg,122.0,mg/dL\n5041,-basos,0.0,%\n5041,-eos,0.0,%\n5041,-lymphs,10.0,%\n5041,-monos,6.0,%\n5041,-polys,83.0,%\n5041,BUN,11.0,mg/dL\n5041,Hct,25.2,%\n5041,Hgb,8.3,g/dL\n5041,MCH,29.0,pg\n5041,MCHC,32.9,g/dL\n5041,MCV,88.1,fL\n5041,MPV,9.3,fL\n5041,PT,13.9,sec\n5041,PT - INR,1.09,ratio\n5041,RBC,2.86,M/mcL\n5041,RDW,17.7,%\n5041,WBC x 1000,6.58,K/mcL\n5041,bicarbonate,24.0,mmol/L\n5041,calcium,6.5,mg/dL\n5041,chloride,103.0,mmol/L\n5041,creatinine,0.8,mg/dL\n5041,platelets x 1000,134.0,K/mcL\n5041,potassium,2.8,mmol/L\n5041,sodium,141.0,mmol/L\n6471,-basos,0.0,%\n6471,-eos,1.0,%\n6471,-lymphs,16.0,%\n6471,-monos,11.0,%\n6471,-polys,71.0,%\n6471,BUN,11.0,mg/dL\n6471,Hct,26.9,%\n6471,Hgb,8.8,g/dL\n6471,MCH,29.1,pg\n6471,MCHC,32.7,g/dL\n6471,MCV,89.1,fL\n6471,MPV,9.3,fL\n6471,PT,14.7,sec\n6471,PT - INR,1.18,ratio\n6471,RBC,3.02,M/mcL\n6471,RDW,18.2,%\n6471,WBC x 1000,6.94,K/mcL\n6471,bicarbonate,26.0,mmol/L\n6471,calcium,6.5,mg/dL\n6471,chloride,106.0,mmol/L\n6471,creatinine,0.7,mg/dL\n6471,platelets x 1000,155.0,K/mcL\n6471,potassium,3.0,mmol/L\n6471,sodium,143.0,mmol/L\n6480,glucose_4h_avg,85.0,mg/dL\n6960,glucose_4h_avg,114.0,mg/dL\n7116,BUN,10.0,mg/dL\n7116,bicarbonate,24.0,mmol/L\n7116,calcium,6.5,mg/dL\n7116,chloride,107.0,mmol/L\n7116,creatinine,0.7,mg/dL\n7116,potassium,4.6,mmol/L\n7116,sodium,142.0,mmol/L\n7680,glucose_4h_avg,118.0,mg/dL\n7871,-basos,0.0,%\n7871,-eos,1.0,%\n7871,-lymphs,13.0,%\n7871,-monos,5.0,%\n7871,-polys,80.0,%\n7871,BUN,9.0,mg/dL\n7871,Hct,29.6,%\n7871,Hgb,9.7,g/dL\n7871,MCH,29.8,pg\n7871,MCHC,32.8,g/dL\n7871,MCV,90.8,fL\n7871,MPV,9.1,fL\n7871,RBC,3.26,M/mcL\n7871,RDW,18.4,%\n7871,WBC x 1000,7.36,K/mcL\n7871,bicarbonate,23.0,mmol/L\n7871,calcium,6.6,mg/dL\n7871,chloride,103.0,mmol/L\n7871,creatinine,0.7,mg/dL\n7871,platelets x 1000,166.0,K/mcL\n7871,potassium,4.2,mmol/L\n7871,sodium,139.0,mmol/L\n8160,bedside glucose_4h_avg,104.0,mg/dL\n"
+    },
+    "output": {
+      "all_diseases": [
+        {
+          "name": "cardiovascular|shock / hypotension|sepsis",
+          "icd9code": "038.9",
+          "icd10code": "A41.9"
+        },
+        {
+          "name": "cardiovascular|shock / hypotension|hypotension",
+          "icd9code": "458.9",
+          "icd10code": "I95.9"
+        },
+        {
+          "name": "cardiovascular|shock / hypotension|hypovolemia",
+          "icd9code": "276.52",
+          "icd10code": "E86.1"
+        }
+      ],
+      "primary_diseases": [
+        {
+          "name": "cardiovascular|shock / hypotension|hypovolemia",
+          "icd9code": "276.52",
+          "icd10code": "E86.1"
+        }
+      ],
+      "major_diseases": [
+        {
+          "name": "cardiovascular|shock / hypotension|sepsis",
+          "icd9code": "038.9",
+          "icd10code": "A41.9"
+        },
+        {
+          "name": "cardiovascular|shock / hypotension|hypotension",
+          "icd9code": "458.9",
+          "icd10code": "I95.9"
+        }
+      ],
+      "other_diseases": []
+    }
+  },
+  {
+    "case_id": "370873",
+    "input": {
+      "patient_info": "Patient demographics and basic information: gender: Female, age: 68",
+      "past_history": "Patient's medical history and past conditions: Organ Systems/Pulmonary/COPD/COPD  - moderate, Organ Systems/Cardiovascular (R)/Congestive Heart Failure/CHF, Organ Systems/Neurologic/Strokes/stroke - date unknown, Organ Systems/Cardiovascular (R)/Myocardial Infarction/MI - date unknown",
+      "physical_exam": "Physical examination findings and clinical observations: [Resp Current: 20, BP (diastolic) Current: 81, 2: 2, sedated: sedated, FiO2%: 8, PEEP: 5, Admission: 97.8400, BP (systolic) Current: 123, O2 Sat% Current: 99, HR Current: 88, ventilated: ventilated, 1: 1, estimated due to meds: estimated due to meds, Vent Rate Current: 20, 1: 1]",
+      "lab_results": "Laboratory test results with timestamps and measurements:\nlabresultoffset,labname,labresult,labmeasurenamesystem\n-115,Base Deficit,6.1,mEq/L\n-115,FiO2,60.0,%\n-115,HCO3,23.3,mmol/L\n-115,PEEP,5.0,cm H2O\n-115,Vent Rate,14.0,/min\n-115,pH,7.169,\n-115,paCO2,65.5,mm Hg\n-115,paO2,106.7,mm Hg\n0,glucose_4h_avg,145.0,mg/dL\n12,FiO2,60.0,%\n71,-eos,0.0,%\n71,-lymphs,5.0,%\n71,-monos,5.0,%\n71,-polys,90.0,%\n71,ALT (SGPT),20.0,Units/L\n71,AST (SGOT),34.0,Units/L\n71,BNP,860.4,pg/mL\n71,BUN,19.0,mg/dL\n71,CPK,141.0,Units/L\n71,Hct,37.9,%\n71,Hgb,11.8,g/dL\n71,MCH,26.0,pg\n71,MCHC,31.0,g/dL\n71,MCV,82.0,fL\n71,PT,11.4,sec\n71,PT - INR,1.1,ratio\n71,RBC,4.6,M/mcL\n71,RDW,16.6,%\n71,WBC x 1000,14.7,K/mcL\n71,albumin,3.6,g/dL\n71,alkaline phos.,92.0,Units/L\n71,bicarbonate,23.0,mmol/L\n71,calcium,9.2,mg/dL\n71,chloride,107.0,mmol/L\n71,creatinine,2.02,mg/dL\n71,platelets x 1000,217.0,K/mcL\n71,potassium,3.7,mmol/L\n71,sodium,143.0,mmol/L\n71,total bilirubin,0.3,mg/dL\n71,total protein,7.1,g/dL\n71,troponin - I,0.467,ng/mL\n117,Base Deficit,1.6,mEq/L\n117,FiO2,60.0,%\n117,HCO3,24.1,mmol/L\n117,PEEP,5.0,cm H2O\n117,Vent Rate,25.0,/min\n117,pH,7.35,\n117,paCO2,44.7,mm Hg\n117,paO2,126.2,mm Hg\n240,bedside glucose_4h_avg,191.0,mg/dL\n291,urinary specific gravity,1.009,\n356,CPK,176.0,Units/L\n356,troponin - I,0.916,ng/mL\n506,TSH,1.801,mcU/ml\n506,magnesium,1.4,mg/dL\n960,bedside glucose_4h_avg,136.0,mg/dL\n960,glucose_4h_avg,133.0,mg/dL\n1066,-eos,0.0,%\n1066,-lymphs,8.0,%\n1066,-monos,6.0,%\n1066,-polys,86.0,%\n1066,BUN,30.0,mg/dL\n1066,Hct,34.7,%\n1066,Hgb,11.2,g/dL\n1066,MCH,26.0,pg\n1066,MCHC,32.0,g/dL\n1066,MCV,81.0,fL\n1066,PT,13.4,sec\n1066,PT - INR,1.2,ratio\n1066,RBC,4.3,M/mcL\n1066,RDW,16.2,%\n1066,WBC x 1000,11.5,K/mcL\n1066,ammonia,21.0,mcg/dL\n1066,bicarbonate,20.0,mmol/L\n1066,calcium,9.2,mg/dL\n1066,chloride,106.0,mmol/L\n1066,creatinine,2.56,mg/dL\n1066,platelets x 1000,211.0,K/mcL\n1066,potassium,3.6,mmol/L\n1066,sodium,141.0,mmol/L\n1127,Base Deficit,1.5,mEq/L\n1127,FiO2,60.0,%\n1127,HCO3,19.3,mmol/L\n1127,PEEP,5.0,cm H2O\n1127,Vent Rate,25.0,/min\n1127,pH,7.553,\n1127,paCO2,22.4,mm Hg\n1127,paO2,200.3,mm Hg\n1200,bedside glucose_4h_avg,128.0,mg/dL\n1378,urinary creatinine,97.8,mg/dL\n1378,urinary osmolality,474.0,mOsm/L\n1378,urinary sodium,126.0,mmol/L\n1680,bedside glucose_4h_avg,93.5,mg/dL\n2160,bedside glucose_4h_avg,88.0,mg/dL\n2400,bedside glucose_4h_avg,94.0,mg/dL\n2400,glucose_4h_avg,122.0,mg/dL\n2486,-eos,0.0,%\n2486,-lymphs,16.0,%\n2486,-monos,7.0,%\n2486,-polys,77.0,%\n2486,BUN,40.0,mg/dL\n2486,Hct,34.1,%\n2486,Hgb,11.6,g/dL\n2486,MCH,27.0,pg\n2486,MCHC,34.0,g/dL\n2486,MCV,81.0,fL\n2486,PT,12.4,sec\n2486,PT - INR,1.1,ratio\n2486,RBC,4.21,M/mcL\n2486,RDW,16.5,%\n2486,WBC x 1000,10.6,K/mcL\n2486,bicarbonate,22.0,mmol/L\n2486,calcium,9.0,mg/dL\n2486,chloride,105.0,mmol/L\n2486,creatinine,2.84,mg/dL\n2486,platelets x 1000,198.0,K/mcL\n2486,potassium,3.5,mmol/L\n2486,sodium,143.0,mmol/L\n2528,Base Excess,0.8,mEq/L\n2528,FiO2,40.0,%\n2528,HCO3,24.0,mmol/L\n2528,PEEP,5.0,cm H2O\n2528,Vent Rate,18.0,/min\n2528,pH,7.47,\n2528,paCO2,33.8,mm Hg\n2528,paO2,119.7,mm Hg\n2640,bedside glucose_4h_avg,102.0,mg/dL\n3120,bedside glucose_4h_avg,120.5,mg/dL\n3286,Base Excess,1.8,mEq/L\n3286,FiO2,40.0,%\n3286,HCO3,26.5,mmol/L\n3286,PEEP,5.0,cm H2O\n3286,Pressure Support,7.0,cm H2O\n3286,pH,7.419,\n3286,paCO2,41.9,mm Hg\n3286,paO2,121.7,mm Hg\n3840,bedside glucose_4h_avg,100.66666666666669,mg/dL\n3840,glucose_4h_avg,101.0,mg/dL\n3866,BUN,39.0,mg/dL\n3866,PT,12.5,sec\n3866,PT - INR,1.2,ratio\n3866,bicarbonate,25.0,mmol/L\n3866,calcium,9.1,mg/dL\n3866,chloride,106.0,mmol/L\n3866,creatinine,2.47,mg/dL\n3866,magnesium,1.6,mg/dL\n3866,potassium,4.3,mmol/L\n3866,sodium,142.0,mmol/L\n4080,bedside glucose_4h_avg,109.5,mg/dL\n4271,Base Excess,4.6,mEq/L\n4271,FiO2,40.0,%\n4271,HCO3,29.3,mmol/L\n4271,PEEP,5.0,cm H2O\n4271,Pressure Support,7.0,cm H2O\n4271,pH,7.44,\n4271,paCO2,44.2,mm Hg\n4271,paO2,116.6,mm Hg\n4320,bedside glucose_4h_avg,96.0,mg/dL\n4560,bedside glucose_4h_avg,105.0,mg/dL\n5040,bedside glucose_4h_avg,122.0,mg/dL\n5280,bedside glucose_4h_avg,126.0,mg/dL\n5280,glucose_4h_avg,131.0,mg/dL\n5291,BUN,44.0,mg/dL\n5291,PT,11.7,sec\n5291,PT - INR,1.1,ratio\n5291,bicarbonate,27.0,mmol/L\n5291,calcium,9.4,mg/dL\n5291,chloride,103.0,mmol/L\n5291,creatinine,2.29,mg/dL\n5291,potassium,4.1,mmol/L\n5291,sodium,142.0,mmol/L\n5520,bedside glucose_4h_avg,128.0,mg/dL\n5760,bedside glucose_4h_avg,115.0,mg/dL\n6000,bedside glucose_4h_avg,102.0,mg/dL\n6240,bedside glucose_4h_avg,126.0,mg/dL\n6720,bedside glucose_4h_avg,138.0,mg/dL\n6720,glucose_4h_avg,134.0,mg/dL\n6761,BUN,51.0,mg/dL\n6761,Hct,34.6,%\n6761,Hgb,11.4,g/dL\n6761,MCH,27.0,pg\n6761,MCHC,33.0,g/dL\n6761,MCV,82.0,fL\n6761,PT,12.3,sec\n6761,PT - INR,1.1,ratio\n6761,RBC,4.23,M/mcL\n6761,RDW,16.5,%\n6761,WBC x 1000,8.7,K/mcL\n6761,bicarbonate,28.0,mmol/L\n6761,calcium,9.6,mg/dL\n6761,chloride,100.0,mmol/L\n6761,creatinine,2.37,mg/dL\n6761,platelets x 1000,194.0,K/mcL\n6761,potassium,4.0,mmol/L\n6761,sodium,142.0,mmol/L\n6960,bedside glucose_4h_avg,138.0,mg/dL\n7680,bedside glucose_4h_avg,114.0,mg/dL\n7920,bedside glucose_4h_avg,117.0,mg/dL\n8160,glucose_4h_avg,109.0,mg/dL\n8231,BUN,59.0,mg/dL\n8231,PT,11.4,sec\n8231,PT - INR,1.1,ratio\n8231,bicarbonate,24.0,mmol/L\n8231,calcium,9.8,mg/dL\n8231,chloride,98.0,mmol/L\n8231,creatinine,2.3,mg/dL\n8231,potassium,4.6,mmol/L\n8231,sodium,137.0,mmol/L\n8400,bedside glucose_4h_avg,114.0,mg/dL\n8640,bedside glucose_4h_avg,115.0,mg/dL\n9120,bedside glucose_4h_avg,112.0,mg/dL\n9600,glucose_4h_avg,110.0,mg/dL\n9641,BUN,56.0,mg/dL\n9641,PT,11.6,sec\n9641,PT - INR,1.1,ratio\n9641,bicarbonate,23.0,mmol/L\n9641,calcium,9.7,mg/dL\n9641,chloride,100.0,mmol/L\n9641,creatinine,2.23,mg/dL\n9641,potassium,4.1,mmol/L\n9641,sodium,136.0,mmol/L\n9840,bedside glucose_4h_avg,126.0,mg/dL\n10080,bedside glucose_4h_avg,113.0,mg/dL\n"
+    },
+    "output": {
+      "all_diseases": [
+        {
+          "name": "cardiovascular|ventricular disorders|congestive heart failure",
+          "icd9code": "428.0",
+          "icd10code": "I50.9"
+        },
+        {
+          "name": "pulmonary|disorders of the airways|COPD",
+          "icd9code": "491.20",
+          "icd10code": "J44.9"
+        },
+        {
+          "name": "pulmonary|respiratory failure|acute respiratory distress",
+          "icd9code": "518.82",
+          "icd10code": ""
+        },
+        {
+          "name": "cardiovascular|chest pain / ASHD|coronary artery disease|known",
+          "icd9code": "414.00",
+          "icd10code": "I25.10"
+        }
+      ],
+      "primary_diseases": [
+        {
+          "name": "cardiovascular|ventricular disorders|congestive heart failure",
+          "icd9code": "428.0",
+          "icd10code": "I50.9"
+        }
+      ],
+      "major_diseases": [
+        {
+          "name": "pulmonary|disorders of the airways|COPD",
+          "icd9code": "491.20",
+          "icd10code": "J44.9"
+        },
+        {
+          "name": "pulmonary|respiratory failure|acute respiratory distress",
+          "icd9code": "518.82",
+          "icd10code": ""
+        },
+        {
+          "name": "cardiovascular|chest pain / ASHD|coronary artery disease|known",
+          "icd9code": "414.00",
+          "icd10code": "I25.10"
+        }
+      ],
+      "other_diseases": []
+    }
+  },
+  {
+    "case_id": "728557",
+    "input": {
+      "patient_info": "Patient demographics and basic information: gender: Female, age: 26",
+      "past_history": "Patient's medical history and past conditions: Organ Systems/Pulmonary/Asthma/asthma",
+      "physical_exam": "Physical examination findings and clinical observations: [BP (diastolic) Lowest: 60, 4: 4, 1: 1, BP (diastolic) Current: 60, BP (systolic) Highest: 140, BP (systolic) Lowest: 117, 1: 1, scored: scored, BP (diastolic) Highest: 73, BP (systolic) Current: 117]",
+      "lab_results": "Laboratory test results with timestamps and measurements:\nlabresultoffset,labname,labresult,labmeasurenamesystem\n-240,bedside glucose_4h_avg,187.0,mg/dL\n-240,glucose_4h_avg,197.0,mg/dL\n-122,Base Excess,-11.0,mEq/L\n-122,FiO2,100.0,%\n-122,HCO3,21.0,mmol/L\n-122,O2 Sat (%),94.6,%\n-122,pH,6.974,\n-122,paCO2,90.6,mm Hg\n-122,paO2,117.0,mm Hg\n-104,ALT (SGPT),41.0,Units/L\n-104,AST (SGOT),40.0,Units/L\n-104,BUN,9.0,mg/dL\n-104,Hct,43.9,%\n-104,Hgb,14.9,g/dL\n-104,MCH,28.8,pg\n-104,MCHC,33.9,g/dL\n-104,MCV,85.0,fL\n-104,MPV,9.7,fL\n-104,RBC,5.18,M/mcL\n-104,RDW,13.0,%\n-104,WBC x 1000,22.2,K/mcL\n-104,albumin,4.0,g/dL\n-104,alkaline phos.,103.0,Units/L\n-104,anion gap,15.0,\n-104,bicarbonate,21.0,mmol/L\n-104,calcium,7.8,mg/dL\n-104,chloride,103.0,mmol/L\n-104,creatinine,0.68,mg/dL\n-104,ethanol,194.0,mg/dL\n-104,lactate,2.9,mmol/L\n-104,platelets x 1000,409.0,K/mcL\n-104,potassium,4.4,mmol/L\n-104,sodium,139.0,mmol/L\n-104,total bilirubin,0.1,mg/dL\n-104,total protein,8.2,g/dL\n-85,Base Excess,-10.4,mEq/L\n-85,FiO2,100.0,%\n-85,HCO3,18.3,mmol/L\n-85,PEEP,5.0,cm H2O\n-85,TV,400.0,mls\n-85,pH,7.126,\n-85,paCO2,55.6,mm Hg\n-85,paO2,552.0,mm Hg\n14,FiO2,50.0,%\n41,Base Excess,-7.6,mEq/L\n41,FiO2,50.0,%\n41,HCO3,19.3,mmol/L\n41,O2 Sat (%),97.1,%\n41,PEEP,5.0,cm H2O\n41,TV,400.0,mls\n41,pH,7.239,\n41,paCO2,45.3,mm Hg\n41,paO2,104.3,mm Hg\n213,Base Excess,-7.4,mEq/L\n213,FiO2,50.0,%\n213,HCO3,18.5,mmol/L\n213,PEEP,5.0,cm H2O\n213,TV,490.0,mls\n213,lactate,3.0,mmol/L\n213,pH,7.295,\n213,paCO2,38.1,mm Hg\n213,paO2,157.4,mm Hg\n240,bedside glucose_4h_avg,104.0,mg/dL\n540,FiO2,40.0,%\n540,HCO3,20.9,mmol/L\n540,PEEP,5.0,cm H2O\n540,TV,490.0,mls\n540,lactate,0.9,mmol/L\n540,pH,7.391,\n540,paCO2,34.5,mm Hg\n540,paO2,119.4,mm Hg\n720,bedside glucose_4h_avg,103.5,mg/dL\n960,bedside glucose_4h_avg,103.0,mg/dL\n1160,Base Excess,-0.7,mEq/L\n1160,FiO2,40.0,%\n1160,HCO3,23.9,mmol/L\n1160,PEEP,5.0,cm H2O\n1160,TV,490.0,mls\n1160,pH,7.402,\n1160,paCO2,38.5,mm Hg\n1160,paO2,107.0,mm Hg\n1440,bedside glucose_4h_avg,108.0,mg/dL\n1440,glucose_4h_avg,105.0,mg/dL\n1597,BUN,6.0,mg/dL\n1597,Hct,35.3,%\n1597,Hgb,11.8,g/dL\n1597,MCH,28.4,pg\n1597,MCHC,33.4,g/dL\n1597,MCV,85.0,fL\n1597,MPV,9.2,fL\n1597,RBC,4.16,M/mcL\n1597,RDW,13.2,%\n1597,WBC x 1000,11.7,K/mcL\n1597,anion gap,4.0,\n1597,bicarbonate,28.0,mmol/L\n1597,calcium,8.6,mg/dL\n1597,chloride,108.0,mmol/L\n1597,creatinine,0.67,mg/dL\n1597,magnesium,2.1,mg/dL\n1597,phosphate,1.9,mg/dL\n1597,platelets x 1000,206.0,K/mcL\n1597,potassium,4.2,mmol/L\n1597,sodium,140.0,mmol/L\n1680,bedside glucose_4h_avg,90.0,mg/dL\n"
+    },
+    "output": {
+      "all_diseases": [
+        {
+          "name": "pulmonary|disorders of the airways|asthma / bronchospasm",
+          "icd9code": "493.90",
+          "icd10code": "J45"
+        },
+        {
+          "name": "pulmonary|pulmonary infections|pneumonia|aspiration",
+          "icd9code": "507.0",
+          "icd10code": "J69.0"
+        },
+        {
+          "name": "pulmonary|respiratory failure|acute respiratory failure",
+          "icd9code": "518.81",
+          "icd10code": "J96.00"
+        },
+        {
+          "name": "cardiovascular|shock / hypotension|signs and symptoms of sepsis (SIRS)",
+          "icd9code": "995.90",
+          "icd10code": ""
+        }
+      ],
+      "primary_diseases": [
+        {
+          "name": "pulmonary|respiratory failure|acute respiratory failure",
+          "icd9code": "518.81",
+          "icd10code": "J96.00"
+        }
+      ],
+      "major_diseases": [
+        {
+          "name": "pulmonary|disorders of the airways|asthma / bronchospasm",
+          "icd9code": "493.90",
+          "icd10code": "J45"
+        },
+        {
+          "name": "pulmonary|pulmonary infections|pneumonia|aspiration",
+          "icd9code": "507.0",
+          "icd10code": "J69.0"
+        },
+        {
+          "name": "cardiovascular|shock / hypotension|signs and symptoms of sepsis (SIRS)",
+          "icd9code": "995.90",
+          "icd10code": ""
+        }
+      ],
+      "other_diseases": []
+    }
+  },
+  {
+    "case_id": "2879882",
+    "input": {
+      "patient_info": "Patient demographics and basic information: gender: Male, age: 47",
+      "past_history": "Patient's medical history and past conditions: Organ Systems/Renal  (R)/Renal Failure/renal failure - hemodialysis, Organ Systems/Neurologic/Strokes/stroke - date unknown, Organ Systems/Endocrine (R)/Non-Insulin Dependent Diabetes/medication dependent, Organ Systems/Cardiovascular (R)/Hypertension Requiring Treatment/hypertension requiring treatment",
+      "physical_exam": "Physical examination findings and clinical observations: [5: 5, BP (systolic) Current: 171, HR Highest: 85, HR Lowest: 85, 4: 4, scored: scored, Admission: 83.9, HR Current: 85, BP (systolic) Lowest: 171, BP (systolic) Highest: 229, BP (diastolic) Current: 108, 6: 6, BP (diastolic) Highest: 127, BP (diastolic) Lowest: 108, Resp Lowest: 18, Resp Highest: 18, O2 Sat% Current: 100, O2 Sat% Lowest: 100, O2 Sat% Highest: 100, FiO2%: 40, Resp Current: 18]",
+      "lab_results": "Laboratory test results with timestamps and measurements:\nlabresultoffset,labname,labresult,labmeasurenamesystem\n-240,bedside glucose_4h_avg,301.0,mg/dL\n-240,glucose_4h_avg,226.0,mg/dL\n-111,-basos,1.0,%\n-111,-eos,2.0,%\n-111,-lymphs,11.0,%\n-111,-monos,4.0,%\n-111,-polys,82.0,%\n-111,ALT (SGPT),17.0,Units/L\n-111,AST (SGOT),18.0,Units/L\n-111,BUN,109.0,mg/dL\n-111,CPK,173.0,Units/L\n-111,CPK-MB,6.9,ng/mL\n-111,CPK-MB INDEX,4.0,%\n-111,Hct,41.1,%\n-111,Hgb,13.3,g/dL\n-111,MCH,30.2,pg\n-111,MCHC,32.4,g/dL\n-111,MCV,93.0,fL\n-111,RBC,4.41,M/mcL\n-111,RDW,14.2,%\n-111,WBC x 1000,14.1,K/mcL\n-111,albumin,3.8,g/dL\n-111,alkaline phos.,136.0,Units/L\n-111,anion gap,21.6,\n-111,bicarbonate,24.0,mmol/L\n-111,calcium,10.0,mg/dL\n-111,chloride,98.0,mmol/L\n-111,creatinine,16.11,mg/dL\n-111,magnesium,3.2,mg/dL\n-111,platelets x 1000,282.0,K/mcL\n-111,potassium,6.6,mmol/L\n-111,sodium,137.0,mmol/L\n-111,total bilirubin,0.7,mg/dL\n-111,total protein,9.4,g/dL\n-111,troponin - I,1.01,ng/mL\n0,bedside glucose_4h_avg,178.0,mg/dL\n463,BUN,54.0,mg/dL\n463,PT,16.5,sec\n463,PT - INR,1.4,ratio\n463,PTT,35.2,sec\n463,anion gap,13.1,\n463,bicarbonate,27.0,mmol/L\n463,calcium,9.8,mg/dL\n463,chloride,99.0,mmol/L\n463,creatinine,9.84,mg/dL\n463,potassium,4.1,mmol/L\n463,sodium,135.0,mmol/L\n480,bedside glucose_4h_avg,130.0,mg/dL\n480,glucose_4h_avg,125.0,mg/dL\n"
+    },
+    "output": {
+      "all_diseases": [
+        {
+          "name": "cardiovascular|vascular disorders|hypertension",
+          "icd9code": "401.9",
+          "icd10code": "I10"
+        },
+        {
+          "name": "pulmonary|respiratory failure|acute respiratory distress",
+          "icd9code": "518.82",
+          "icd10code": ""
+        },
+        {
+          "name": "renal|disorder of kidney|ESRD (end stage renal disease)",
+          "icd9code": "585.6",
+          "icd10code": "N18.6"
+        },
+        {
+          "name": "renal|electrolyte imbalance|hyperkalemia",
+          "icd9code": "276.7",
+          "icd10code": "E87.5"
+        }
+      ],
+      "primary_diseases": [
+        {
+          "name": "cardiovascular|vascular disorders|hypertension",
+          "icd9code": "401.9",
+          "icd10code": "I10"
+        }
+      ],
+      "major_diseases": [
+        {
+          "name": "pulmonary|respiratory failure|acute respiratory distress",
+          "icd9code": "518.82",
+          "icd10code": ""
+        },
+        {
+          "name": "renal|disorder of kidney|ESRD (end stage renal disease)",
+          "icd9code": "585.6",
+          "icd10code": "N18.6"
+        },
+        {
+          "name": "renal|electrolyte imbalance|hyperkalemia",
+          "icd9code": "276.7",
+          "icd10code": "E87.5"
+        }
+      ],
+      "other_diseases": []
+    }
+  },
+  {
+    "case_id": "365300",
+    "input": {
+      "patient_info": "Patient demographics and basic information: gender: Male, age: 55",
+      "past_history": "Patient's medical history and past conditions: Organ Systems/Endocrine (R)/Non-Insulin Dependent Diabetes/medication dependent, Organ Systems/Endocrine (R)/Hypothyroidism/hypothyroidism, Organ Systems/Cardiovascular (R)/Hypertension Requiring Treatment/hypertension requiring treatment",
+      "physical_exam": "Physical examination findings and clinical observations: [BP (systolic) Highest: 114, in acute distress: in acute distress, well developed: well developed, 5: 5, 4: 4, 6: 6, HR Lowest: 90, HR Highest: 90, scored: scored, BP (systolic) Current: 114, BP (diastolic) Current: 77, BP (systolic) Lowest: 114, HR Current: 90, O2 Sat% Current: 100, FiO2%: 21, sinus: sinus, BP (diastolic) Lowest: 77, BP (diastolic) Highest: 77, Resp Current: 19, Resp Lowest: 19, Admission: 125.6, O2 Sat% Highest: 100, O2 Sat% Lowest: 100, spontaneous: spontaneous, ill-appearing: ill-appearing, Resp Highest: 19]",
+      "lab_results": "Laboratory test results with timestamps and measurements:\nlabresultoffset,labname,labresult,labmeasurenamesystem\n-480,bedside glucose_4h_avg,519.0,mg/dL\n-324,CPK,136.0,Units/L\n-324,troponin - I,0.028,ng/mL\n-311,-lymphs,3.0,%\n-311,-monos,13.0,%\n-311,-polys,83.0,%\n-311,BUN,99.0,mg/dL\n-311,Hct,33.5,%\n-311,Hgb,10.9,g/dL\n-311,MCH,27.9,pg\n-311,MCHC,32.5,g/dL\n-311,MCV,85.7,fL\n-311,RBC,3.91,M/mcL\n-311,WBC x 1000,13.8,K/mcL\n-311,bicarbonate,13.6,mmol/L\n-311,chloride,100.3,mmol/L\n-311,creatinine,3.9,mg/dL\n-311,ionized calcium,1.23,mg/dL\n-311,platelets x 1000,263.0,K/mcL\n-311,potassium,5.72,mmol/L\n-311,sodium,129.4,mmol/L\n-263,urinary specific gravity,1.01,\n-240,bedside glucose_4h_avg,388.0,mg/dL\n-240,glucose_4h_avg,591.0,mg/dL\n0,bedside glucose_4h_avg,244.5,mg/dL\n106,urinary creatinine,41.5,mg/dL\n106,urinary sodium,26.0,mmol/L\n240,glucose_4h_avg,284.0,mg/dL\n246,BUN,85.0,mg/dL\n246,bicarbonate,14.0,mmol/L\n246,calcium,8.2,mg/dL\n246,chloride,104.0,mmol/L\n246,creatinine,3.65,mg/dL\n246,magnesium,1.98,mg/dL\n246,potassium,4.3,mmol/L\n246,sodium,135.0,mmol/L\n480,bedside glucose_4h_avg,256.75,mg/dL\n521,bicarbonate,18.0,mmol/L\n521,chloride,105.0,mmol/L\n521,potassium,4.2,mmol/L\n521,sodium,138.0,mmol/L\n720,bedside glucose_4h_avg,257.5,mg/dL\n720,glucose_4h_avg,299.0,mg/dL\n875,ALT (SGPT),12.0,Units/L\n875,AST (SGOT),10.0,Units/L\n875,BUN,80.0,mg/dL\n875,Fe,15.0,mcg/dL\n875,Fe/TIBC Ratio,9.0,%\n875,Ferritin,1205.9,ng/mL\n875,Hct,29.6,%\n875,Hgb,10.0,g/dL\n875,MCH,28.0,pg\n875,MCHC,34.0,g/dL\n875,MCV,84.0,fL\n875,RBC,3.54,M/mcL\n875,RDW,16.5,%\n875,TIBC,173.0,mcg/dL\n875,TSH,0.697,mcU/ml\n875,WBC x 1000,8.8,K/mcL\n875,albumin,3.1,g/dL\n875,alkaline phos.,61.0,Units/L\n875,bicarbonate,19.0,mmol/L\n875,calcium,8.4,mg/dL\n875,chloride,107.0,mmol/L\n875,creatinine,3.47,mg/dL\n875,magnesium,1.95,mg/dL\n875,phosphate,2.9,mg/dL\n875,platelets x 1000,214.0,K/mcL\n875,potassium,4.3,mmol/L\n875,sodium,138.0,mmol/L\n875,total bilirubin,0.3,mg/dL\n875,total protein,5.8,g/dL\n960,bedside glucose_4h_avg,250.5,mg/dL\n1200,bedside glucose_4h_avg,206.66666666666663,mg/dL\n1376,bicarbonate,15.0,mmol/L\n1376,chloride,108.0,mmol/L\n1376,potassium,4.5,mmol/L\n1376,sodium,138.0,mmol/L\n1440,bedside glucose_4h_avg,200.33333333333331,mg/dL\n1611,bicarbonate,18.0,mmol/L\n1611,chloride,109.0,mmol/L\n1611,potassium,4.4,mmol/L\n1611,sodium,136.0,mmol/L\n1680,bedside glucose_4h_avg,183.5,mg/dL\n1920,bedside glucose_4h_avg,202.5,mg/dL\n2083,bicarbonate,18.0,mmol/L\n2083,chloride,110.0,mmol/L\n2083,potassium,4.2,mmol/L\n2083,sodium,137.0,mmol/L\n2160,bedside glucose_4h_avg,219.0,mg/dL\n2326,bicarbonate,18.0,mmol/L\n2326,chloride,111.0,mmol/L\n2326,potassium,4.5,mmol/L\n2326,sodium,139.0,mmol/L\n2400,bedside glucose_4h_avg,249.2,mg/dL\n2574,bicarbonate,19.0,mmol/L\n2574,chloride,108.0,mmol/L\n2574,potassium,4.6,mmol/L\n2574,sodium,138.0,mmol/L\n2640,bedside glucose_4h_avg,236.0,mg/dL\n2880,bedside glucose_4h_avg,207.0,mg/dL\n3120,bedside glucose_4h_avg,259.0,mg/dL\n3600,bedside glucose_4h_avg,257.0,mg/dL\n3600,glucose_4h_avg,241.0,mg/dL\n3641,BUN,32.0,mg/dL\n3641,bicarbonate,18.0,mmol/L\n3641,calcium,8.3,mg/dL\n3641,chloride,109.0,mmol/L\n3641,creatinine,2.42,mg/dL\n3641,potassium,4.6,mmol/L\n3641,sodium,136.0,mmol/L\n3840,bedside glucose_4h_avg,171.0,mg/dL\n"
+    },
+    "output": {
+      "all_diseases": [
+        {
+          "name": "endocrine|glucose metabolism|DKA",
+          "icd9code": "250.13",
+          "icd10code": "E10.1"
+        },
+        {
+          "name": "renal|electrolyte imbalance|hyperkalemia",
+          "icd9code": "276.7",
+          "icd10code": "E87.5"
+        },
+        {
+          "name": "renal|electrolyte imbalance|hyponatremia",
+          "icd9code": "276.1",
+          "icd10code": "E87.0"
+        },
+        {
+          "name": "renal|disorder of acid base|metabolic acidosis",
+          "icd9code": "276.2",
+          "icd10code": "E87.2"
+        },
+        {
+          "name": "cardiovascular|ventricular disorders|hypertension",
+          "icd9code": "401.9",
+          "icd10code": "I10"
+        },
+        {
+          "name": "renal|disorder of kidney|acute renal failure",
+          "icd9code": "584.9",
+          "icd10code": "N17.9"
+        },
+        {
+          "name": "endocrine|thyroid|hypothyroidism",
+          "icd9code": "244.9",
+          "icd10code": "E03.9"
+        },
+        {
+          "name": "cardiovascular|chest pain / ASHD|hyperlipidemia",
+          "icd9code": "272.4",
+          "icd10code": "E78.5"
+        }
+      ],
+      "primary_diseases": [
+        {
+          "name": "endocrine|glucose metabolism|DKA",
+          "icd9code": "250.13",
+          "icd10code": "E10.1"
+        }
+      ],
+      "major_diseases": [
+        {
+          "name": "cardiovascular|ventricular disorders|hypertension",
+          "icd9code": "401.9",
+          "icd10code": "I10"
+        },
+        {
+          "name": "renal|disorder of kidney|acute renal failure",
+          "icd9code": "584.9",
+          "icd10code": "N17.9"
+        },
+        {
+          "name": "endocrine|thyroid|hypothyroidism",
+          "icd9code": "244.9",
+          "icd10code": "E03.9"
+        },
+        {
+          "name": "cardiovascular|chest pain / ASHD|hyperlipidemia",
+          "icd9code": "272.4",
+          "icd10code": "E78.5"
+        }
+      ],
+      "other_diseases": [
+        {
+          "name": "renal|electrolyte imbalance|hyperkalemia",
+          "icd9code": "276.7",
+          "icd10code": "E87.5"
+        },
+        {
+          "name": "renal|electrolyte imbalance|hyponatremia",
+          "icd9code": "276.1",
+          "icd10code": "E87.0"
+        },
+        {
+          "name": "renal|disorder of acid base|metabolic acidosis",
+          "icd9code": "276.2",
+          "icd10code": "E87.2"
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "220686",
+    "input": {
+      "patient_info": "Patient demographics and basic information: gender: Female, age: 24",
+      "past_history": "Patient's medical history and past conditions: Organ Systems/Pulmonary/COPD/COPD  - moderate, Organ Systems/Endocrine (R)/Non-Insulin Dependent Diabetes/non-medication dependent, Organ Systems/Pulmonary/Asthma/asthma",
+      "physical_exam": "Physical examination findings and clinical observations: [BP (systolic) Highest: 132, scored: scored, BP (systolic) Lowest: 132, BP (diastolic) Lowest: 80, Delta: +0.1, Current: 105.9, Dialysis Net: 0, Total Net: +480, 4: 4, 5: 5, BP (systolic) Current: 132, 6: 6, Admission: 105.8, BP (diastolic) Highest: 80, Intake Total: 480, Output Total: 0, BP (diastolic) Current: 80]",
+      "lab_results": "Laboratory test results with timestamps and measurements:\nlabresultoffset,labname,labresult,labmeasurenamesystem\n-2400,glucose_4h_avg,130.0,mg/dL\n-2387,-bands,2.0,%\n-2387,-lymphs,62.0,%\n-2387,-monos,11.0,%\n-2387,-polys,25.0,%\n-2387,BUN,10.0,mg/dL\n-2387,Hct,37.7,%\n-2387,Hgb,12.9,g/dL\n-2387,MCH,29.2,pg\n-2387,MCHC,34.2,g/dL\n-2387,MCV,85.3,fL\n-2387,RBC,4.42,M/mcL\n-2387,RDW,13.1,%\n-2387,WBC x 1000,6.5,K/mcL\n-2387,anion gap,19.0,\n-2387,bicarbonate,22.0,mmol/L\n-2387,calcium,9.3,mg/dL\n-2387,chloride,103.0,mmol/L\n-2387,creatinine,1.01,mg/dL\n-2387,platelets x 1000,310.0,K/mcL\n-2387,potassium,2.8,mmol/L\n-2387,sodium,141.0,mmol/L\n-2160,glucose_4h_avg,144.0,mg/dL\n-2013,-basos,1.0,%\n-2013,-eos,0.0,%\n-2013,-lymphs,16.0,%\n-2013,-monos,3.0,%\n-2013,-polys,80.0,%\n-2013,ALT (SGPT),29.0,Units/L\n-2013,AST (SGOT),25.0,Units/L\n-2013,BUN,7.0,mg/dL\n-2013,Hct,37.1,%\n-2013,Hgb,12.6,g/dL\n-2013,MCH,29.5,pg\n-2013,MCHC,34.0,g/dL\n-2013,MCV,86.9,fL\n-2013,RBC,4.27,M/mcL\n-2013,RDW,13.1,%\n-2013,WBC x 1000,7.2,K/mcL\n-2013,albumin,3.8,g/dL\n-2013,alkaline phos.,59.0,Units/L\n-2013,anion gap,15.0,\n-2013,bicarbonate,25.0,mmol/L\n-2013,calcium,8.7,mg/dL\n-2013,chloride,104.0,mmol/L\n-2013,creatinine,0.91,mg/dL\n-2013,magnesium,2.2,mg/dL\n-2013,platelets x 1000,286.0,K/mcL\n-2013,potassium,3.1,mmol/L\n-2013,sodium,141.0,mmol/L\n-2013,total bilirubin,0.2,mg/dL\n-2013,total protein,7.8,g/dL\n-1690,potassium,3.9,mmol/L\n-379,Base Excess,3.0,mEq/L\n-379,FiO2,28.0,%\n-379,HCO3,26.0,mmol/L\n-379,LPM O2,2.0,L/min\n-379,pH,7.46,\n-379,paCO2,38.0,mm Hg\n-379,paO2,83.0,mm Hg\n0,bedside glucose_4h_avg,208.0,mg/dL\n51,urinary specific gravity,1.02,\n240,bedside glucose_4h_avg,147.0,mg/dL\n720,glucose_4h_avg,153.0,mg/dL\n800,-basos,0.0,%\n800,-eos,0.0,%\n800,-lymphs,18.0,%\n800,-monos,3.0,%\n800,-polys,79.0,%\n800,BUN,13.0,mg/dL\n800,Hct,37.5,%\n800,Hgb,12.2,g/dL\n800,MCH,29.3,pg\n800,MCHC,32.5,g/dL\n800,MCV,90.1,fL\n800,RBC,4.16,M/mcL\n800,RDW,13.4,%\n800,TSH,0.077,mcU/ml\n800,WBC x 1000,10.8,K/mcL\n800,anion gap,13.0,\n800,bicarbonate,26.0,mmol/L\n800,calcium,9.0,mg/dL\n800,chloride,104.0,mmol/L\n800,creatinine,0.77,mg/dL\n800,magnesium,2.2,mg/dL\n800,platelets x 1000,305.0,K/mcL\n800,potassium,4.4,mmol/L\n800,sodium,139.0,mmol/L\n960,bedside glucose_4h_avg,142.0,mg/dL\n1200,bedside glucose_4h_avg,116.0,mg/dL\n1440,bedside glucose_4h_avg,127.0,mg/dL\n1680,bedside glucose_4h_avg,156.0,mg/dL\n2160,glucose_4h_avg,158.0,mg/dL\n2261,-basos,0.0,%\n2261,-eos,0.0,%\n2261,-lymphs,16.0,%\n2261,-monos,4.0,%\n2261,-polys,80.0,%\n2261,BUN,17.0,mg/dL\n2261,Hct,37.6,%\n2261,Hgb,12.3,g/dL\n2261,MCH,29.3,pg\n2261,MCHC,32.7,g/dL\n2261,MCV,89.5,fL\n2261,RBC,4.2,M/mcL\n2261,RDW,13.3,%\n2261,WBC x 1000,15.4,K/mcL\n2261,anion gap,11.0,\n2261,bicarbonate,29.0,mmol/L\n2261,calcium,8.8,mg/dL\n2261,chloride,102.0,mmol/L\n2261,creatinine,0.79,mg/dL\n2261,free T4,0.9,ng/dL\n2261,platelets x 1000,317.0,K/mcL\n2261,potassium,4.4,mmol/L\n2261,sodium,138.0,mmol/L\n2400,bedside glucose_4h_avg,139.0,mg/dL\n2640,bedside glucose_4h_avg,153.0,mg/dL\n2880,bedside glucose_4h_avg,162.0,mg/dL\n3120,bedside glucose_4h_avg,144.0,mg/dL\n3360,glucose_4h_avg,197.0,mg/dL\n3556,ALT (SGPT),30.0,Units/L\n3556,AST (SGOT),8.0,Units/L\n3556,BUN,16.0,mg/dL\n3556,Hct,39.2,%\n3556,Hgb,13.0,g/dL\n3556,MCH,29.6,pg\n3556,MCHC,33.2,g/dL\n3556,MCV,89.3,fL\n3556,RBC,4.39,M/mcL\n3556,RDW,13.5,%\n3556,WBC x 1000,15.2,K/mcL\n3556,albumin,3.5,g/dL\n3556,alkaline phos.,48.0,Units/L\n3556,anion gap,12.0,\n3556,bicarbonate,30.0,mmol/L\n3556,calcium,8.9,mg/dL\n3556,chloride,101.0,mmol/L\n3556,creatinine,0.82,mg/dL\n3556,magnesium,2.1,mg/dL\n3556,platelets x 1000,362.0,K/mcL\n3556,potassium,4.7,mmol/L\n3556,sodium,138.0,mmol/L\n3556,total bilirubin,0.2,mg/dL\n3556,total protein,7.4,g/dL\n3600,bedside glucose_4h_avg,136.0,mg/dL\n4080,bedside glucose_4h_avg,129.0,mg/dL\n4320,bedside glucose_4h_avg,231.0,mg/dL\n4560,bedside glucose_4h_avg,254.5,mg/dL\n5193,Hct,40.9,%\n5193,Hgb,13.4,g/dL\n5193,MCH,29.1,pg\n5193,MCHC,32.8,g/dL\n5193,MCV,88.7,fL\n5193,RBC,4.61,M/mcL\n5193,RDW,13.6,%\n5193,WBC x 1000,20.2,K/mcL\n5193,creatinine,0.73,mg/dL\n5193,platelets x 1000,375.0,K/mcL\n5280,bedside glucose_4h_avg,97.0,mg/dL\n5520,bedside glucose_4h_avg,130.0,mg/dL\n6000,bedside glucose_4h_avg,138.5,mg/dL\n6480,glucose_4h_avg,96.0,mg/dL\n6615,-basos,1.0,%\n6615,-eos,0.0,%\n6615,-lymphs,41.0,%\n6615,-monos,7.0,%\n6615,-polys,51.0,%\n6615,ALT (SGPT),27.0,Units/L\n6615,AST (SGOT),7.0,Units/L\n6615,BUN,22.0,mg/dL\n6615,Hct,41.2,%\n6615,Hgb,13.8,g/dL\n6615,MCH,29.6,pg\n6615,MCHC,33.5,g/dL\n6615,MCV,88.4,fL\n6615,RBC,4.66,M/mcL\n6615,RDW,13.8,%\n6615,WBC x 1000,19.4,K/mcL\n6615,albumin,3.3,g/dL\n6615,alkaline phos.,46.0,Units/L\n6615,anion gap,15.0,\n6615,bicarbonate,26.0,mmol/L\n6615,calcium,8.5,mg/dL\n6615,chloride,101.0,mmol/L\n6615,creatinine,0.92,mg/dL\n6615,platelets x 1000,369.0,K/mcL\n6615,potassium,3.8,mmol/L\n6615,sodium,138.0,mmol/L\n6615,total bilirubin,0.2,mg/dL\n6615,total protein,6.9,g/dL\n6720,bedside glucose_4h_avg,86.0,mg/dL\n6960,bedside glucose_4h_avg,110.0,mg/dL\n"
+    },
+    "output": {
+      "all_diseases": [
+        {
+          "name": "pulmonary|disorders of the airways|COPD",
+          "icd9code": "491.20",
+          "icd10code": "J44.9"
+        },
+        {
+          "name": "pulmonary|disorders of the airways|asthma / bronchospasm",
+          "icd9code": "493.90",
+          "icd10code": "J45"
+        }
+      ],
+      "primary_diseases": [
+        {
+          "name": "pulmonary|disorders of the airways|COPD",
+          "icd9code": "491.20",
+          "icd10code": "J44.9"
+        }
+      ],
+      "major_diseases": [
+        {
+          "name": "pulmonary|disorders of the airways|asthma / bronchospasm",
+          "icd9code": "493.90",
+          "icd10code": "J45"
         }
       ],
       "other_diseases": []

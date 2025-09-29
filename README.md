@@ -4,32 +4,30 @@ This is an official implementation of "[The reasoning paradox of large language 
 
 ## Introduction
 
-We constructed a long-context diagnostic reasoning (LDR) benchmark from the MIMIC-IV database. We systematically evaluated 5 state-of-the-art reasoning language models (RLMs) including Gemini-2.5-Pro, O4-Mini (High), O3-Mini (High), DeepSeek-R1, and Grok-3-Reasoner, along with 4 large language models including GPT-4.1, GPT-4o, DeepSeek-V3, and Grok-3. Our evaluation framework spans 3 dimensions (Accuracy, Reliability, Assistance) using 5 metrics: primary accuracy, exact match accuracy, miss and overdiagnosis rates, diagnostic reliability, and quality of differential diagnosis and clinical relevance.
+This study constructed two long-context diagnostic reasoning (LDR) benchmarks using the MIMIC-IV and eICU databases to evaluate six state-of-the-art matched model pairs: GPT-5 (Mini), Gemini 2.5 (Flash), Claude 4 (Sonnet), DeepSeek, Qwen3-235B, and Qwen3-30B. Each pair comprises a thinking-augmented model (referred to as LRM) and a standard model (LLM), both operating on the identical base model.
+Our evaluation framework assessed two complementary dimensions: diagnostic performance and clinical reliability/safety.
+The results reveal a key insight: although LRMs achieve superior diagnostic accuracy and comprehensiveness, these benefits are counterbalanced by notable limitations in clinical reliability and safety, such as overdiagnosis and inconsistencies at the level of individual diagnoses.
 
 
-![Overview of model evaluation framework and LDR dataset construction pipeline](image/main_pipeline.jpg)
-> *Overview of model evaluation framework and LDR dataset construction pipeline*
 
-**Key Findings**
+![Overview of model evaluation framework and LDR dataset construction pipeline](image/main_pipeline_public.png)
+> *Overview of model evaluation framework and LDR-MIMIC dataset construction pipeline*
 
-- Our study reveals RLMs outperform LLMs in primary diagnoses (61.8% vs 52.5% accuracy), but still fall below clinical deployment thresholds.
-- Even the best models achieve less than 25% exact match accuracy, with RLMs showing 43% higher overdiagnosis rates despite better identifying relevant conditions. We further analyzed three main causes of overdiagnosis: evidence over-interpretation errors (Type-A), temporal confusion (Type-B), and clinical hierarchy confusion (Type-C), with Type-A and Type-C being the most significant contributors.
-- RLMs demonstrate lower reliability, with 62% primary self-consistency compared to LLMs' 87%, suggesting reasoning introduces variability.
-- As diagnostic assistants, RLMs provide superior differential diagnoses and higher clinical relevance, with only 29.2% completely unrelated predictions versus 37.6% for LLMs.
-- All evaluated models still produce 30%+ clinically irrelevant predictions, indicating significant room for improvement before clinical deployment.
 
 
 ## Data:
 
-First, you need to download [the MIMIC-IV dataset ](https://physionet.org/content/mimiciv/2.2/) (requires passing a qualification exam).
+For buliding LDR-MIMIC dataset, you need to download [the MIMIC-IV dataset ](https://physionet.org/content/mimiciv/2.2/) (requires passing a qualification exam).
 Then use our code in the `data/` directory to process and generate the LDR training and evaluation datasets.
+
+Similarly, to bulid the LDR-eICU dataset, you need to download [the eICU dataset](https://eicu-crd.mit.edu/).
 
 
 ## File Structure
 Our code structure consists of three main parts: 
 - Data processing: scripts for preparing and processing the MIMIC-IV dataset into the LDR benchmark.
 - Inference code: scripts for model inference and evaluation via API.
-- Fine-tuning code: scripts for model fine-tuning on the LDR training set.
+- Examples: single-case inference to check case input and output; 100 cases from each dataset are provided for consistency reproduction.
 
 The detailed structure of the code is as follows:
 
