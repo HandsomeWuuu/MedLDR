@@ -1,12 +1,12 @@
 # The reasoning paradox of large language models in clinical diagnostics
 
-This is an official implementation of "[The reasoning paradox of large language models in clinical diagnostics]()".
+This is the official implementation of "[The reasoning paradox of large language models in clinical diagnostics]()".
 
 ## Introduction
 
-This study constructed two long-context diagnostic reasoning (LDR) benchmarks using the MIMIC-IV and eICU databases to evaluate six state-of-the-art matched model pairs: GPT-5 (Mini), Gemini 2.5 (Flash), Claude 4 (Sonnet), DeepSeek, Qwen3-235B, and Qwen3-30B. Each pair comprises a thinking-augmented model (referred to as LRM) and a standard model (LLM), both operating on the identical base model.
+This study constructed two long-context diagnostic reasoning (LDR) benchmarks using the MIMIC-IV and eICU databases to evaluate six state-of-the-art matched model pairs: GPT-5 (Mini), Gemini 2.5 (Flash), Claude 4 (Sonnet), DeepSeek, Qwen3-235B, and Qwen3-30B. Each pair comprises a reasoning-augmented model (referred to as LRM) and a standard model (LLM), both operating on the same base model.
 Our evaluation framework assessed two complementary dimensions: diagnostic performance and clinical reliability/safety.
-The results reveal a key insight: although LRMs achieve superior diagnostic accuracy and comprehensiveness, these benefits are counterbalanced by notable limitations in clinical reliability and safety, such as overdiagnosis and inconsistencies at the level of individual diagnoses.
+The results reveal a key insight: although LRMs achieve superior diagnostic accuracy and comprehensiveness, these benefits are counterbalanced by notable limitations in clinical reliability and safety, such as overdiagnosis and inconsistencies at the level of  diagnoses.
 
 
 
@@ -15,9 +15,9 @@ The results reveal a key insight: although LRMs achieve superior diagnostic accu
 
 
 ## File Structure
-Our code structure consists of three main parts: 
+Our codebase consists of three main parts: 
 - Data processing: scripts for preparing and processing the MIMIC-IV dataset into the LDR benchmark.
-- Inference code: scripts for model inference and evaluation via API.
+- Inference code: scripts for model inference via API and for computing evaluation metrics.
 - Examples: single-case inference to check case input and output; 100 cases from each dataset are provided for consistency reproduction.
 
 The detailed structure of the code is as follows:
@@ -46,21 +46,18 @@ The detailed structure of the code is as follows:
 ## Data Preparation:
 
 ### Download:
-To build LDR-MIMIC dataset, you need to download [the MIMIC-IV dataset ](https://physionet.org/content/mimiciv/2.2/) (requires passing a qualification exam).
-Then use our code in the `data/` directory to process and generate the LDR training and evaluation datasets.
+To build the LDR-MIMIC dataset, you need to download [the MIMIC-IV dataset ](https://physionet.org/content/mimiciv/2.2/) (requires passing a qualification exam).
 
 Similarly, to build the LDR-eICU dataset, you need to download [the eICU dataset](https://eicu-crd.mit.edu/).
 
 ### Processing:
 
-To build the LDR-MIMIC dataset:
+To build the LDR-MIMIC dataset, follow the steps in the 
+[ldr_mimic_build_pipeline](data/make_ldr_mimic/mimic_data_processing_pipeline.md).
 
--  Use the scripts in the `data/preprocess_mimic` directory to process the raw MIMIC-IV data and organize all admission information for each patient.
+To build the LDR-eICU dataset, follow the steps in the [ldr_eicu_build_pipeline](data/make_ldr_eicu/ldr_eicu_build.md).
 
-- Run the scripts in `data/make_ldr_mimic` to construct the LDR- evaluation datasets.
-
-To build the LDR-eICU dataset, follow the steps in the [build_pipeline](data/make_ldr_eicu/ldr_eicu_build.md).
-
+To quickly view and experience these two datasets, refer to the [Example section](#examples).
 
 
 ## Inference API models
@@ -71,9 +68,8 @@ To run inference, please install the required Python packages:
 pip install openai requests
 ```
 
-To perform inference with APIs (e.g., OpenAI, DeepSeek, and Claude), you must obtain and set your API keys. You can directly insert your API key in the code where required. 
-
-We recommend using the third-party API platform -- [CursorAI](https://api.cursorai.art/), which allows access to all of the models with a single API key.
+To perform inference with APIs (e.g., OpenAI, DeepSeek, and Claude), you must obtain and set your API keys. 
+We recommend using the third-party API platform [CursorAI](https://api.cursorai.art/), which allows access to all of the models with a single API key.
 
 
 ### 2. Inference Evaluation Data
