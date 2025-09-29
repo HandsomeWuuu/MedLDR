@@ -25,7 +25,7 @@ for temperature in "${temperature_list[@]}"; do
         python mimic_infer.py \
         --test_data_path $test_data_path \
         --task_type all \
-        --chat_model cursorai_gemini_2_5_flash \
+        --chat_model cursorai_claude_sonnet_4 \
         --system_message_type $prompt_type \
         --think True \
         --temperature $temperature \
@@ -37,7 +37,7 @@ for temperature in "${temperature_list[@]}"; do
         python mimic_infer.py \
             --test_data_path $test_data_path \
             --task_type all \
-            --chat_model cursorai_gemini_2_5_flash \
+            --chat_model cursorai_claude_sonnet_4 \
             --system_message_type $prompt_type \
             --temperature $temperature \
             --num_processes 10 \

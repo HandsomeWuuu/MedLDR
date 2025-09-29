@@ -14,15 +14,6 @@ The results reveal a key insight: although LRMs achieve superior diagnostic accu
 > *Overview of model evaluation framework and LDR-MIMIC dataset construction pipeline*
 
 
-
-## Data:
-
-For buliding LDR-MIMIC dataset, you need to download [the MIMIC-IV dataset ](https://physionet.org/content/mimiciv/2.2/) (requires passing a qualification exam).
-Then use our code in the `data/` directory to process and generate the LDR training and evaluation datasets.
-
-Similarly, to bulid the LDR-eICU dataset, you need to download [the eICU dataset](https://eicu-crd.mit.edu/).
-
-
 ## File Structure
 Our code structure consists of three main parts: 
 - Data processing: scripts for preparing and processing the MIMIC-IV dataset into the LDR benchmark.
@@ -38,10 +29,28 @@ The detailed structure of the code is as follows:
 │   ├── preprocess/      # Preprocessing MIMIC-IV dataset, integrating each patient's admission information
 │   └── make_ldr/        # Scripts and workflow for constructing the LDR dataset
 ├── inference/           # Inference model code (model loading, inference scripts, evaluation)
-├── finetune/            # Fine-tuning code (training scripts, configs, logs)
-├── models/              # Pre-trained/fine-tuned model weights (optional, or download links)
 └── examples/            # Example use cases, notebooks, etc.
 ```
+
+## Data Preparation:
+
+### Download:
+To build LDR-MIMIC dataset, you need to download [the MIMIC-IV dataset ](https://physionet.org/content/mimiciv/2.2/) (requires passing a qualification exam).
+Then use our code in the `data/` directory to process and generate the LDR training and evaluation datasets.
+
+Similarly, to build the LDR-eICU dataset, you need to download [the eICU dataset](https://eicu-crd.mit.edu/).
+
+### Processing:
+
+To build the LDR-MIMIC dataset:
+
+-  Use the scripts in the `data/preprocess_mimic` directory to process the raw MIMIC-IV data and organize all admission information for each patient.
+
+- Run the scripts in `data/make_ldr_mimic` to construct the LDR- evaluation datasets.
+
+To build the LDR-eICU dataset, follow the steps in the [build_pipeline](data/make_ldr_eicu/ldr_eicu_build.md).
+
+
 
 ## Inference API models
 ### 1. Requirements
@@ -51,22 +60,18 @@ To run inference, please install the required Python packages:
 pip install openai requests
 ```
 
-To perform inference with APIs (e.g., OpenAI, DeepSeek), you must obtain and set your API keys. You can directly insert your API key in the code where required.
+To perform inference with APIs (e.g., OpenAI, DeepSeek, and Claude), you must obtain and set your API keys. You can directly insert your API key in the code where required. 
 
-### 2. Data Preparation
-- First, download the [MIMIC-IV](https://physionet.org/content/mimiciv/2.2/) dataset from PhysioNet (requires credential approval).
+We recommend using the third-party API platform -- [CursorAI](https://api.cursorai.art/), which allows access to all of the models with a single API key.
 
-- Next, use the scripts in the `data/preprocess` directory to process the raw MIMIC-IV data and organize all admission information for each patient.
 
-- Finally, run the scripts in `data/make_ldr` to construct the LDR training and evaluation datasets.
-
-### 3. Inference Evaluation Data
-As an example, to perform inference using the DeepSeek-R1 model, follow these steps:
+### 2. Inference Evaluation Data
+As an example, to perform inference using the Claude 4 (Sonnet) model, follow these steps:
 
 1. **Run Inference**  
-  Use the provided shell script to generate predictions:
+  Use the provided shell script to generate predictions (add your **API key** in the script):
   ```bash
-  bash ./inference/scripts/infer/infer_deepseek_r1.sh
+  bash ./inference/scripts/infer/infer_claude_sonnet_4.sh
   ```
 
 2. **Extract Results**  
@@ -78,66 +83,10 @@ As an example, to perform inference using the DeepSeek-R1 model, follow these st
 3. **Evaluate Predictions**  
   Evaluate the predictions using the evaluation script:
   ```bash
-  bash ./inference/scripts/eval/eval_api_models/eval_deepseek_r1_metrics.sh
+  bash ./inference/scripts/eval/eval_api_models/eval_claude_sonnot_4.sh
   ```
 
 Replace the placeholder paths in the scripts with your actual prediction and reference files as needed.
-
-
-##  Fine-tuning models
-### 1. Requirements
-**Model Preparation**
-Download the models from the links provided in `models/download_link.txt`:
-- [DeepSeek-R1-Distill-Llama-8B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B)
-- [Llama3-OpenBioLLM-8B](https://huggingface.co/aaditya/Llama3-OpenBioLLM-8B)
-
-**Training Environment**
-Our training code is based on [open-r1](https://github.com/huggingface/open-r). Please set up your environment according to the requirements of open-r1.
-
-### 2. Data Preparation
-
-Use the training dataset of the LDR dataset.
-
-### 3. Train
-
-**Supervised Fine-tuning Training**
-
-- Train DeepSeek-R1-Distill-Llama-8B
-```
-bash ./finetune/scripts_train/distill_llama_8b/sft/train_sft_llama_8b_mimic.sh
-```
-- Train Llama3-OpenBioLLM-8B
-```
-bash ./finetune/scripts_train/distill_llama_8b/grpo/train_grpo_llama_8b.sh
-```
-
-**Reinforcement Learning Training (GPRO)**
-- Train DeepSeek-R1-Distill-Llama-8B
-```
-bash ./finetune/scripts_train/openbio_8b/sft/train_sft_openbio_8b_mimic.sh
-```
-### 4. Inference Evaluation Data
-
-1. **Run Inference**  
-  Use the provided shell script to generate predictions:
-  ```bash
-  # Inference SFT models
-  bash ./finetune/scripts_infer/distill_llama_8b/infer_sft_distill_llama_api_data.sh
-  # Inference RL models
-  bash ./finetune/scripts_infer/distill_llama_8b/infer_grpo_distill_llama_8b_model.sh
-  ```
-
-2. **Extract Results**  
-  After inference, extract and format the results:
-  ```bash
-  python finetune/eval/extract_sft_openbio_result.py
-  ```
-
-3. **Evaluate Predictions**  
-  Evaluate the predictions using the evaluation script:
-  ```bash
-  bash ./inference/scripts/eval/eval_train_models/eval_sft_model.sh
-  ```
 
 ## Examples
 
@@ -146,15 +95,11 @@ bash ./finetune/scripts_train/openbio_8b/sft/train_sft_openbio_8b_mimic.sh
 
 Use the [`examples/inference_api.ipynb`](examples/inference_api.ipynb) notebook to perform inference with API models.
 
-**Inference with Fine-tuned Models**
-
-Use the [`examples/inference_ft.ipynb`](examples/inference_ft.ipynb) notebook to perform inference with fine-tuned models.
-
 ### One hundred cases for batch testing:
 
-We provide 100 LDR test cases in `examples/ldr_dataset/mimic_llm_sample_100_subset.json` for consistency verification.
+We provide 100 LDR-MIMIC test cases in `examples/ldr_dataset/mimic_llm_sample_100_subset.json` for consistency verification.
 
-Additionally, 100 external eICU dataset test cases are available in `examples/eicu_dataset/eicu_llm_sample_100_subset.json` for consistency verification.
+Additionally, 100  LDR-eICU dataset test cases are available in `examples/eicu_dataset/eicu_llm_sample_100_subset.json` for consistency verification.
 
 After configuring your API KEY:
 
@@ -203,7 +148,7 @@ If you find this project useful for your research, please consider citing:
 
 # Acknowledgment
 Our implementation is mainly based on the following codebases. We gratefully thank the authors for their wonderful works.
-> [Open-r1](https://github.com/huggingface/open-r1), [DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1)
+> [DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1)
 
 # Contact
 

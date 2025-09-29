@@ -8,9 +8,14 @@ import os
 # reasoning_effort: minimal, low, medium, high
 def chat_gpt_5_mini(client, system, query,reasoning_effort):
     try:
+        # Try get the API key from environment variable
+        api_key = os.getenv("API_KEY")
+        if not api_key:
+            raise ValueError("API_KEY environment variable not set.")
+        
         headers = {
             "Content-Type": "application/json",
-            "Authorization": f"Bearer {'sk-xxx'}"
+            "Authorization": f"Bearer {api_key}"
         }
         payload = {
             "model": "gpt-5-mini-2025-08-07",
@@ -54,7 +59,11 @@ def chat_gpt_5_mini(client, system, query,reasoning_effort):
 def test_chat_gpt_5_mini():
     client = requests.Session()
     system = "You are a helpful assistant."
-    query = "你是gpt4还是gpt5?"
+    query = "Which is greater, 9.11 or 9.8?"
+
+    # set your API key to environment variable or directly assign it here
+    import os
+    os.environ["API_KEY"] = "sk-xxxx"  # replace with your actual API key
 
     # response_content, token_dict = chat_gpt_5_mini(client, system, query, reasoning_effort='minimal')
     response_content, token_dict = chat_gpt_5_mini(client, system, query, reasoning_effort='high')

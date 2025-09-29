@@ -15,10 +15,15 @@ def chat_claude_sonnet_4(client, system, query,think=False,temperature=1):
         
 
     try:
+        # Try get the API key from environment variable
+        api_key = os.getenv("API_KEY")
+
+        if not api_key:
+            raise ValueError("API_KEY environment variable not set.")
+        
         headers = {
             "Content-Type": "application/json",
-            "Authorization": f"Bearer {'sk-xxxx'}"
-           
+            "Authorization": f"Bearer {api_key}"
         }
         payload = {
             "model": model_name,
@@ -69,8 +74,11 @@ def chat_claude_sonnet_4(client, system, query,think=False,temperature=1):
 def test_chat_claude_sonnet_4():
     client = requests.Session()
     system = "You are a helpful assistant."
-    query = "9.11 和 9.8 哪个大?"
+    query = "Which is greater, 9.11 or 9.8?"
     
+    # set your API key to environment variable or directly assign it here
+    import os
+    os.environ["API_KEY"] = "sk-xxxx"  # replace with your actual API key
     
     response_content, token_dict = chat_claude_sonnet_4(client, system, query,think=True,temperature=1)
     # response_content, token_dict = chat_claude_sonnet_4(client, system, query,think=False,temperature=1)
