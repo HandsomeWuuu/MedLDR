@@ -1,6 +1,6 @@
-# The reasoning paradox of large language models in clinical diagnostics
+# The accuracy-safety trade-off of large reasoning models in clinical diagnostics
 
-This is the official implementation of "[The reasoning paradox of large language models in clinical diagnostics]()".
+This is the official implementation of "[The accuracy-safety trade-off of large reasoning models in clinical diagnostics]()".
 
 ## Introduction
 
